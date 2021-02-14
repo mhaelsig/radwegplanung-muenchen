@@ -1,6 +1,7 @@
 node_modules/
 dist/
 prod/
+doc/source
 icons/build
 npm-debug.log
 themes.json

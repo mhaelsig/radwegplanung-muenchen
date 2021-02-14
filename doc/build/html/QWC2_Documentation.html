@@ -1,0 +1,846 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="de" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>QGIS Web Client 2 Documentation &mdash; radwegplanung-muenchen 0.9 Dokumentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> radwegplanung-muenchen
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Dokumentation durchsuchen" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Inhalt:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="%C3%9Cberblick.html">Überblick</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nutzung.html">Nutzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Werkzeuge.html">Werkzeuge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%C3%84nderungshistorie.html">Radwegplanung München</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">radwegplanung-muenchen</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>QGIS Web Client 2 Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/QWC2_Documentation.md.txt" rel="nofollow"> Quelltext anzeigen</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="qgis-web-client-2-documentation">
+<h1>QGIS Web Client 2 Documentation<a class="headerlink" href="#qgis-web-client-2-documentation" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link zu dieser Überschrift">¶</a></h2>
+<p>QGIS Web Client 2 (QWC2) is a modular next generation responsive web client for QGIS Server, built with ReactJS and OpenLayers.</p>
+<p>It is released under the terms of the <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/LICENSE">BSD license</a>.</p>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link zu dieser Überschrift">¶</a></h2>
+<p>As a minimum, a working QGIS server environment is required. Projects which are to be offered as QWC2 topics must be published as WMS.</p>
+<p>Furthermore, a web server is required which will serve the QWC2 application.</p>
+</div>
+<div class="section" id="a-name-quick-start-a-quick-start">
+<h2><a name="quick-start"></a>Quick start<a class="headerlink" href="#a-name-quick-start-a-quick-start" title="Link zu dieser Überschrift">¶</a></h2>
+<p>QWC2 is divided into two repositories:</p>
+<ul class="simple">
+<li><p>The QWC2 components, hosted at <a class="reference external" href="https://github.com/qgis/qwc2/">https://github.com/qgis/qwc2/</a>. This repository contains the core building blocks common to all QWC2 applications.</p></li>
+<li><p>The QWC2 application, an example is hosted at <a class="reference external" href="https://github.com/qgis/qwc2-demo-app">https://github.com/qgis/qwc2-demo-app</a>. This repository contains the user-specific configuration of the core components and can also include any other custom components.</p></li>
+</ul>
+<p>Additionally, some QWC2 components (such as permalink generation, elevation queries, editing, etc) require external services. The reference implementation of these services are hosted at <a class="reference external" href="https://github.com/qwc-services/">https://github.com/qwc-services/</a>.</p>
+<p>To work with QWC2, you will need a minimal development environment consisting of <a class="reference external" href="https://git-scm.com/">git</a>, <a class="reference external" href="https://nodejs.org/">node</a> and <a class="reference external" href="https://yarnpkg.com">yarn</a>.</p>
+<p>The fastest way to get started is by recursively cloning the demo application repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone --recursive https://github.com/qgis/qwc2-demo-app.git
+</pre></div>
+</div>
+<p>Next, install all required dependencies:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd qwc2-demo-app
+$ yarn install
+</pre></div>
+</div>
+<p>Then, start a local development application:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ yarn start
+</pre></div>
+</div>
+<p>The development application will run by default on <code class="docutils literal notranslate"><span class="pre">http://localhost:8081</span></code>. Note: if you are behind a proxy server, you‘ll need to <a class="reference external" href="#themes-json">specify the proxy settings</a>.</p>
+<p>At this point, you can customize and configure the application according to your needs, as described in detail in the following chapters.</p>
+<p>The final step is to compile a deployable application bundle for production:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ yarn run prod
+</pre></div>
+</div>
+<p>You can then deploy the contents of the <code class="docutils literal notranslate"><span class="pre">prod</span></code> folder to your web server root. If you opt to deploy the application to a subfolder of the web server root, you will need to adjust the <code class="docutils literal notranslate"><span class="pre">assetsPath</span></code> and<code class="docutils literal notranslate"> <span class="pre">translationsPath</span></code> settings in <code class="docutils literal notranslate"><span class="pre">config.json</span></code> accordingly.</p>
+<p><em>Note</em>: On some Linux distributions, <code class="docutils literal notranslate"><span class="pre">yarn</span></code> may refer to the tool of the <code class="docutils literal notranslate"><span class="pre">cmdtest</span></code> software package, not the Yarn package manager. The latter might instead be called <code class="docutils literal notranslate"><span class="pre">yarnpkg</span></code>.</p>
+</div>
+<div class="section" id="qwc2-configuration">
+<h2>QWC2 configuration<a class="headerlink" href="#qwc2-configuration" title="Link zu dieser Überschrift">¶</a></h2>
+<p>The layout of the development tree is as follows:</p>
+<p>| Path                      | Description
+|—————————|——————————————————————-|
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">assets/</span></code>               |                                                                   |
+|<code class="docutils literal notranslate"><span class="pre">│  ├─</span> <span class="pre">css/qwc2.css</span></code>       | Master style sheet                                                |
+|<code class="docutils literal notranslate"><span class="pre">│  ├─</span> <span class="pre">img/</span></code>               | Application logo                                                  |
+|<code class="docutils literal notranslate"><span class="pre">│  │  └─</span> <span class="pre">mapthumbs/</span></code>      | Map thumbnails, typically autogenerated                           |
+|<code class="docutils literal notranslate"><span class="pre">│</span>&#160; <span class="pre">└─</span> <span class="pre">templates/</span></code>         |                                                                   |
+|<code class="docutils literal notranslate"><span class="pre">│</span>&#160;&#160;&#160;&#160; <span class="pre">└─</span> <span class="pre">legendprint.html</span></code>| HTML template for the legend print                                |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">js/</span></code>                   |                                                                   |
+|<code class="docutils literal notranslate"><span class="pre">│  ├─</span> <span class="pre">app.jsx</span></code>            | Entry point of the ReactJS application                            |
+|<code class="docutils literal notranslate"><span class="pre">│  ├─</span> <span class="pre">appConfig.js</span></code>       | Configuration of the qwc2 core modules                            |
+|<code class="docutils literal notranslate"><span class="pre">│  ├─</span> <span class="pre">Help.jsx</span></code>           | Component for rendering a user-defined Help dialog                |
+|<code class="docutils literal notranslate"><span class="pre">│  └─</span> <span class="pre">SearchProviders.js</span></code> | Search providers                                                  |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">icons/</span></code>                | Application icons                                                 |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">qwc2/</span></code>                 | Git submodule containing the core qwc2 components                 |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">translations/</span></code>         | Translation files                                                 |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">config.json</span></code>           | Master configuration file                                         |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">index.html</span></code>            | Entry point                                                       |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">package.json</span></code>          | NodeJS configuration file                                         |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">styleConfig.json</span></code>      | Configuration of some application-wide styles                     |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">themesConfig.json</span></code>     | Themes configuration                                              |
+|<code class="docutils literal notranslate"><span class="pre">├─</span> <span class="pre">themes.json</span></code>           | Full theme configuration, autogenerated from <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code>  |
+|<code class="docutils literal notranslate"><span class="pre">└─</span> <span class="pre">webpack.config.js</span></code>     | Webpack dev server and application bundler configuration          |</p>
+<p>These files are described in detail in the following sections, in order of importance.</p>
+<div class="section" id="application-configuration-the-config-json-and-js-appconfig-js-files">
+<h3>Application configuration: the <code class="docutils literal notranslate"><span class="pre">config.json</span></code> and <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code> files<a class="headerlink" href="#application-configuration-the-config-json-and-js-appconfig-js-files" title="Link zu dieser Überschrift">¶</a></h3>
+<p>The central aspect to keep in mind is that a QWC2 application consists of a collection of plugins, which can be individually enabled and configured, in particular separately for desktop and mobile mode. Together, the <code class="docutils literal notranslate"><span class="pre">config.json</span></code> and <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code> files control these plugins, along with a number of other global settings.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code> is the build-time configuation file, and defines:</p>
+<ul class="simple">
+<li><p>The default application locale, built into the application. This locale is used if no available locale matches the browser locale.</p></li>
+<li><p>Which plugins are built into the application. Plugins left out here will be completely omitted when compiling the application bundle, and will hence also reduce the size of the bundle.</p></li>
+<li><p>Various hook functions, as documented in the sample <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/js/appConfig.js">sample <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code></a>.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">config.json</span></code> file is the run-time configuration file. It contains the following settings:</p>
+<p><em>URLs of external services</em>:
+Some external services can be used to enhance the application. The reference implementation of these services are hosted at <a class="reference external" href="https://github.com/qwc-services/">https://github.com/qwc-services/</a>. The following services can be configured:</p>
+<p>| Setting              | Description |
+|———————-|————-|
+|<code class="docutils literal notranslate"><span class="pre">permalinkServiceUrl</span></code> | Generates and resolves compact permalinks for the Share plugin. If omitted, the full URL will be used. |
+|<code class="docutils literal notranslate"><span class="pre">elevationServiceUrl</span></code> | Returns elevation values, used to generate a height profile when measuring lines and display elevation information in the map right-click information bubble. If omitted, the respective information will not be displayed in the client. |
+|<code class="docutils literal notranslate"><span class="pre">editServiceUrl</span></code>      | Service for editing features of layers served by QGIS Server. Required by the Editing plugin. |
+|<code class="docutils literal notranslate"><span class="pre">mapInfoService</span></code>      | Returns additional information to be displayed in the map right-click information bubble. If omitted, no additional information will be displayed. |
+|<code class="docutils literal notranslate"><span class="pre">featureReportService</span></code>| Returns a custom document associated to a feature. See <a class="reference external" href="#themesConfig-json"><code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code></a>. |</p>
+<p><em>Global settings</em>:</p>
+<p>All settings are optional, with fallback to the default values as documented.</p>
+<p>| Setting                             | Description |
+|————————————-|————-|
+|<code class="docutils literal notranslate"><span class="pre">translationsPath</span></code>                   | Path from to the <code class="docutils literal notranslate"><span class="pre">translations</span></code> folder. Default value: <code class="docutils literal notranslate"><span class="pre">translations</span></code>.   |
+|<code class="docutils literal notranslate"><span class="pre">assetsPath</span></code>                         | Path from to the <code class="docutils literal notranslate"><span class="pre">assets</span></code> folder. Default value: <code class="docutils literal notranslate"><span class="pre">assets</span></code>.               |
+|<code class="docutils literal notranslate"><span class="pre">urlPositionFormat</span></code>                  | How to encode the current map extent in the URL, either <code class="docutils literal notranslate"><span class="pre">centerAndZoom</span></code> or <code class="docutils literal notranslate"><span class="pre">extent</span></code>. See <a class="reference external" href="#url-parameters">URL parameters</a> for details. Default value: <code class="docutils literal notranslate"><span class="pre">extent</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">urlPositionCrs</span></code>                     | The CRS used to encode the current map extent coordinates in the URL. Default value: the map projection. |
+|<code class="docutils literal notranslate"><span class="pre">omitUrlParameterUpdates</span></code>            | Whether to omit updating the URL parameters. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.      |
+|<code class="docutils literal notranslate"><span class="pre">defaultFeatureStyle</span></code>                | The default style to use for selection geometries and other unstyled features. Default value: see <code class="docutils literal notranslate"><span class="pre">qwc2/utils/FeatureStyles.js</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">projections</span></code>                        | A list of map projections to register, in the format <code class="docutils literal notranslate"><span class="pre">{&quot;code&quot;:</span> <span class="pre">&quot;&lt;code&gt;&quot;,</span> <span class="pre">&quot;proj&quot;:</span> <span class="pre">&quot;&lt;proj4def&gt;&quot;,</span> <span class="pre">&quot;label&quot;:</span> <span class="pre">&quot;&lt;label&gt;&quot;}</span></code>. By default, <code class="docutils literal notranslate"><span class="pre">EPSG:3857</span></code> and <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code> are registered. |
+|<code class="docutils literal notranslate"><span class="pre">allowFractionalZoom</span></code>                | Whether to allow arbitrary scales for viewing the map. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.      |
+|<code class="docutils literal notranslate"><span class="pre">localeAwareNumbers</span></code>                 | Whether to use locale aware numbers throughout. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.             |
+|<code class="docutils literal notranslate"><span class="pre">wmsDpi</span></code>                             | The DPI to pass to the WMS requests. Default value: <code class="docutils literal notranslate"><span class="pre">96</span></code>.                           |
+|<code class="docutils literal notranslate"><span class="pre">wmsHidpi</span></code>                           | Whether to honour the device pixel ratio for WMS GetMap requests. Default value: <code class="docutils literal notranslate"><span class="pre">true</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">externalLayerFeatureInfoFormats</span></code>    | A dictionary of feature info formats for external layers, in the format <code class="docutils literal notranslate"><span class="pre">{&quot;&lt;url&gt;&quot;:</span> <span class="pre">&quot;&lt;format&gt;&quot;,</span> <span class="pre">...}</span></code>. If the GetFeatureInfo URL of a layer contains the specified <code class="docutils literal notranslate"><span class="pre">&lt;url&gt;</span></code>, the corresponding format is used. |</p>
+<p><em>Global settings, overridable per theme</em>:<a name="config-json-overridable"></a></p>
+<p>The following options can be specified globally, and also overriden per theme, see <a class="reference external" href="#themesConfig-json"><code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code></a>.
+All settings are optional, with fallback to the default values as documented.</p>
+<p>| Setting                              | Description |
+|————————————–|————-|
+|<code class="docutils literal notranslate"><span class="pre">preserveExtentOnThemeSwitch</span></code>         | Whether to preserve the current map extent when switching theme, if possible (see below). Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">preserveBackgroundOnThemeSwitch</span></code>     | Whether to preserve the current background layer when switching theme, if possible. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">preserveNonThemeLayersOnThemeSwitch</span></code> | Whether to preserve non-theme layers when switching theme. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.  |
+|<code class="docutils literal notranslate"><span class="pre">allowReorderingLayers</span></code>               | Whether to allow re-ordering layers in the layer tree. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.      |
+|<code class="docutils literal notranslate"><span class="pre">flattenLayerTreeGroups</span></code>              | Whether to display a flat layer tree, omitting the groups. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.  |
+|<code class="docutils literal notranslate"><span class="pre">allowLayerTreeSeparators</span></code>            | Allows users to add separator items in a flat layer tree. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>.   |
+|<code class="docutils literal notranslate"><span class="pre">preventSplittingGroupsWhenReordering</span></code>| Whether to prevent splitting sibling groups or the group itself when reordering items. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">allowRemovingThemeLayers</span></code>            | Whether to allow removing any theme layers from the layer tree. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">searchThemes</span></code>                        | Whether allow searching for themes from the global search field. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">allowAddingOtherThemes</span></code>              | Whether to allow adding another theme to a currently loaded theme. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">disableImportingLocalLayers</span></code>         | Whether to hide the option to import local layers from the layer tree. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">importLayerUrlPresets</span></code>               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. Entries must be strings or objects of the format <code class="docutils literal notranslate"><span class="pre">{&quot;label&quot;:</span> <span class="pre">&quot;&lt;Label&gt;&quot;,</span> <span class="pre">&quot;value&quot;:</span> <span class="pre">&quot;&lt;URL&gt;&quot;}</span></code>. See also <a class="reference external" href="#layer-catalogs">Layer catalogs</a>. |
+|<code class="docutils literal notranslate"><span class="pre">identifyTool</span></code>                        | The name of the identify plugin to use. It is possible to have multiple identify tools, and i.e. on a per-theme basis select which one is active. Default value: <code class="docutils literal notranslate"><span class="pre">Identify</span></code>. |
+|<code class="docutils literal notranslate"><span class="pre">globallyDisableDockableDialogs</span></code>      | Whether to globally disable the dockable feature of popup dialogs. Default value: <code class="docutils literal notranslate"><span class="pre">false</span></code>. |</p>
+<p><em>Notes</em>:</p>
+<ul class="simple">
+<li><p>The layer tree supports re-ordering layers via drag-and-drop if <code class="docutils literal notranslate"><span class="pre">allowReorderingLayers</span> <span class="pre">=</span> <span class="pre">true</span></code> <em>and either</em> <code class="docutils literal notranslate"><span class="pre">preventSplittingGroupsWhenReordering</span> <span class="pre">=</span> <span class="pre">true</span></code> <em>or</em> <code class="docutils literal notranslate"><span class="pre">flattenLayerTreeGroups</span> <span class="pre">=</span> <span class="pre">true</span></code>.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">preserveExtentOnThemeSwitch</span> <span class="pre">=</span> <span class="pre">true</span></code>, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If <code class="docutils literal notranslate"><span class="pre">preserveExtentOnThemeSwitch</span> <span class="pre">=</span> <span class="pre">&quot;force&quot;</span></code>, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.</p></li>
+</ul>
+<p><em>Plugin configuration</em>:
+The plugin configuration is entered separately for desktop and for mobile mode. Refer to the <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/config.json">sample <code class="docutils literal notranslate"><span class="pre">config.json</span></code></a> for a list of available configuration options. Each plugin configuration block is of the format</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;PluginName&quot;</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="s2">&quot;cfg&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="o">...</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;mapClickAction&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="s2">&quot;identify&quot;</span><span class="o">|</span><span class="s2">&quot;unset&quot;</span><span class="o">|</span><span class="n">null</span><span class="o">&gt;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>where</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>: The plugin name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cfg</span></code>: Optional: arbitrary configuration properties, directly passed to the relative plugin class as React props.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mapClickAction</span></code>: Optional: for plugins which are associated to a viewer task (and typically linked in the <code class="docutils literal notranslate"><span class="pre">menuItems</span></code> or <code class="docutils literal notranslate"><span class="pre">toolbarItems</span></code> of the <code class="docutils literal notranslate"><span class="pre">TopBar</span></code>, see below), determines whether a click in the map will result in the identify tool being invoked, the task being unset, or whether no particular action should be performed (default). Note: <code class="docutils literal notranslate"><span class="pre">&quot;mapClickAction&quot;</span></code> should be <code class="docutils literal notranslate"><span class="pre">null</span></code> or omitted for plugins which handle mouse events on the map themselves. Can optionally also be specified directly in the <code class="docutils literal notranslate"><span class="pre">menuItems</span></code> or <code class="docutils literal notranslate"><span class="pre">toolbarItems</span></code> entries, see below.</p></li>
+</ul>
+<p>You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code>.</p>
+<p>A particularly interesting aspect is the configuration of the entries in the application menu and toolbar, i.e. the entries in <code class="docutils literal notranslate"><span class="pre">menuItems</span></code> and <code class="docutils literal notranslate"><span class="pre">toolbarItems</span></code> in the <code class="docutils literal notranslate"><span class="pre">TopBar</span></code> configuration. The most common format for linking an entry to an existing plugin is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;key&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;icon&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;themeWhitelist&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&lt;themename&gt;&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span> <span class="s2">&quot;mapClickAction&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="s2">&quot;identify&quot;</span><span class="o">|</span><span class="s2">&quot;unset&quot;</span><span class="o">|</span><span class="n">null</span><span class="o">&gt;</span><span class="p">,</span> <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;mode&gt;&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>where</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code>: The name of the plugin to activate when the entry is clicked, i.e. <code class="docutils literal notranslate"><span class="pre">LayerTree</span></code>. Also used to lookup the the label for the entry from the translations, using the <code class="docutils literal notranslate"><span class="pre">appmenu.items.&lt;key&gt;</span></code> message identifier (see <a href="#translations">Managing translations</a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">icon</span></code>: The icon of the entry, either a name (without the <code class="docutils literal notranslate"><span class="pre">.svg</span></code> extension) of an icon in <code class="docutils literal notranslate"><span class="pre">icons/</span></code>, or <code class="docutils literal notranslate"><span class="pre">:/&lt;path_to_asset&gt;</span></code> containing the path relative to <code class="docutils literal notranslate"><span class="pre">assetsPath</span></code> of an asset image.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">themeWhitelist</span></code>: Optional, allows specifying a whitelist of theme names or titles for which the entry should be visible.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mapClickAction</span></code>: Optional, takes precedence over the <code class="docutils literal notranslate"><span class="pre">mapClickAction</span></code> setting specified in the plugin configuration block, if any. See above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code>: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the <code class="docutils literal notranslate"><span class="pre">Measure</span></code> plugin supports specifying the measurement mode (<code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">LineString</span></code>, <code class="docutils literal notranslate"><span class="pre">Polygon</span></code>).</p></li>
+</ul>
+<p>Additionally, entries opening external URLs can be defined as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;key&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;icon&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;url&gt;&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>where</p>
+<ul class="simple">
+<li><p>`Key: An arbitrary key name (not used by existing plugins), used to lookup the the label for the entry from the translations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">icon</span></code>: As above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">url</span></code>: The URL to open. Can contain as placeholders the keys listed in <a href="#url-parameters">URL parameters</a>, encolsed in <code class="docutils literal notranslate"><span class="pre">$</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">$e$</span></code> for the extent). In addition, the placeholders <code class="docutils literal notranslate"><span class="pre">$x$</span></code> and <code class="docutils literal notranslate"><span class="pre">$y$</span></code> for the individual map center coordinates are also supported.</p></li>
+</ul>
+</div>
+<div class="section" id="theme-configuration-qgis-projects-and-the-themesconfig-json-file">
+<h3>Theme configuration: QGIS projects and the <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> file<a class="headerlink" href="#theme-configuration-qgis-projects-and-the-themesconfig-json-file" title="Link zu dieser Überschrift">¶</a></h3>
+<p>A theme corresponds to a QGIS project, published as WMS and served by QGIS Server.</p>
+<div class="section" id="creating-and-publishing-a-qgis-project">
+<h4>Creating and publishing a QGIS project<a class="headerlink" href="#creating-and-publishing-a-qgis-project" title="Link zu dieser Überschrift">¶</a></h4>
+<p>The first step is to prepare a QGIS project. Besides the common tasks of adding and grouping layers, the following table gives an overview of settings which influence how the theme is displayed by QWC2:</p>
+<p>| What                 | Where                                     | Description                                      |
+|———————-|——————————————-|————————————————–|
+| Service capabilities | Project Properties → QGIS Server → Service capabilities | <strong>Must</strong> be checked for QGIS Server to publish the project. |
+| Service Metadata     | Project Properties → QGIS Server → Service capabilities | Shown in the theme info dialog, invokable from the Layer Tree panel titlebar. |
+| Title, keywords      | Project Properties → QGIS Server → Service capabilities | Theme title, displayed in the Theme Switcher, and keywords, useful for filtering. |
+| Queryable layers     | Project Properties → Data sources | Mark layers as identifyable by the client.       |
+| FeatureInfo geometry | Project Properties → QGIS Server → WMS Capabilities → Add geometry to feature response | Return feature geometries with the GetFeatureInfo request. Allows the client to highlight the selected features. |
+| Layer Display Field  | Vector Layer Properties → Display    | The field used in the identify results. |
+| Layer Map Tip        | Vector Layer Properties → Display    | The contents of the Map Tip shown when hovering over layers in the client, if displaying Map Tips is enabled in the Layer Tree. |
+| Layer Metadata       | Layer Properties → QGIS Server       | Shown in the client Layer Info dialog, invokable from the Layer Tree. |
+| Scale range          | Layer Properties → Rendering → Scale dependent visibility | The scale range within which a layer is visible, useful to improve rendering performance. |
+| Initial visibility   | Layers Panel                              | Initial visibility of layers and groups.         |
+| Rendering order      | Layer Order Panel or Layers Panel         | Rendering order of the layers. If layer re-ordering is enabled in <code class="docutils literal notranslate"><span class="pre">config.json</span></code>, the order from the Layer Order Panel is ignored. |
+| Print layouts        | Layout manager                            | The print layouts offered in the Print plugin.   |
+| Print layout labels  | Layout manager                            | Print layout labels with an ID will be exposed in the Print plugin. |</p>
+</div>
+<div class="section" id="a-name-themesconfig-json-a-configuring-the-themes-in-themesconfig-json">
+<h4><a name="themesConfig-json"></a>Configuring the themes in <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code><a class="headerlink" href="#a-name-themesconfig-json-a-configuring-the-themes-in-themesconfig-json" title="Link zu dieser Überschrift">¶</a></h4>
+<p>The second step is to configure the themes which are available to QWC2 in the <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> file, which contains a list of themes, optionally organized in groups, as well as a list of background layers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span> <span class="o">&lt;</span><span class="n">ThemeDefinition</span><span class="o">&gt;</span> <span class="p">},</span>
+      <span class="o">...</span>
+    <span class="p">],</span> <span class="s2">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Group</span> <span class="n">title</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[{</span> <span class="o">&lt;</span><span class="n">ThemeDefinition</span><span class="o">&gt;</span> <span class="p">},</span> <span class="o">...</span><span class="p">],</span>
+        <span class="s2">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">{</span> <span class="o">&lt;</span><span class="n">Group</span><span class="o">&gt;</span> <span class="p">},</span> <span class="o">...</span><span class="p">]</span>
+       <span class="p">},</span>
+       <span class="o">...</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;externalLayers&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="o">&lt;</span><span class="n">ExternalLayerDefinition</span><span class="o">&gt;</span> <span class="p">},</span>
+    <span class="o">...</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;themeInfoLinks&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="o">&lt;</span><span class="n">ThemeInfoLinkDefinition</span><span class="o">&gt;</span> <span class="p">},</span>
+    <span class="o">...</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;backgroundLayers&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="o">&lt;</span><span class="n">BackgroundLayerDefinition</span><span class="o">&gt;</span> <span class="p">},</span>
+    <span class="o">...</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;defaultScales&quot;</span><span class="p">:</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">Scale</span> <span class="n">denominators</span><span class="o">&gt;</span><span class="p">],</span>
+  <span class="s2">&quot;defaultPrintScales&quot;</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">Scale</span> <span class="n">denominators</span><span class="o">&gt;</span><span class="p">],</span>
+  <span class="s2">&quot;defaultPrintResolutions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">DPIs</span><span class="o">&gt;</span><span class="p">],</span>
+  <span class="s2">&quot;defaultPrintGrid&quot;</span><span class="p">:</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">Print</span> <span class="n">grid</span><span class="p">,</span> <span class="n">see</span> <span class="n">below</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Refer to the <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json">sample <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code></a> for a complete example.</p>
+<p>The format of the theme definitions is as follows:</p>
+<!-- Important: Use U+00A0 non-breaking spaces ( ) in code blocks --><p>| Entry                                        | Description                                                                       |
+|———————————————-|———————————————————————————–|
+| <code class="docutils literal notranslate"><span class="pre">&quot;url&quot;: &quot;&lt;WMS</span> <span class="pre">URL&gt;&quot;,</span></code>                        | The address of desired WMS served by QGIS Server.                                 |
+| <code class="docutils literal notranslate"><span class="pre">&quot;wmsBasicAuth&quot;:</span> <span class="pre">&quot;{</span></code>                         | Optional, allows to authenticate to QGIS Server during themes.json generation. NOTE: these credentials will solely be used by <code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">run</span> <span class="pre">themesConfig</span></code> and won‘t be stored in <code class="docutils literal notranslate"><span class="pre">themes.json</span></code>.|
+| <code class="docutils literal notranslate">&#160; <span class="pre">&quot;username&quot;:</span> <span class="pre">&lt;username&gt;</span></code>                   | Optional: http basic authentication username.                                     |
+| <code class="docutils literal notranslate">&#160; <span class="pre">&quot;password&quot;:</span> <span class="pre">&lt;password&gt;</span></code>                   | Optional: http basic authentication password.                                     |
+| <code class="docutils literal notranslate"><span class="pre">},</span></code>                                         |                                                                                   |
+| <code class="docutils literal notranslate"><span class="pre">&quot;title&quot;: &quot;&lt;Custom</span> <span class="pre">title&gt;&quot;,</span></code>                 | Optional, override WMS title.                                                     |
+| <code class="docutils literal notranslate"><span class="pre">&quot;description&quot;: &quot;&lt;Description&gt;&quot;,</span></code>            | Optional, an additional description to show below the theme title.                |
+| <code class="docutils literal notranslate"><span class="pre">&quot;thumbnail&quot;: &quot;&lt;Filename&gt;&quot;,</span></code>                 | Optional, image file in <code class="docutils literal notranslate"><span class="pre">assets/img/mapthumbs</span></code>. If omitted, autogenerated via WMS GetMap. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;attribution&quot;: &quot;&lt;Attribution&gt;&quot;,</span></code>            | Optional, attribution which will be shown in the bottom right corner of the map.  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;attributionUrl&quot;: &quot;&lt;URL&gt;&quot;,</span></code>                 | Optional, link associated to the attribution                                      |
+| <code class="docutils literal notranslate"><span class="pre">&quot;default&quot;: true,</span></code>                           | Whether to use this theme as initial theme                                        |
+| <code class="docutils literal notranslate"><span class="pre">&quot;scales&quot;: [&lt;Scale</span> <span class="pre">denominators&gt;],</span></code>          | List of denominators of allowed map scales. If omitted, defaults to <code class="docutils literal notranslate"><span class="pre">defaultScales</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;printScales&quot;: [&lt;Scale</span> <span class="pre">denominators&gt;],</span></code>     | List of denominators of allowed print scales. If omitted, defaults to <code class="docutils literal notranslate"><span class="pre">defaultPrintScales</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;printResolutions&quot;: [&lt;DPIs&gt;],</span></code>              | List of available print resolutions. If omitted, defaults to <code class="docutils literal notranslate"><span class="pre">defaultPrintResolutions</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;printGrid&quot;: [</span></code>                             | List of grid scale-dependent grid intervals to use when printing. If omitted, defaults to <code class="docutils literal notranslate"><span class="pre">defaultPrintGrid</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">  {&quot;s&quot;: &lt;Scale1&gt;, x: &lt;Interval1&gt;, y: &lt;Interval1&gt;},</span></code> | Keep this list sorted in descending order by scale denominator.           |
+| <code class="docutils literal notranslate"><span class="pre">  {&quot;s&quot;: &lt;Scale2&gt;, x: &lt;Interval2&gt;, y: &lt;Interval2&gt;}</span></code>  | In this example, <code class="docutils literal notranslate"><span class="pre">{x:</span> <span class="pre">&lt;Interval2&gt;,</span> <span class="pre">y:</span> <span class="pre">&lt;Interval2&gt;}</span></code> will be used for <code class="docutils literal notranslate"><span class="pre">&lt;Scale1&gt;</span> <span class="pre">&gt;</span> <span class="pre">Scale</span> <span class="pre">&gt;=</span> <span class="pre">&lt;Scale2&gt;</span></code>.  |
+| <code class="docutils literal notranslate"><span class="pre">],</span></code>                                          |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;printLabelForSearchResult&quot;: &quot;&lt;ID&gt;&quot;,</span></code>        | Optional, an ID of a print layout label to which the current search result text (if any) will be written to when printing. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;printLabelConfig&quot;: {</span></code>                       | Optional, configuration of the text input fields for print layout labels.        |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;&lt;LabelId&gt;&quot;: {&quot;rows&quot;: &lt;n&gt;, &quot;maxLength&quot;: &lt;n&gt;},</span></code> | Height of the input field in rows and maximum number of allowed characters. |
+| <code class="docutils literal notranslate"><span class="pre">},</span></code>                                          |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;mapCrs: &quot;&lt;EPSG</span> <span class="pre">code&gt;&quot;,</span></code>                     | Optional, map projection, defaults to <code class="docutils literal notranslate"><span class="pre">EPSG:3857</span></code>.                               |
+| <code class="docutils literal notranslate"><span class="pre">&quot;extent&quot;: [&lt;xmin&gt;, &lt;ymin&gt;, &lt;xmax&gt;, &lt;ymax&gt;],</span></code> | Optional, override theme extent. In <code class="docutils literal notranslate"><span class="pre">mapCrs</span></code>.                                    |
+| <code class="docutils literal notranslate"><span class="pre">&quot;tiled&quot;: &lt;boolean&gt;,</span></code>                         | Optional, use tiled WMS, defaults to <code class="docutils literal notranslate"><span class="pre">false</span></code>.                                    |
+| <code class="docutils literal notranslate"><span class="pre">&quot;format&quot;: &quot;&lt;mimetype&gt;&quot;,</span></code>                     | Optional, the format to use for WMS GetMap. Defaults to <code class="docutils literal notranslate"><span class="pre">image/png</span></code>.             |
+| <code class="docutils literal notranslate"><span class="pre">&quot;externalLayers&quot;: [{</span></code>                        | Optional, external layers to use as replacements for internal layers, see below. |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;name&quot;: &quot;&lt;external_layer_name&gt;&quot;,</span></code>          | Name of the external layer, matching a <code class="docutils literal notranslate"><span class="pre">ExternalLayerDefinition</span></code>, see below.     |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;internalLayer&quot;: &quot;&lt;QGis_layer_name&gt;&quot;</span></code>      | Name of an internal layer, as contained in the QGIS project, to replace with the external layer. |
+| <code class="docutils literal notranslate"><span class="pre">}],</span></code>                                         |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;themeInfoLinks&quot;: {</span></code>                         | Optional, custom links to additional resources, shown as a menu in the theme selector in the theme switcher.<br />| <code class="docutils literal notranslate"><span class="pre">  &quot;title&quot;: &quot;&lt;Menu</span> <span class="pre">title&gt;&quot;,</span></code>                  | An arbitrary string shown as title of the menu.                                  |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;titleMsgId&quot;: &quot;&lt;Menu</span> <span class="pre">title</span> <span class="pre">msgID&gt;&quot;,</span></code>       | Alternative to <code class="docutils literal notranslate"><span class="pre">title</span></code>, a message ID, translated through the translation files.  |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;entries&quot;: [&lt;link_name&gt;,</span> <span class="pre">...]</span></code>             | List of theme info link names, see below.                                        |
+| <code class="docutils literal notranslate"><span class="pre">},</span></code>                                          |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;backgroundLayers&quot;: [{,</span></code>                     | Optional, list of available background layers.                                   |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;name&quot;: &quot;&lt;Background layer name&gt;&quot;,</span></code>        | Name of matching <code class="docutils literal notranslate"><span class="pre">BackgroundLayerDefinition</span></code>, see below.                         |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;printLayer&quot;: &quot;&lt;QGis layer name&gt;&quot;\|[&lt;list&gt;],</span></code>| Optional, name of layer to use as matching background layer when printing. Alternatively, a list <code class="docutils literal notranslate"><span class="pre">[{&quot;maxScale&quot;:</span> <span class="pre">&lt;scale&gt;,</span> <span class="pre">&quot;name&quot;:</span> <span class="pre">&quot;&lt;QGis layer name&gt;&quot;},</span> <span class="pre">...,</span> <span class="pre">{&quot;maxScale&quot;:</span> <span class="pre">null,</span> <span class="pre">&quot;name&quot;:</span> <span class="pre">&quot;&lt;QGis layer name&gt;&quot;}]</span></code> can be provided, ordered in ascending order by <code class="docutils literal notranslate"><span class="pre">maxScale</span></code>. The last entry should have <code class="docutils literal notranslate"><span class="pre">maxScale</span></code> <code class="docutils literal notranslate"><span class="pre">null</span></code>, as the layer used for all remaining scales. If omitted, no background is printed. |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;visibility&quot;: &lt;boolean&gt;</span></code>                   | Optional, initial visibility of the layer when theme is loaded.                  |
+| <code class="docutils literal notranslate"><span class="pre">}],</span></code>                                         |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;searchProviders&quot;: [&quot;&lt;ProviderId&gt;&quot;],</span></code>        | Optional, list of search providers IDs. An ID corresponds to the key of the exported <code class="docutils literal notranslate"><span class="pre">SearchProviders</span></code> object in <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;minSearchScaleDenom&quot;:</span> <span class="pre">&lt;number&gt;,</span></code>                 | Optional, minimum scale to enforce when zooming to search results. Takes precedence over value in <code class="docutils literal notranslate"><span class="pre">config.json</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;featureReport&quot;: {</span></code>                          | Optional, available feature report templates.                                    |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;&lt;LayerId&gt;&quot;: &quot;&lt;TemplateID&gt;&quot;</span>&#160; </code>             | WMS sublayer ID and associated template ID to pass to the <code class="docutils literal notranslate"><span class="pre">featureReportService</span></code>.|
+| <code class="docutils literal notranslate"><span class="pre">},</span></code>                                          |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;additionalMouseCrs&quot;: [&quot;&lt;EPSG code&gt;&quot;],</span></code>      | Optional, list of additional projections for displaying the mouse position. WGS84 and <code class="docutils literal notranslate"><span class="pre">mapCrs</span></code> are available by default. Additional projections definitions must be added to <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code> or <code class="docutils literal notranslate"><span class="pre">config.json</span></code>.         |
+| <code class="docutils literal notranslate"><span class="pre">&quot;watermark&quot;: {</span></code>                              | Optional, configuration of watermark to add to raster export images.             |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;text&quot;: &quot;&lt;text&gt;&quot;,</span></code>                         | Arbitrary text.                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;texpadding&quot;: &lt;number&gt;,</span></code>                   | Optional, padding between text and frame, in points.                             |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;fontsize&quot;: &lt;number&gt;,</span></code>                     | Optional, font size.                                                             |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;fontfamily&quot;: &quot;&lt;Font family&gt;&quot;,</span></code>            | Optional, font family.                                                           |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;fontcolor&quot;: &quot;#RRGGBB&quot;,</span></code>                   | Optional, font color.                                                            |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;backgroundcolor&quot;: &quot;#RRGGBB&quot;,</span></code>             | Optional, frame background color.                                                |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;framecolor&quot;: &quot;#RRGGBB&quot;,</span></code>                  | Optional, frame color.                                                           |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;framewidth&quot;: &lt;number&gt;,</span></code>                   | Optional, frame width.                                                           |
+| <code class="docutils literal notranslate"><span class="pre">},</span></code>                                          |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;collapseLayerGroupsBelowLevel&quot;: &lt;level&gt;,</span></code>   | Optional, layer tree level below which to initially collapse groups. By default the tree is completely expanded. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;skipEmptyFeatureAttributes&quot;: &lt;boolean&gt;,</span></code>    | Optional, whether to skip empty attributes in the identify results. Default is <code class="docutils literal notranslate"><span class="pre">false</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;mapTips&quot;:</span> <span class="pre"> &lt;boolean&gt;\|null,</span></code>                | Optional, per-theme setting whether map-tips are unavailable (<code class="docutils literal notranslate"><span class="pre">null</span></code>), disabled by default (<code class="docutils literal notranslate"><span class="pre">false</span></code>) or enabled by default (<code class="docutils literal notranslate"><span class="pre">true</span></code>). |
+| <code class="docutils literal notranslate"><span class="pre">&quot;extraLegendParameters&quot;: &quot;&lt;&amp;KEY=VALUE&gt;&quot;,</span></code>    | Optional, additional query parameters to append to WMS GetLegendGraphic.         |
+| <code class="docutils literal notranslate"><span class="pre">&quot;printLabelBlacklist&quot;:</span> <span class="pre"> [&quot;&lt;LabelId&gt;&quot;,</span> <span class="pre">...]</span></code>  | Optional, list of composer label ids to not expose in the print dialog. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;editConfig&quot;: &quot;&lt;editConfig.json&gt;&quot;</span></code>           | Optional, path to a filename containing the editing configuration for the theme, see <a class="reference external" href="#editing-interface">EditingInterface.js</a>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;config&quot;: {</span></code>                                 | Optional, per-theme configuration entries which override the global entries in <code class="docutils literal notranslate"><span class="pre">config.json</span></code>.|
+| <code class="docutils literal notranslate"><span class="pre">  &quot;allowRemovingThemeLayers&quot;: &lt;boolean&gt;</span></code>     | See <a class="reference external" href="#config-json-overrideable"><code class="docutils literal notranslate"><span class="pre">config.json</span></code></a> for which settings can be specified here. |
+| <code class="docutils literal notranslate"><span class="pre">  ...</span></code>                                       |                                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">}</span></code>                                           |</p>
+<p><strong>External layers:</strong>
+External layers can be used to selectively replace layers in a QGIS project, for instance in the case of a WMS layer embedded in a QGIS project, to avoid cascading WMS requests. They are handled transparently by QWC2 (they are positioned in the layer tree identically to the internal layer they replace), but the <code class="docutils literal notranslate"><span class="pre">GetMap</span></code> and <code class="docutils literal notranslate"><span class="pre">GetFeatureInfo</span></code> requests are sent directly to the specified WMS Service.</p>
+<p>The format for external layer definitions is as follows:</p>
+<p>| Entry                                                  | Description                                                                       |
+|——————————————————–|———————————————————————————–|
+| <code class="docutils literal notranslate"><span class="pre">&quot;name&quot;: &quot;&lt;external_layer_name&gt;&quot;,</span></code>                     | The name of the external layer, as referenced in the theme definitions.           |
+| <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;&lt;layer_type&gt;&quot;,</span></code>                              | Layer type, „wms“ or „wmts“                                                       |
+| <code class="docutils literal notranslate"><span class="pre">&quot;url&quot;: &quot;&lt;wms_baseurl&gt;&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160; </code>                       | The WMS URL or WMTS resource URL for the external layer.                          |</p>
+<p>For external WMS layers, the following additional parameters apply:</p>
+<p>| Entry                                                  | Description                                                                       |
+|——————————————————–|———————————————————————————–|
+| <code class="docutils literal notranslate"><span class="pre">&quot;params&quot;: {</span></code>                                          | Parameters for the GetMap request.                                                |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;LAYERS&quot;: &quot;&lt;wms_layername&gt;,...&quot;</span></code>,                   | WMS layer names.                                                                  |
+| <code class="docutils literal notranslate"><span class="pre">  &quot;OPACITIES&quot;: &quot;&lt;0-255&gt;,...&quot;</span></code>                         | Optional, if WMS server supports opacities.                                       |
+| <code class="docutils literal notranslate"><span class="pre">},</span></code>                                                   |                                                                                   |
+| <code class="docutils literal notranslate"><span class="pre">&quot;featureInfoUrl&quot;: &quot;&lt;wms_featureinfo_baseurl&gt;&quot;,</span></code>       | Optional, base URL for WMS GetFeatureInfo, if different from <code class="docutils literal notranslate"><span class="pre">url</span></code>.               |
+| <code class="docutils literal notranslate"><span class="pre">&quot;legendUrl&quot;: &quot;&lt;wms_legendgraphic_baseurl&gt;&quot;</span>&#160;&#160; <span class="pre">,</span></code>       | Optional, base URL for WMS GetLegendGraphic, if different from <code class="docutils literal notranslate"><span class="pre">url</span></code>.             |
+| <code class="docutils literal notranslate"><span class="pre">&quot;queryLayers&quot;: [&quot;&lt;wms_featureinfo_layername&gt;&quot;,</span> <span class="pre">...],</span></code> | Optional, list of GetFeatureInfo query layers, if different from <code class="docutils literal notranslate"><span class="pre">params.LAYERS</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;infoFormats&quot;: [&quot;&lt;featureinfo_format&gt;&quot;,</span> <span class="pre">...]</span></code>         | List of GetFeatureInfo query formats which the WMS service supports.              |</p>
+<p>For external WMTS layers, the following additional parameters apply (you can use the <code class="docutils literal notranslate"><span class="pre">qwc2/scripts/wmts_config_generator.py</span></code> script to obtain these values):</p>
+<p>| Entry                                                  | Description                                                                       |
+|——————————————————–|———————————————————————————–|
+| <code class="docutils literal notranslate"><span class="pre">&quot;tileMatrixSet&quot;:</span> <span class="pre">&quot;&lt;tile_matrix_set_name&gt;&quot;,</span></code>           | The name of the tile matrix set.                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;originX&quot;:</span> <span class="pre">&lt;origin_x&gt;,</span></code>                               | The X origin of the tile matrix.                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;originY&quot;:</span> <span class="pre">&lt;origin_y&gt;,</span></code>                               | The Y origin of the tile matrix.                                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;projection&quot;:</span> <span class="pre">&quot;EPSG:&lt;code&gt;&quot;,</span></code>                         | The layer projection.                                                             |
+| <code class="docutils literal notranslate"><span class="pre">&quot;resolutions&quot;:</span> <span class="pre">[&lt;resolution&gt;,</span> <span class="pre">...],</span></code>                  | The list of WMTS resolutions.                                                     |
+| <code class="docutils literal notranslate"><span class="pre">&quot;tileSize&quot;:</span> <span class="pre">[&lt;tile_width&gt;,</span> <span class="pre">&lt;tile_height&gt;]</span></code>            | The tile width and height.                                                        |</p>
+<p>You can also set the „Data Url“ for a layer in QGIS (Layer Properties → QGIS Server → Data Url) to a string of the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wms</span><span class="p">:</span><span class="o">&lt;</span><span class="n">service_url</span><span class="o">&gt;</span><span class="c1">#&lt;layername&gt;</span>
+</pre></div>
+</div>
+<p>(for instance, <code class="docutils literal notranslate"><span class="pre">wms:http://wms.geo.admin.ch/?#ch.are.bauzonen</span></code>), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
+Note that this is currently only implemented for WMS layers.</p>
+<p><strong>Theme info links:</strong>
+You can specify links to display in an info-menu next to the respective theme title in the theme switcher entries.</p>
+<p>The format for the theme info links is as follows:</p>
+<p>| Entry                                                  | Description                                                                       |
+|——————————————————–|———————————————————————————–|
+| <code class="docutils literal notranslate"><span class="pre">&quot;name&quot;: &quot;&lt;link_name&gt;&quot;,</span></code>                               | The name of the link, as referenced in the theme definitions.                     |
+| <code class="docutils literal notranslate"><span class="pre">&quot;title&quot;: &quot;&lt;link_title&gt;&quot;,</span></code>                             | The title for the link, as displayed in the info menu of the theme entry in the theme switcher. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;url&quot;: &quot;&lt;link&gt;&quot;,</span></code>                                     | A link URL.                                                                       |
+| <code class="docutils literal notranslate"><span class="pre">&quot;target&quot;: &quot;&lt;link_target&gt;&quot;</span></code>                            | The link target, i.e. <code class="docutils literal notranslate"><span class="pre">_blank</span></code>.                                                   |</p>
+<p><strong>Background layers:</strong>
+Background layers are handled completely client-side and do not appear in the layer tree.</p>
+<p>The format of the background layer definitions is as follows:</p>
+<p>| Entry                        | Description                                                                       |
+|——————————|———————————————————————————–|
+| <code class="docutils literal notranslate"><span class="pre">&quot;name&quot;: &quot;&lt;Name&gt;&quot;,</span></code>          | The name of the background layer, used in the theme definitions.                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;title&quot;: &quot;&lt;Title&gt;&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160; </code> | The title of the background layer, as displayed in the background switcher.       |
+| <code class="docutils literal notranslate"><span class="pre">&quot;thumbnail&quot;: &quot;&lt;Filename&gt;&quot;,</span></code> | Optional, image file in <code class="docutils literal notranslate"><span class="pre">assets/img/mapthumbs</span></code>. Defaults to <code class="docutils literal notranslate"><span class="pre">default.jpg</span></code>.        |
+| <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;: &quot;&lt;Type&gt;&quot;,</span></code>          | The background layer type, i.e. <code class="docutils literal notranslate"><span class="pre">wms</span></code> or <code class="docutils literal notranslate"><span class="pre">wmts</span></code>.                                  |
+| <code class="docutils literal notranslate"><span class="pre">&quot;group&quot;:</span> <span class="pre"> &quot;&lt;GroupId&gt;&quot;,</span></code>     | Optional, a group ID string. Background layers with the same group ID will be grouped together in the background switcher. |
+| <code class="docutils literal notranslate"><span class="pre">&quot;minScale&quot;: &lt;min_scale&gt;,</span></code>   | Optional, minimum scale denominator from which to render the layer.               |
+| <code class="docutils literal notranslate"><span class="pre">&quot;maxScale&quot;: &lt;max_scale&gt;,</span></code>   | Optional, maximum scale denominator from which to render the layer.               |
+| <code class="docutils literal notranslate"><span class="pre">&lt;Layer params&gt;</span></code>             | Parameters according to the specified layer type. Refer to the <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json">sample <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code></a> for some examples. |</p>
+<p><em>Note</em>: You can use the helper python script located at <code class="docutils literal notranslate"><span class="pre">qwc2/scripts/wmts_config_generator.py</span></code> to easily generate WMTS background layer configurations.</p>
+<p>Alternatively, a background layer definition can be a group of layers, in the format</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;Name&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;Title&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;group&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="o">&lt;</span><span class="n">BackgroundLayerDefinition</span><span class="o">&gt;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="o">&lt;</span><span class="n">BackgroundLayerDefinition</span><span class="o">&gt;</span> <span class="p">},</span>
+    <span class="o">...</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Instead of specifiying a full background layer definition in a group, you can also reference an existing one with <code class="docutils literal notranslate"><span class="pre">&quot;ref&quot;:</span> <span class="pre">&quot;&lt;bg_layer_name&gt;&quot;</span></code>, and selectively override certain properties, such as <code class="docutils literal notranslate"><span class="pre">minScale</span></code> and <code class="docutils literal notranslate"><span class="pre">maxScale</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="o">...</span>
+  <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;ref&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;bg_layer_name&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;minScale&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">min_scale</span><span class="o">&gt;</span><span class="p">,</span>
+      <span class="s2">&quot;maxScale&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">max_scale</span><span class="o">&gt;</span>
+    <span class="p">},</span>
+    <span class="o">...</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-name-themes-json-a-generating-themes-json">
+<h4><a name="themes-json"></a>Generating <code class="docutils literal notranslate"><span class="pre">themes.json</span></code><a class="headerlink" href="#a-name-themes-json-a-generating-themes-json" title="Link zu dieser Überschrift">¶</a></h4>
+<p>The final step is to generate <code class="docutils literal notranslate"><span class="pre">themes.json</span></code>, the file which is ultimately read by QWC2. This file combines the input from <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> with the information from the WMS service capabilities and is automatically generated when starting the local development application via <code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">start</span></code>. Alternatively, it can be manually generated via</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yarn</span> <span class="n">run</span> <span class="n">themesconfig</span>
+</pre></div>
+</div>
+<p>or, if working in an environment without node, using the equivalent command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">qwc2</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">themesConfig</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>If you want to manage multiple <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> files, you can specify which while should be processed by the theme generation script via the <code class="docutils literal notranslate"><span class="pre">QWC2_THEMES_CONFIG</span></code> environment variable.</p>
+<p>Note: if you are behind a proxy server and your <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> refers to resources outside the local network, you‘ll need to specify the proxy settings to use in <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> by adding a toplevel block of the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;proxy&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;host&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;port&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">port</span><span class="o">&gt;</span><span class="p">,</span>
+      <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;username&gt;&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;password&gt;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="implementing-search-providers-in-js-searchproviders-js">
+<h3>Implementing search providers in <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code><a class="headerlink" href="#implementing-search-providers-in-js-searchproviders-js" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Search providers are typically application specific, and hence need to be implemented in the application specific <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code> file. The <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js">sample <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code></a> documents how to implement search providers and contains some examples.</p>
+<p>An advanced feature is the possibility to define parametrized search providers. This allows for instance to implement just a generic search provider interface in <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code> and move the implementation details to the service. To this end, you can also add to the <code class="docutils literal notranslate"><span class="pre">searchProviders</span></code> list in <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code> entries of the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Key</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">label</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Label</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Such entries are passed to the method <code class="docutils literal notranslate"><span class="pre">searchProviderFactory</span></code> in <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code>, which you can tweak to dynamically create a search provider definition based on the parameters specified in the entry. Refer to the <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js">sample  <code class="docutils literal notranslate"><span class="pre">js/SearchProviders.js</span></code></a> for an example.</p>
+</div>
+<div class="section" id="a-name-editing-interface-a-implementing-the-editing-interface-in-js-editinginterface-js">
+<h3><a name="editing-interface"></a>Implementing the editing interface in <code class="docutils literal notranslate"><span class="pre">js/EditingInterface.js</span></code><a class="headerlink" href="#a-name-editing-interface-a-implementing-the-editing-interface-in-js-editinginterface-js" title="Link zu dieser Überschrift">¶</a></h3>
+<p>The QWC2 Editing plugin allows to add, remove and edit features from the map. For this to work, the following steps need to be performed:</p>
+<ul class="simple">
+<li><p>The Editing plugin needs to be enabled in <code class="docutils literal notranslate"><span class="pre">config.json</span></code> and <code class="docutils literal notranslate"><span class="pre">appConfig.js</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">editServiceUrl</span></code> needs to be specified in <code class="docutils literal notranslate"><span class="pre">config.json</span></code>.</p></li>
+<li><p>The server-side service needs to be set up. The <a class="reference external" href="https://github.com/qgis/qwc2/tree/master/utils/EditingInterface.js">default editing interface</a> is the conterpart for the <a class="reference external" href="https://github.com/qwc-services/qwc-data-service">QWC data service</a>. You can also use a custom editing service, in which case you need to implement a custom EditingInterface and pass it to the Editing plugin in <code class="docutils literal notranslate"><span class="pre">appConfig.js</span></code>.</p></li>
+<li><p>For every theme for which editing is allowed, a matching <code class="docutils literal notranslate"><span class="pre">editConfig.json</span></code> needs to be implemented and specified in the corresponding entry in <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code>.</p></li>
+</ul>
+<p>The format of the <code class="docutils literal notranslate"><span class="pre">editConfig.json</span></code> is as follows:</p>
+<p>| Entry                               | Description                                                   |
+|————————————-|—————————————————————|
+| <code class="docutils literal notranslate"><span class="pre">{</span></code>                                 |                                                               |
+| <code class="docutils literal notranslate"><span class="pre">  &lt;LayerId&gt;: {</span></code>                    | A WMS layer ID. Should be a theme WMS layer name, to ensure the WMS is correctly refreshed. |
+| <code class="docutils literal notranslate"><span class="pre">    &quot;layerName&quot;: &quot;&lt;LayerName&gt;&quot;,</span></code>   | The layer name to show in the selection combo box. |
+| <code class="docutils literal notranslate"><span class="pre">    &quot;geomType&quot;: &quot;&lt;GeomType&gt;&quot;,</span></code>     | The geometry type, either <code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">LineString</span></code> or <code class="docutils literal notranslate"><span class="pre">Polygon</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">    &quot;displayField&quot;:</span> <span class="pre"> &quot;&lt;FieldId&quot;&gt;&quot;,</span></code>| The ID of the field to use in the feature selection menu.     |
+| <code class="docutils literal notranslate"><span class="pre">    &quot;fields&quot;: [{</span></code>                  | A list of field definitions, for each exposed attribute.      |
+| <code class="docutils literal notranslate"><span class="pre">      &quot;id&quot;: &quot;&lt;FieldID&gt;&quot;,</span></code>          | The field ID.                                                 |
+| <code class="docutils literal notranslate"><span class="pre">      &quot;name&quot;: &quot;&lt;FieldName&gt;&quot;,</span></code>      | The field name, as displayed in the editing form.             |
+| <code class="docutils literal notranslate"><span class="pre">      &quot;type&quot;: &quot;&lt;FieldType&gt;&quot;,</span></code>      | A field type. Either <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">list</span></code> or a regular <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">HTML input element type</a>. |
+| <code class="docutils literal notranslate"><span class="pre">      &quot;constraints&quot;: {</span></code>            | Constraints for the input field.                              |
+| <code class="docutils literal notranslate"><span class="pre">        &quot;values&quot;: [&lt;Entries&gt;],</span></code>    | Only if <code class="docutils literal notranslate"><span class="pre">type</span></code> is <code class="docutils literal notranslate"><span class="pre">list</span></code>: an array of arbitrary strings.      |
+| <code class="docutils literal notranslate"><span class="pre">        ...</span></code>                       | For regular HTML input types, the ReactJS API name of any applicable <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">HTML input constraint</a>, i.e. <code class="docutils literal notranslate"><span class="pre">maxLength</span></code> or <code class="docutils literal notranslate"><span class="pre">readOnly</span></code>. |
+| <code class="docutils literal notranslate"><span class="pre">      }</span></code>                           |                                                               |
+| <code class="docutils literal notranslate"><span class="pre">    }],</span></code>                           |                                                               |
+| <code class="docutils literal notranslate"><span class="pre">    &quot;form&quot;: &quot;&lt;PathToUiFile&gt;&quot;,</span></code>     | As alternative to <code class="docutils literal notranslate"><span class="pre">fields</span></code>, a QtDesigner UI file. See below.  |
+| <code class="docutils literal notranslate"><span class="pre">  }</span></code>                               |                                                               |
+| <code class="docutils literal notranslate"><span class="pre">}</span></code>                                 |                                                               |</p>
+<ul class="simple">
+<li><p>If you specify <code class="docutils literal notranslate"><span class="pre">fields</span></code>, a simple form is autogenerated based on the field definitions.</p></li>
+<li><p>If you specify <code class="docutils literal notranslate"><span class="pre">form</span></code>, you can specify the URL to a Qt Designer UI form (use <code class="docutils literal notranslate"><span class="pre">:/&lt;path&gt;</span></code> to specify a path below the <code class="docutils literal notranslate"><span class="pre">assets</span></code> folder). Most basic input elements provided by QtDesigner are supported, see <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/assets/forms/form.ui">this sample form</a>. The widget names must be set equal to the attribute names.</p></li>
+</ul>
+<p>See the <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/test2056_edit.json">sample <code class="docutils literal notranslate"><span class="pre">editConfig.json</span></code></a> for a full example. See also the <a class="reference external" href="https://github.com/qwc-services/qwc-data-service/blob/master/README.md">QWC data service README</a>.</p>
+</div>
+<div class="section" id="a-name-translations-a-managing-translations">
+<h3><a name="translations"></a>Managing translations<a class="headerlink" href="#a-name-translations-a-managing-translations" title="Link zu dieser Überschrift">¶</a></h3>
+<p>The translations are managed on two levels:</p>
+<ul class="simple">
+<li><p>At QWC2 components level, in <code class="docutils literal notranslate"><span class="pre">qwc2/translations</span></code>.</p></li>
+<li><p>At application level, in <code class="docutils literal notranslate"><span class="pre">translations</span></code>.</p></li>
+</ul>
+<p>A script will take care of merging the component translations into the application translations. This way, when updating the QWC2 submodule, new translations are automatically obtained. This script is automatically invoked on <code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">start</span></code>, but can also be manually invoked using</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yarn</span> <span class="n">run</span> <span class="n">tsupdate</span>
+</pre></div>
+</div>
+<p>Translations are stored inside the respective <code class="docutils literal notranslate"><span class="pre">translations</span></code> folder as regular plain-text JSON files, named <code class="docutils literal notranslate"><span class="pre">&lt;locale&gt;.json</span></code> and can be freely edited with any text editor.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">tsconfig.json</span></code> files stored inside the respective <code class="docutils literal notranslate"><span class="pre">translations</span></code> folder contains the list of languages for which translations should be generated and a list of message IDs to include in the translation. The <code class="docutils literal notranslate"><span class="pre">tsupdate</span></code> script will automatically scan for message IDs (looking for static strings passed to <code class="docutils literal notranslate"><span class="pre">LocaleUtils.tr</span></code> and <code class="docutils literal notranslate"><span class="pre">LocaleUtils.trmsg</span></code>), store these in <code class="docutils literal notranslate"><span class="pre">tsconfig.json</span></code> and automatically create resp. update the translation files.</p>
+<p>In some cases <code class="docutils literal notranslate"><span class="pre">tsconfig.json</span></code> will not pick up a message ID (for instance, if it is computed at runtime). In these cases, the message IDs can be added manually to the <code class="docutils literal notranslate"><span class="pre">extra_strings</span></code> section of the <code class="docutils literal notranslate"><span class="pre">tsconfig.json</span></code>.</p>
+<p>Also it may be desired to override a translation inherited from the QWC2 components at application level. To prevent <code class="docutils literal notranslate"><span class="pre">tsupdate</span></code> from continuously reverting the overridden translation, the respective message IDs can be added to the <code class="docutils literal notranslate"><span class="pre">overrides</span></code> section in the application <code class="docutils literal notranslate"><span class="pre">tsconfig.json</span></code> file.</p>
+<p>The typical workflow for managing application translations is:</p>
+<ul class="simple">
+<li><p>Declare all locales which should be supported in <code class="docutils literal notranslate"><span class="pre">js/appConfig.js</span></code>.</p></li>
+<li><p>Ensure these locales are listed in <code class="docutils literal notranslate"><span class="pre">translations/tsconfig.json</span></code>.</p></li>
+<li><p>Write the translated strings to the respective <code class="docutils literal notranslate"><span class="pre">&lt;locale&gt;.json</span></code> files.</p></li>
+<li><p>Test the translation, specifying <code class="docutils literal notranslate"><span class="pre">locale=&lt;locale&gt;</span></code> in the QWC2 application URL.</p></li>
+</ul>
+<p>If translations of the QWC2 components for a desired language are missing, please create resp. update the translations respective files in <code class="docutils literal notranslate"><span class="pre">qwc2/translations</span></code> and contribute them by submitting a pull request to the <a class="reference external" href="https://github.com/qgis/qwc2">upstream qwc2 repository</a>.</p>
+</div>
+<div class="section" id="a-name-appearance-customization-a-customizing-the-qwc2-appearance">
+<h3><a name="appearance-customization"></a>Customizing the QWC2 appearance<a class="headerlink" href="#a-name-appearance-customization-a-customizing-the-qwc2-appearance" title="Link zu dieser Überschrift">¶</a></h3>
+<p>The following options are available for customizing the appearance of the QWC2 application while preserving compatibility with the core QWC2 components:</p>
+<ul class="simple">
+<li><p>Modifying the logo in <code class="docutils literal notranslate"><span class="pre">assets/img/</span></code>.</p></li>
+<li><p>Modifying the application icons in <code class="docutils literal notranslate"><span class="pre">icons</span></code>.</p></li>
+<li><p>Tweaking the colors in <code class="docutils literal notranslate"><span class="pre">styleConfig.js</span></code>.</p></li>
+<li><p>Adding style declarations to the master CSS stylesheet <code class="docutils literal notranslate"><span class="pre">assets/css/qwc2.css</span></code>. This however is potentially fragile and should only be done as a last resort.</p></li>
+<li><p>Changing the browser page title in <code class="docutils literal notranslate"><span class="pre">index.html</span></code>, and potentially adding a favicon.</p></li>
+<li><p>Modifying the legend print template in <code class="docutils literal notranslate"><span class="pre">assets/templates/legendprint.html</span></code>. The only requirement for this template is that is must contain a <code class="docutils literal notranslate"><span class="pre">&lt;div</span> <span class="pre">id=&quot;legendcontainer&quot;&gt;&lt;/div&gt;</span></code> element.</p></li>
+<li><p>Modifying the custom Help component <code class="docutils literal notranslate"><span class="pre">js/Help.jsx</span></code>.</p></li>
+</ul>
+<p><em>Note</em>: The common application icons are located in <code class="docutils literal notranslate"><span class="pre">qwc2/icons</span></code>. They can be overridden by creating an icon with the same filename in the application specific <code class="docutils literal notranslate"><span class="pre">icons</span></code> folder.
+<em>Note</em>: The icons in the <code class="docutils literal notranslate"><span class="pre">icons</span></code> folder are compiled into an icon font. Currently, the icons need to be black content on transparent background, and all drawings (including texts) must be converted to paths for the icons to render correctly.</p>
+</div>
+</div>
+<div class="section" id="server-side-configuration">
+<h2>Server-side configuration<a class="headerlink" href="#server-side-configuration" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="a-name-cross-origin-requests-a-cross-origin-requests">
+<h3><a name="cross-origin-requests"></a>Cross-Origin requests<a class="headerlink" href="#a-name-cross-origin-requests-a-cross-origin-requests" title="Link zu dieser Überschrift">¶</a></h3>
+<p>All modern browsers will block a page from requesting resources from another origin (except for images, stylesheets, scripts, iframes and videos), unless the response from the remote origin contains a matching <code class="docutils literal notranslate"><span class="pre">Access-Control-Allow-Origin</span></code> header. An origin is defined as <code class="docutils literal notranslate"><span class="pre">&lt;scheme&gt;://&lt;hostname&gt;:&lt;port&gt;</span></code>.</p>
+<p>For each service QWC2 interacts with, in particular the QGIS Server, one has to ensure that this interaction isn‘t blocked by the browser. The following options exist:</p>
+<ul class="simple">
+<li><p>Ensure that the service runs on the same origin as the web server which serves the QWC2 application.</p></li>
+<li><p>Ensure that the service sends a <code class="docutils literal notranslate"><span class="pre">Access-Control-Allow-Origin</span></code> header with matching origin with each response.</p></li>
+<li><p>For development purposes, use a browser plugin which adds the CORS headers, i.e. <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/">CORS Everywhere</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="filenames-of-print-and-raster-and-dxf-export">
+<h3>Filenames of print and raster and DXF export<a class="headerlink" href="#filenames-of-print-and-raster-and-dxf-export" title="Link zu dieser Überschrift">¶</a></h3>
+<p>The QGIS server response for the print, raster and DXF export requests does by default not contain any <code class="docutils literal notranslate"><span class="pre">Content-Disposition</span></code> header, meaning that browsers will attempt to guess a filename, which typically is the last part of the URL, without any extension.</p>
+<p>To ensure browsers use a proper filename, configure the web server running QGIS Server to add a suitable <code class="docutils literal notranslate"><span class="pre">Content-Disposition</span></code> header to the response. In the case of Apache, the rule for the print output might look as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SetEnvIf Request_URI &quot;^/wms.*/(.+)$&quot; project_name=$1
+Header always setifempty Content-Disposition &quot;attachment; filename=%{project_name}e.pdf&quot; &quot;expr=%{CONTENT_TYPE} = &#39;application/pdf&#39;&quot;
+</pre></div>
+</div>
+<p>This rule will use the last part of the URL as basename and add the <code class="docutils literal notranslate"><span class="pre">.pdf</span></code> extension, and will also ensure that the content-type is set to <code class="docutils literal notranslate"><span class="pre">application/pdf</span></code>. Note that this example uses the <code class="docutils literal notranslate"><span class="pre">setenvif</span></code> and <code class="docutils literal notranslate"><span class="pre">headers</span></code> apache modules.</p>
+</div>
+</div>
+<div class="section" id="a-name-url-parameters-a-url-parameters">
+<h2><a name="url-parameters"></a>URL parameters<a class="headerlink" href="#a-name-url-parameters-a-url-parameters" title="Link zu dieser Überschrift">¶</a></h2>
+<p>The following parameters can appear in the URL of the QWC2 application:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">t</span></code>: The active theme</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span></code>: The layers in the map, see below.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bl</span></code>: The visible background layer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">st</span></code>: The search text</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sp</span></code>: Applied search provider when using <code class="docutils literal notranslate"><span class="pre">st</span></code> Parameter</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">e</span></code>: The visible extent</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">c</span></code>: The center of the visible extent</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s</span></code>: The current scale</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crs</span></code>: The CRS of extent/center coordinates</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hc</span></code>: If <code class="docutils literal notranslate"><span class="pre">c</span></code> is specified and <code class="docutils literal notranslate"><span class="pre">hc</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>, a marker is set at <code class="docutils literal notranslate"><span class="pre">c</span></code> when starting the application. Note: requires the <code class="docutils literal notranslate"><span class="pre">StartupMarkerPlugin</span></code> plugin to be active.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">l</span></code> parameter lists all layers in the map (redlining and background layers) as a comma separated list of entries of the form</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;layername&gt;[&lt;transparency&gt;]!
+</pre></div>
+</div>
+<p>where</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">layername</span></code> is the WMS name of a theme layer or group, or a string of the format</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">wms</span><span class="o">|</span><span class="n">wfs</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">service_url</span><span class="o">&gt;</span><span class="c1">#&lt;layername&gt;</span>
+</pre></div>
+</div>
+<p>for external layers, i.e. <code class="docutils literal notranslate"><span class="pre">wms:https://wms.geo.admin.ch/?#ch.are.bauzonen</span></code>.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;transparency&gt;</span></code> denotes the layer transparency, betwen 0 and 100. If the <code class="docutils literal notranslate"><span class="pre">[&lt;transparency&gt;]</span></code> portion is omitted, the layer is fully opaque.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!</span></code> denotes that the layer is invisible. If omitted, the layer is visible.</p></li>
+</ul>
+<p><em>Note</em>: If group name is specified instead of the layer name, QWC2 will automatically resolve this to all layer names contained in that group, and will apply transparency and visibility settings as specified for the group.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">urlPositionFormat</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">config.json</span></code> determines whether the extent or the center and scale appears in the URL.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">urlPositionCrs</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">config.json</span></code> determines the projection to use for the extent resp. center coordinates in the URL. By default the map projection of the current theme is used. If <code class="docutils literal notranslate"><span class="pre">urlPositionCrs</span></code> is equal to the map projection, the <code class="docutils literal notranslate"><span class="pre">crs</span></code> parameter is omitted in the URL.</p>
+<p>If the search text passed via <code class="docutils literal notranslate"><span class="pre">st</span></code> results in a unique result, the viewer automatically zooms to this result on startup. If the search result does not provide a bounding box, the <code class="docutils literal notranslate"><span class="pre">minScaleDenom</span></code> defined in the <code class="docutils literal notranslate"><span class="pre">searchOptions</span></code> of the <code class="docutils literal notranslate"><span class="pre">TopBar</span></code> configuration in <code class="docutils literal notranslate"><span class="pre">config.json</span></code> is used.</p>
+</div>
+<div class="section" id="startup-position">
+<h2>Startup position<a class="headerlink" href="#startup-position" title="Link zu dieser Überschrift">¶</a></h2>
+<p>By default, the viewer opens zooming on the respective theme extent, as defined in <code class="docutils literal notranslate"><span class="pre">themes.json</span></code> (and overrideable in <code class="docutils literal notranslate"><span class="pre">themesConfig.json</span></code>).</p>
+<p>Alternatively, the following three options exist to influence the startup position:</p>
+<ul class="simple">
+<li><p>Pass appropriate <code class="docutils literal notranslate"><span class="pre">c</span></code>, <code class="docutils literal notranslate"><span class="pre">s</span></code> or <code class="docutils literal notranslate"><span class="pre">e</span></code> URL parameters, as documented in <a class="reference external" href="#url-parameters">URL parameters</a>.</p></li>
+<li><p>Pass a search text which results in a unique result (i.e. a coordinate string) as URL parameter, as documented in <a class="reference external" href="#url-parameters">URL parameters</a>.</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">startupMode</span></code> in the <code class="docutils literal notranslate"><span class="pre">LocateSupport</span></code> options of the <code class="docutils literal notranslate"><span class="pre">Map</span></code> configuration in <code class="docutils literal notranslate"><span class="pre">config.json</span></code>. Possible values are <code class="docutils literal notranslate"><span class="pre">DISABLED</span></code>, <code class="docutils literal notranslate"><span class="pre">ENABLED</span></code> or <code class="docutils literal notranslate"><span class="pre">FOLLOWING</span></code>. If a search text is passed via <code class="docutils literal notranslate"><span class="pre">st</span></code> URL parameter or <code class="docutils literal notranslate"><span class="pre">hc=1</span></code> is specified in the URL, the <code class="docutils literal notranslate"><span class="pre">startupMode</span></code> is ignored.</p></li>
+</ul>
+<div class="section" id="a-name-layer-catalogs-a-layer-catalogs">
+<h3><a name="layer-catalogs"></a>Layer catalogs<a class="headerlink" href="#a-name-layer-catalogs-a-layer-catalogs" title="Link zu dieser Überschrift">¶</a></h3>
+<p>The import layer functionality in the layertree also supports loading a layer catalog document from an URL. Two catalog formats are supported:</p>
+<ul>
+<li><p>QGIS WMS/WFS connections XML: this file is produced by exporting the configured WMS or WFS connections from the QGIS data source manager dialog.</p></li>
+<li><p>JSON: a document with contents</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;catalog&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;Titel&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;resource&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;wms|wfs&gt;:&lt;service_url&gt;#&lt;layername&gt;&quot;</span>
+    <span class="p">},</span>
+  <span class="o">...</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">resource</span></code> is in the same format as the serialized layer identifiers in a QWC2 URL, see <a class="reference external" href="#url-parameters">URL Parameters</a>.</p>
+</li>
+</ul>
+<p>Note that the server serving the catalog documents needs to ensure that it sets CORS headers appropriately, if they are served from a different origin than QWC2.</p>
+</div>
+</div>
+<div class="section" id="keeping-the-qwc2-application-up-to-date">
+<h2>Keeping the QWC2 application up to date<a class="headerlink" href="#keeping-the-qwc2-application-up-to-date" title="Link zu dieser Überschrift">¶</a></h2>
+<p>As mentioned in the <a class="reference external" href="#quick-start">quick start</a> chapter, QWC2 is split into a common components repository and an application specific repository. The goal of this approach is to cleanly separate user-specific configuration and components which common components which serve as a basis for all QWC2 applications, and to make it as easy as possible to rebase the application onto the latest common QWC2 components.</p>
+<p>The recommended workflow is to keep the <code class="docutils literal notranslate"><span class="pre">qwc2</span></code> folder a submodule referencing the <a class="reference external" href="https://github.com/qgis/qwc2">upstream qwc2 repository</a>. To update it, just checkout the latest master (or a specific commit if desired):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">qwc2</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">git</span> <span class="n">pull</span>
+<span class="n">cd</span> <span class="o">..</span>
+<span class="n">yarn</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>It is good practice to run <code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">install</span></code> after pulling the submodule to ensure all the correct dependencies are installed.</p>
+<p>The <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/UpgradeNotes.md">upgrade notes</a> documents major changes, and in particular all incompatible changes between releases which require changes to the application specific code and/or configuration.</p>
+</div>
+<div class="section" id="api-for-external-applications">
+<h2>API for external applications<a class="headerlink" href="#api-for-external-applications" title="Link zu dieser Überschrift">¶</a></h2>
+<p>The API plugin binds many application actions to the <code class="docutils literal notranslate"><span class="pre">window.qwc2</span></code> object and makes them accessible for external applications. Currently, the following methods are available:</p>
+<ul class="simple">
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/display.js">display</a> actions</p></li>
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/layers.js">layers</a> actions</p></li>
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/locate.js">locate</a> actions</p></li>
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/map.js">map</a> actions</p></li>
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/task.js">task</a> actions</p></li>
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/theme.js">theme</a> actions</p></li>
+<li><p>All <a class="reference external" href="https://github.com/qgis/qwc2/blob/master/actions/windows.js">windows</a> actions</p></li>
+<li><p>Additional API calls:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">window.qwc2.addExternalLayer(resource,</span> <span class="pre">beforeLayerName=null)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">window.qwc2.drawScratch(geomType,</span> <span class="pre">message,</span> <span class="pre">drawMultiple,</span> <span class="pre">callback,</span> <span class="pre">style</span> <span class="pre">=</span> <span class="pre">null)</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>See the docstrings in <a class="reference external" href="https://github.com/qgis/qwc2/tree/master/plugins/API.js">API.js</a> as well as the actions functions linked above for more information.</p>
+<p>See <a class="reference external" href="https://github.com/qgis/qwc2-demo-app/blob/master/api_examples.js">api_examples.js</a> for some concrete examples.</p>
+</div>
+<div class="section" id="developing">
+<h2>Developing<a class="headerlink" href="#developing" title="Link zu dieser Überschrift">¶</a></h2>
+<p>QWC2 is written in JavaScript using in particular the ReactJS, Redux and OpenLayers libraries. The following links point to some useful resources to learn the basics:</p>
+<p><strong>ECMAScript 2015</strong></p>
+<ul class="simple">
+<li><p>https://babeljs.io/docs/learn-es2015/</p></li>
+</ul>
+<p><strong>ReactJS</strong></p>
+<ul class="simple">
+<li><p>https://facebook.github.io/react/docs/thinking-in-react.html</p></li>
+<li><p>https://medium.com/&#64;diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc</p></li>
+<li><p>https://medium.com/&#64;diamondgfx/learning-react-with-create-react-app-part-2-3ad99f38b48d</p></li>
+<li><p>https://medium.com/&#64;diamondgfx/learning-react-with-create-react-app-part-3-322447d14192</p></li>
+</ul>
+<p><strong>Redux</strong></p>
+<ul class="simple">
+<li><p>http://redux.js.org/</p></li>
+<li><p>https://egghead.io/courses/getting-started-with-redux</p></li>
+<li><p>https://egghead.io/courses/building-react-applications-with-idiomatic-redux</p></li>
+</ul>
+<p>When developing, it is useful to add <code class="docutils literal notranslate"><span class="pre">debug=true</span></code> to the URL query parameters, which will enable logging of all application state changes to the browser console.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dr. Michael Hälsig.
+
+    </p>
+  </div>
+    
+    
+    
+    Erstellt mit <a href="https://www.sphinx-doc.org/">Sphinx</a> mit einem
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    bereitgestellt von <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

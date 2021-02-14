@@ -1,0 +1,45 @@
+# Radwegplanung München
+
+## Überblick
+Diese Website unterstützt die Radwegplanung in München. Sie entstand in der Folge des
+[Radentscheids München](https://www.radentscheidmuenchen.de/), um allen Beteiligten einen Überblick zu ermöglichen. Dazu werden verschiedene Ebenen zur Verfügung gestellt, die man miteinander vergleichen kann:
+
+### Bestand und Planungen
+
+- bestehenden Radwege und beschildertenRadrouten in München aus dem Radlstadtplan
+- die Vorschläge von [munichways](https://www.munichways.com)
+- die bereits von der Stadtverwaltung geplanten Maßnahmen in München zur Umsetzung des Radentscheids
+- die geplanten Radschnellverbindungen, wie sie im Dezember 2020 den Bezirksausschüssen vorgestellt wurden
+- dem Verkehrsentwicklungsplan Rad (VEP-R) aus dem Jahr 2005
+- Radwege in Bayern
+
+### Istzahlen
+
+- die Istzahlen aus dem Projekt [Stadtradeln](https://www.stadtradeln.de) aus den Jahren 2018 - 2020
+
+### Fahrradabstellplätze
+
+- zeigt die bestehenden Fahrradabstellplätze
+
+### Kriterien zur Überprüfung der Planungen
+
+- Die Abdeckung der heutigen, beschilderten Fahrradrouten und des von munichways vorgeschlagenen Radlvorrangnetzes
+- Eine Anzeige der Unfallstellen, bei denen Radfahrende betroffen waren, und der im Jahr 2014 erfasste Gefahrenatlas der Süddeutschen Zeitung
+- die Orte der Feuerwachen, da hier keine Fahrradhauptrouten geführt werden sollten
+
+### Kriterien zur Ableitung der Planungen
+
+- zeigt die Quell- und Zielorte des Radverkehrs
+- konsolidierte Zentren, bei denen Quell- und Zielorte zusammengefasst wurden, und Wunschlinien, die diese Zentren verbinden
+- die Bevölkerungsdichte
+- Quell- und Zielorte sind auch große S- oder U-Bahnhöfe mit mehr als 100 Fahrradabstellplätzen, die unter Fahrradabstellplätzen zu finden sind
+
+### Grenzen
+
+- hier sind verschiedene Grenzen verfügbar, wie Stadtbezirksgrenzen, Schulbezirke, etc.
+
+### Barrieren
+
+- kleine Barrieren für den Radverkehr, wie Umlaufgitter, Pfosten und Ampeln, und große, wie Hauptstraßen, Bahngleise oder die Isar.
+
+## Nutzung
