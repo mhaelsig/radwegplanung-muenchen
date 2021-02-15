@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 /**
  * Copyright 2018-2021 Sourcepole AG
  * All rights reserved.
@@ -36,7 +37,8 @@ class MapInfoTooltip extends React.Component {
     state = {
         coordinate: null, elevation: null, extraInfo: null
     }
-    componentDidUpdate(prevProps, prevState) {
+    // eslint-disable-next-line no-unused-vars
+    componentDidUpdate(prevProps, _prevState) {
         if (!this.props.enabled && this.state.coordinate) {
             this.clear();
             return;
@@ -64,34 +66,41 @@ class MapInfoTooltip extends React.Component {
                         this.setState({extraInfo: response.data.results});
                     }).catch(() => {});
                 }
-/*
-    Ergänzung mh, um bei einem Mausklick rechts muenchen-transparent mit der Suche
-    'Fahrrad* + <Straße>
-    aufzurufen. Dazu (1) die Transformation der Koordinaten in EPGS:4326, (2) Suche
-    der Straße an dieser Koordinate mit Nominatim, (3) Aufruf muenchen-transperent
-*/
+                /*
+                Ergänzung mh, um bei einem Mausklick rechts muenchen-transparent mit der Suche
+                'Fahrrad* + <Straße>
+                aufzurufen. Dazu (1) die Transformation der Koordinaten in EPGS:4326, (2) Suche
+                der Straße an dieser Koordinate mit Nominatim, (3) Aufruf muenchen-transperent
+                */
 
-                let NominatimService = ConfigUtils.getConfigProp("NominatimService");
-                if(NominatimService) {
+                const NominatimService = ConfigUtils.getConfigProp("NominatimService");
+                if (NominatimService) {
+                    // eslint-disable-next-line camelcase
                     let WGS_coords = [];
-                    WGS_coords = proj4(serviceParams.crs,'EPSG:4326').forward (newPoint.coordinate);
-                    let NominatimCall = NominatimService+'?'+'format=geojson'+'&'+'lat='+WGS_coords[1]+'&'+'lon='+WGS_coords[0];
+                    // eslint-disable-next-line camelcase
+                    WGS_coords = proj4(serviceParams.crs, 'EPSG:4326').forward(newPoint.coordinate);
+                    // eslint-disable-next-line space-infix-ops
+                    const NominatimCall = NominatimService + '?' + 'format=geojson'+'&'+'lat='+WGS_coords[1]+'&'+'lon='+WGS_coords[0];
 
-                    let road ='';
+                    let road = '';
+                    // eslint-disable-next-line camelcase
                     let house_number = '';
                     axios.get(NominatimCall).then(response => {
                         road = response.data.features[0].properties.address.road;
+                        // eslint-disable-next-line camelcase
                         house_number = response.data.features[0].properties.address.house_number;
+                        // eslint-disable-next-line camelcase
                         if (house_number === undefined) {
                             house_number = ' ';
                         }
                         this.setState({extraInfo: road + ' ' + house_number});
                         road = road.replace(/ /g, '');
                         window.open('https://www.muenchen-transparent.de/suche?suchbegriff=Fahrrad*+' + road.replace(/(s|S)tra(ss|ß)e/, '*'), "mt");
-                        }).catch(e => {
+                    }).catch(e => {
+                        // eslint-disable-next-line no-console
                         console.log(e);
-                    });  
-                }                    
+                    });
+                }
             }
         }
     }

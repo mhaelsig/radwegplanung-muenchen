@@ -9,6 +9,5 @@
 import React from 'react';
 
 export function renderHelp() {
-    return (<a href="https://radwegplanung-muenchen.de/doc/build/html/index.html" target="_blank">Dokumentation Radwegplanung München</a>
-    );
+    return (<div>Help</div>);
 }
