@@ -109,7 +109,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "https://www.munichways.com/radlvorrangnetz/berwertungskriterien-radwege/"}
+                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
               ],
               "searchOptions": {
                 "minScaleDenom": 1000,
@@ -321,7 +321,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "https://www.munichways.com/radlvorrangnetz/berwertungskriterien-radwege/"}
+                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},

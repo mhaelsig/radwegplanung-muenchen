@@ -1,9 +1,19 @@
 Änderungshistorie
 =================
 
+
+- 16.02.2021
+
+    Bike&Ride Fahrradabstellplätze mit Kapazitäten > 50 und > 100 hinzugefügt
+
+    Radlstadtplan der Stadt München als WMS hinzugefügt (leider nur Teile)
+
 - 14.02.2021
+
     Dokumentation hinzugefügt
+
 - 02.02.2021
+
     Gruppe Radwege Bayern ersetzt - die bisherigen WMS sind abgeschaltet worden.
 
     Radwege München aus Radlstadtplan in leichtem Gelb gefärbt, nicht mehr Magenta, um Verwechslung mit RadlVorrang-Strecken zu vermeiden.

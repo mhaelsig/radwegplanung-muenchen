@@ -151,13 +151,6 @@
         "thumbnail": "img/mapthumbs/default.jpg"
       },
       {
-        "type": "google",
-        "name": "ROADMAP",
-        "title": "Google Straßenkarte",
-        "attribution": "Google Attribution",
-        "apiKey": "AIzaSyDp7QQGOBo9qN7-RZH8Gi-ARenkBUKXbWU"
-      },
-      {
         "type": "tileprovider",
         "provider": "OpenTopoMap",
         "title": "OpenTopoMap",

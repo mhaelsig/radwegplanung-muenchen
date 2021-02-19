@@ -13,6 +13,7 @@
   "preventSplittingGroupsWhenReordering": false,
   "allowLayerTreeSeparators": false,
   "allowRemovingThemeLayers": true,
+  "globallyDisableDockableDialogs": false,
   "searchThemes": true,
   "allowAddingOtherThemes": true,
   "allowFractionalZoom": true,
@@ -26,7 +27,8 @@
     "fillColor": [255, 0, 255, 0.33],
     "circleRadius": 10,
     "textFill": "black",
-    "textStroke": "white"
+    "textStroke": "white",
+    "textFont": "11pt sans-serif"
   },
   "projections": [
     {
@@ -95,7 +97,6 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers"},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
@@ -108,7 +109,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "https://www.munichways.com/radlvorrangnetz/berwertungskriterien-radwege/"}
+                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
               ],
               "searchOptions": {
                 "minScaleDenom": 1000,
@@ -132,6 +133,15 @@
           "name": "Measure",
           "cfg": {
             "showMeasureModeSwitcher": true
+          }
+        },
+        {
+          "name": "BottomBar",
+          "cfg": {
+            "displayCoordinates": false,
+            "displayScales": true,
+            "viewertitleUrl": "http://qgis.org/",
+            "termsUrl":  "http://qgis.org/"
           }
         },
         {
@@ -183,7 +193,6 @@
             "allowImport": true,
             "groupTogglesSublayers": false,
             "grayUnchecked": false,
-            "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false
           },
@@ -300,7 +309,6 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers"},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
@@ -313,7 +321,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "https://www.munichways.com/radlvorrangnetz/berwertungskriterien-radwege/"}
+                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
@@ -363,7 +371,6 @@
             "allowImport": true,
             "groupTogglesSublayers": true,
             "grayUnchecked": false,
-            "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false,
             "showToggleAllLayersCheckbox": true

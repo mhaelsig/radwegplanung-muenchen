@@ -1,7 +1,7 @@
 {
   "NominatimService": "https://nominatim.openstreetmap.org/reverse.php",
   "translationsPath": "/translations",
-  "fallbackLocale": "en-US",
+  "fallbackLocale": "de-DE",
   "assetsPath": "/assets",
   "urlPositionFormat": "centerAndZoom",
   "urlPositionCrs": "",
