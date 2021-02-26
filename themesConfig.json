@@ -1,9 +1,9 @@
 {
   "themes": {
     "items": [{
-      "url": "https://oa.radwegplanung-muenchen.de/cgi-bin/qgis_mapserv.fcgi",
-      "attribution": "Erreichbarkeit Marienplatz",
-      "attributionUrl": "https://www.adfc-muenchen.de",
+      "url": "https://radwegplanung-muenchen.de/cgi-bin/qgis_mapserv.fcgi",
+      "attribution": "munichways Gesamtnetz",
+      "attributionUrl": "https://www.munichways.com",
       "format": "image/png; mode=8bit",
       "default": true,
       "scales": [200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],

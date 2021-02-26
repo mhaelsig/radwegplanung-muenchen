@@ -2,6 +2,21 @@
 =================
 
 
+- 24.02.2021
+
+    Das (i) Icon neben dem Layernamen, das anzeigt, dass der Layer abfragbar ist, entfernt, da alle Layer abfragbar sind. (in config.json: showQueryableIcon = false)
+
+- 23.02.2021
+
+    Aufgrund des Feedbacks aus den Bezirken 6, 7, 17, 18 und 19 weitere Zwangspunkte und neue *Bezirkszentren* eingefügt. Die Bezirkszentren sollten bei der Umsetzung der Radwegplanung auf Bezirksebene berücksichtigt werden.
+
+- 21.02.2021
+
+    Unter 'Fahrradabstellplätze' die über CityWise erfassten Fahrradabstellplätze, Luftpumpen und Fahrradwerkstätten hinzugefügt. Die Bilder lassen sich direkt mit 'mouse over' (*Kartentipps anzeigen* muss eingeschaltet sein)
+    anzeigen. Mit Links-Mausklick auf einen Eintrag werden alle Informationen zu diesem Eintrag, z.B. auch das Datum des Eintrag (*createdOn*) angezeigt.
+
+    Unter Gefahrenstellen/Unfälle die über CityWise erfassten kritschen Stellen eingefügt (Foto mit *mouse over*)
+
 - 16.02.2021
 
     Bike&Ride Fahrradabstellplätze mit Kapazitäten > 50 und > 100 hinzugefügt

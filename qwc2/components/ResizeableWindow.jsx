@@ -15,6 +15,8 @@ import LocaleUtils from '../utils/LocaleUtils';
 import Icon from './Icon';
 import './style/ResizeableWindow.css';
 
+const WINDOW_GEOMETRIES = {};
+
 export default class ResizeableWindow extends React.Component {
     static propTypes = {
         children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
@@ -57,24 +59,34 @@ export default class ResizeableWindow extends React.Component {
         onGeometryChanged: () => {}
     }
     state = {
-        dock: false,
         geometry: null
     }
     constructor(props) {
         super(props);
         this.rnd = null;
-        this.state.dock = props.initiallyDocked || false;
         const height = Math.min(props.initialHeight, window.innerHeight - 100);
-        this.state.geometry = {
-            x: props.initialX !== null ? props.initialX : Math.max(0, Math.round(0.5 * (window.innerWidth - props.initialWidth))),
-            y: props.initialY !== null ? props.initialY : Math.max(0, Math.round(0.5 * height)),
-            width: props.initialWidth,
-            height: height
-        };
+        if (WINDOW_GEOMETRIES[props.title]) {
+            this.state.geometry = WINDOW_GEOMETRIES[props.title];
+        } else {
+            this.state.geometry = {
+                x: props.initialX !== null ? props.initialX : Math.max(0, Math.round(0.5 * (window.innerWidth - props.initialWidth))),
+                y: props.initialY !== null ? props.initialY : Math.max(0, Math.round(0.5 * height)),
+                width: props.initialWidth,
+                height: height,
+                docked: props.initiallyDocked || false
+            };
+        }
+        this.dragShield = null;
     }
     componentDidUpdate(prevProps, prevState) {
         if (this.rnd && this.props.visible && this.props.visible !== prevProps.visible) {
             this.rnd.updatePosition(this.state.geometry);
+        }
+        if (this.state.geometry !== prevState.geometry) {
+            this.props.onGeometryChanged(this.state.geometry);
+            if (this.props.title) {
+                WINDOW_GEOMETRIES[this.props.title] = this.state.geometry;
+            }
         }
     }
     renderRole = (role) => {
@@ -111,18 +123,19 @@ export default class ResizeableWindow extends React.Component {
                 ))}
                 {dockable ? (
                     <Icon
-                        className="resizeable-window-titlebar-control" icon={this.state.dock ? "undock" : "dock"}
+                        className="resizeable-window-titlebar-control" icon={this.state.geometry.docked ? "undock" : "dock"}
                         onClick={this.toggleDock}
-                        titlemsgid={this.state.dock ? LocaleUtils.trmsg("window.undock") : LocaleUtils.trmsg("window.dock")} />
+                        titlemsgid={this.state.geometry.docked ? LocaleUtils.trmsg("window.undock") : LocaleUtils.trmsg("window.dock")} />
                 ) : null}
                 <Icon className="resizeable-window-titlebar-control" icon="remove" onClick={this.onClose} titlemsgid={LocaleUtils.trmsg("window.close")} />
             </div>),
             (<div className={bodyclasses} key="body" onMouseDown={this.stopEvent} onMouseUp={this.stopEvent} onTouchStart={this.stopEvent}>
+                <div className="resizeable-window-drag-shield" ref={el => {this.dragShield = el; }} />
                 {this.renderRole("body")}
             </div>)
         ];
 
-        if (this.state.dock && this.props.visible) {
+        if (this.state.geometry.docked && this.props.visible) {
             return (
                 <div className="dock-window" onMouseDown={this.startDockResize} ref={c => { this.dock = c; }} style={{zIndex: this.props.zIndex, width: this.props.initialWidth + 'px'}}>
                     {content}
@@ -134,6 +147,7 @@ export default class ResizeableWindow extends React.Component {
                     <Rnd bounds="parent" className="resizeable-window" default={this.state.geometry}
                         maxHeight={this.props.maxHeight || window.innerHeight} maxWidth={this.props.maxWidth || window.innerWidth}
                         minHeight={this.props.minHeight} minWidth={this.props.minWidth}
+                        onDragStart={this.onDragStart}
                         onDragStop={this.onDragStop} onResizeStop={this.onResizeStop}
                         ref={c => { this.rnd = c; }} style={{zIndex: this.props.zIndex}}>
                         {content}
@@ -142,28 +156,34 @@ export default class ResizeableWindow extends React.Component {
             );
         }
     }
+    onDragStart = (ev) => {
+        if (this.dragShield) {
+            this.dragShield.style.display = 'initial';
+        }
+    }
     onDragStop = (ev, data) => {
-        this.setState({geometry: {...this.state.geometry, x: data.x, y: data.y}});
-        this.props.onGeometryChanged({
-            x: data.x, y: data.y, width: this.state.width, height: this.state.height, docked: this.state.dock
-        });
+        const geometry = {...this.state.geometry, x: data.x, y: data.y};
+        this.setState({geometry: geometry});
+        if (this.dragShield) {
+            this.dragShield.style.display = 'none';
+        }
     }
     onResizeStop = (ev, dir, ref, delta, position) => {
         const geometry = {
+            ...this.state.geometry,
             x: position.x,
             y: position.y,
             width: this.state.geometry.width + delta.width,
             height: this.state.geometry.height + delta.height
         };
         this.setState({geometry: geometry});
-        this.props.onGeometryChanged({...geometry, docked: this.state.dock});
     }
     toggleDock = () => {
-        const newDockState = !this.state.dock;
-        this.setState({dock: newDockState});
-        this.props.onGeometryChanged({
-            x: this.state.x, y: this.state.y, width: this.state.width, height: this.state.height, docked: this.state.dock
-        });
+        const geometry = {
+            ...this.state.geometry,
+            docked: !this.state.geometry.docked
+        };
+        this.setState({geometry: geometry});
     }
     startDockResize = (ev) => {
         if (ev.target === this.dock) {

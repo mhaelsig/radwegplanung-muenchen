@@ -23,6 +23,10 @@ if [ "$1" == "prod" ]; then
     cp -a  $config ./prod/config.json
     cp -a ./translations/*.json ./prod/translations
     echo "<!-- Built: $(date -R) -->" >> ./prod/index.html
+    cd doc
+    make html
+    cd ..
+    cp doc/source/*.mp4 prod/doc/build/html/
     exit $?
 fi
 if [ "$1" == "analyze" ]; then

@@ -66,7 +66,10 @@ Unabhängig von der aktiven (sichtbaren) Ebene erhält man mit einem **Rechts-Ma
 
     Bei der ersten Abfrage fragt der Webbrowser, ob die Website *radwegplanung-muenchen.de* die Website *muenchen-transparent* aufrufen darf. Dies muss einmalig bestätigt werden.
 
+Anzeigen von Informationen beim Überstreichen mit der Maus
+----------------------------------------------------------
 
+Manche Ebenen (z.B. Fahrradabstellplätze --> CityWise, konsolidierte Zentren) zeigen Zusatzinformationen, wenn man mit der Maus darüberstreicht (*mouse over*). Bei CityWise sind es Bilder, bei den Zentren wird der Name des Zentrums angezeigt. Dazu muss aber im Menü *Ebenen und Legende* die Auswahl *Kartentipps anzeigen* angeklickt (eingeschaltet) sein.
 
 
 
