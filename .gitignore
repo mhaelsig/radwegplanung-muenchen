@@ -6,3 +6,4 @@ npm-debug.log
 themes.json
 assets/img/genmapthumbs/*
 yarn-error.log
+.env

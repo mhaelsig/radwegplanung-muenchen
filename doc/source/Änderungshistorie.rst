@@ -1,6 +1,9 @@
 Änderungshistorie
 =================
 
+- 27.02.2021
+
+  Oberzentren, Triangulierung und Anbindung Grenzpunkte überarbeitet
 
 - 24.02.2021
 

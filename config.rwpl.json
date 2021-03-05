@@ -187,7 +187,7 @@
           "cfg": {
             "showLegendIcons": true,
             "showRootEntry": true,
-            "showQueryableIcon": true,
+            "showQueryableIcon": false,
             "allowMapTips": true,
             "allowCompare": true,
             "allowImport": true,
@@ -365,7 +365,7 @@
           "cfg": {
             "showLegendIcons": true,
             "showRootEntry": true,
-            "showQueryableIcon": true,
+            "showQueryableIcon": false,
             "allowMapTips": true,
             "allowCompare": true,
             "allowImport": true,
