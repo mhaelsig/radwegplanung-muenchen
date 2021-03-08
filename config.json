@@ -140,8 +140,8 @@
           "cfg": {
             "displayCoordinates": false,
             "displayScales": true,
-            "viewertitleUrl": "http://qgis.org/",
-            "termsUrl":  "http://qgis.org/"
+            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
+            "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
           }
         },
         {
@@ -344,8 +344,8 @@
         {
           "name": "BottomBar",
           "cfg": {
-            "viewertitleUrl": "http://qgis.org/",
-            "termsUrl":  "http://qgis.org/"
+            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
+            "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
           }
         },
         {

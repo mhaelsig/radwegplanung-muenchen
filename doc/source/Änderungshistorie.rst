@@ -1,6 +1,22 @@
 Änderungshistorie
 =================
 
+- 08.03.2021
+
+  Datenschutz und Nutzungsbedingungen eingefügt
+
+- 07.03.2021
+
+  Strava Ist-Daten (RIDE) eingefügt
+
+  Stadtplan München(grau) eingefügt - er skaliert mit dem Radlstadtplan, weil der Radlstadtplan für den Druck konzipiert wurde und nicht ohne weiteres mit anderen Hintergrundkarten nutzbar ist.
+
+- 06.03.2021
+
+  Triangulierung weiter bearbeitet - überflüssige Kanten, die von der Stadtgrenze durchschnitten werden, werden bei der Erstellung automatisch entfernt.
+
+  Die aktuelle Dokumentation liegt jetzt auch komplett als PDF-Dokument vor `Radwegplanung München <https://radwegplanung-muenchen.de/doc/build/latex/radwegplanungmnchen.pdf>`_
+
 - 27.02.2021
 
   Oberzentren, Triangulierung und Anbindung Grenzpunkte überarbeitet

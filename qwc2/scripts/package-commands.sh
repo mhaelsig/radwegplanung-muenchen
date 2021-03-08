@@ -25,6 +25,7 @@ if [ "$1" == "prod" ]; then
     echo "<!-- Built: $(date -R) -->" >> ./prod/index.html
     cd doc
     make html
+    make latexpdf
     cd ..
     cp doc/source/*.mp4 prod/doc/build/html/
     exit $?
