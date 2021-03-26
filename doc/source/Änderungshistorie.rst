@@ -1,6 +1,22 @@
 Änderungshistorie
 =================
 
+- 26.03.2021
+
+  Gymnasien inkl. der aktuellen Schülerzahl hinzugefügt. Quellen waren Wikipedia (Geodaten) und das RIS (Schülerzahl).
+
+- 17.03.2021
+
+  Grund- und Mittelschulstandorte und -sprengel, Mittelschulverbund wieder hinzugefügt - Capabilities Dokument auf Geoserver der Stadt München war verschwunden.
+
+- 16.03.2021
+
+  Bevölkerungsdichte nach Baublöcken hinzugefügt. Das ergibt eine wesentliche detailliertere und aktuelle Sicht auf die Einwohnerverteilung als das relativ grobe Raster aus dem Zensus 2011
+
+- 12.03.2021
+
+  (geometrische) Stadtteilzentren und Luftlinien (Delaunay Triangulierung) hinzugefügt
+
 - 08.03.2021
 
   Datenschutz und Nutzungsbedingungen eingefügt
