@@ -29,6 +29,7 @@ Die Informations-Ebenen sind in Gruppen zusammengefasst.
 - Die Abdeckung der heutigen, beschilderten Fahrradrouten und des von munichways vorgeschlagenen Radlvorrangnetzes
 - Eine Anzeige der Unfallstellen, bei denen Radfahrende betroffen waren, und der im Jahr 2014 erfasste Gefahrenatlas der Süddeutschen Zeitung
 - die Orte der Feuerwachen, da hier keine Fahrradhauptrouten geführt werden sollten
+- Haltestellen, die häufiger, oder weniger als in 15 min Intervallen angefahren werden. Bei den Haltestellen die in Intervallen > 15 min angefahren werden, ist es möglich, die Radwegführung einfacher als bei den anderen Haltestellen zu gestalten, da bei diesen Haltestellen mit wenig ein- und aussteigenden Fahrgästen gerechnet werden kann.
 
 5 Kriterien zur Ableitung der Planungen
 

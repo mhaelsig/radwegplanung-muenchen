@@ -1,6 +1,18 @@
 Änderungshistorie
 =================
 
+- 03.04.2021
+
+    Layer *REM* in *Umsetzung LHM* umbenannt. Das Planungsreferat der Stadt München hat Maßnahmenbündel zusammengestellt, die in diesem Layer dargestellt werden. Die zusammenfassende Darstellung dieser Maßnahmen auf der Website der Stadt spiegelt nicht genau den Stand, wie er im RIS zu finden ist.
+
+- 02.04.2021
+
+    Oberzentren und Mittelzentren im Münchener Süden korrigiert und ergänzt. Den Algorithmus *Nächster Nachbar* für die Anbindung der Mittelzentren und Grenzpunkte an die Oberzentren ersetzt durch *Hub Lines / Distance* aus dem Plugin MMQGIS.
+
+- 29.03.2021
+
+    Haltestellen hinzugefügt. Dabei kann man Haltestellen auswählen, die in mehr als 15 min Intervallen angefahren werden. An diesen Haltestellen ist es denkbar, die Radwegführung einfacher zu gestalten, als bei den anderen Haltestellen, wo mit mehr ein- und aussteigenden Fahrgästen gerechnet werden muss.
+
 - 26.03.2021
 
   Gymnasien inkl. der aktuellen Schülerzahl hinzugefügt. Quellen waren Wikipedia (Geodaten) und das RIS (Schülerzahl).
