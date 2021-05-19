@@ -10,6 +10,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import xml2js from 'xml2js';
+import uuid from 'uuid';
+import isEmpty from 'lodash.isempty';
 import ConfigUtils from '../utils/ConfigUtils';
 import Icon from './Icon';
 
@@ -35,7 +37,7 @@ export default class QtDesignerForm extends React.Component {
     state = {
         formdata: null,
         keyvalues: {},
-        attributerelations: {}
+        activetabs: {}
     }
     componentDidMount() {
         let url = this.props.form;
@@ -97,6 +99,8 @@ export default class QtDesignerForm extends React.Component {
                         child = this.renderWidget(item.widget, values, updateField, nametransform);
                     } else if (item.layout) {
                         child = this.renderLayout(item.layout, values, updateField, nametransform);
+                    } else {
+                        return null;
                     }
                     return (
                         <div key={"i" + idx} style={itemStyle(item, idx)}>
@@ -138,7 +142,46 @@ export default class QtDesignerForm extends React.Component {
             return (<span>{widget.property.text}</span>);
         } else if (widget.class === "Line") {
             return (<div className="qt-designer-form-line" />);
-        } else if (widget.class === "QTextEdit") {
+        } else if (widget.class === "QFrame") {
+            return (
+                <div className="qt-designer-form-frame">
+                    {this.renderLayout(widget.layout, values, updateField, nametransform)}
+                </div>
+            );
+        } else if (widget.class === "QGroupBox") {
+            return (
+                <div>
+                    <div>{prop.title}</div>
+                    <div className="qt-designer-form-frame">
+                        {this.renderLayout(widget.layout, values, updateField, nametransform)}
+                    </div>
+                </div>
+            );
+        } else if (widget.class === "QTabWidget") {
+            if (isEmpty(widget.widget)) {
+                return null;
+            }
+            const activetab = this.state.activetabs[widget.name] || widget.widget[0].name;
+            const activewidget = widget.widget.find(child => child.name === activetab);
+            return (
+                <div>
+                    <div className="qt-designer-form-tabbar">
+                        {widget.widget.map(tab => (
+                            <span
+                                className={tab.name === activetab ? "qt-designer-form-tab-active" : ""}
+                                key={tab.name}
+                                onClick={() => this.setState({activetabs: {...this.state.activetabs, [widget.name]: tab.name}})}
+                            >
+                                {tab.attribute.title}
+                            </span>
+                        ))}
+                    </div>
+                    <div className="qt-designer-form-frame">
+                        {this.renderLayout(activewidget.layout, values, updateField, nametransform)}
+                    </div>
+                </div>
+            );
+        } else if (widget.class === "QTextEdit" || widget.class === "QTextBrowser") {
             return (<textarea name={elname} onChange={(ev) => updateField(widget.name, ev.target.value)} value={value} />);
         } else if (widget.class === "QLineEdit") {
             if (widget.name.endsWith("__upload")) {
@@ -179,9 +222,12 @@ export default class QtDesignerForm extends React.Component {
             } else {
                 return (
                     <select name={elname} onChange={ev => updateField(widget.name, ev.target.value)} value={value}>
-                        {this.ensureArray(widget.item).map((item) => (
-                            <option key={item.property.string} value={item.property.string}>{item.property.string}</option>
-                        ))}
+                        {widget.item.map((item) => {
+                            const optval = item.property.value || item.property.text;
+                            return (
+                                <option key={optval} value={optval}>{item.property.text}</option>
+                            );
+                        })}
                     </select>
                 );
             }
@@ -217,7 +263,7 @@ export default class QtDesignerForm extends React.Component {
     ensureArray = (el) => {
         if (el === undefined) {
             return [];
-        } else if (Array.isArray) {
+        } else if (Array.isArray(el)) {
             return el;
         }
         return [el];
@@ -285,18 +331,24 @@ export default class QtDesignerForm extends React.Component {
     }
     reformatWidget = (widget, keyvals) => {
         if (widget.property) {
-            widget.property = Array.isArray(widget.property) ? widget.property : [widget.property];
-            widget.property = widget.property.reduce((res, prop) => {
+            widget.property = this.ensureArray(widget.property).reduce((res, prop) => {
                 return ({...res, [prop.name]: prop[Object.keys(prop).find(key => key !== "name")]});
             }, {});
+        } else {
+            widget.property = {};
         }
         if (widget.attribute) {
-            widget.attribute = Array.isArray(widget.attribute) ? widget.attribute : [widget.attribute];
-            widget.attribute = widget.attribute.reduce((res, prop) => {
+            widget.attribute = this.ensureArray(widget.attribute).reduce((res, prop) => {
                 return ({...res, [prop.name]: prop[Object.keys(prop).find(key => key !== "name")]});
             }, {});
+        } else {
+            widget.attribute = {};
+        }
+        if (widget.item) {
+            this.ensureArray(widget.item).map(item => this.reformatWidget(item, keyvals));
         }
 
+        widget.name = widget.name || uuid.v1();
         const parts = widget.name.split("__");
         if ((parts.length === 5 || parts.length === 6) && parts[0] === "kvrel") {
             const count = parts.length;
@@ -307,6 +359,10 @@ export default class QtDesignerForm extends React.Component {
         }
         if (widget.layout) {
             this.reformatLayout(widget.layout, keyvals);
+        }
+        if (widget.widget) {
+            widget.widget = Array.isArray(widget.widget) ? widget.widget : [widget.widget];
+            widget.widget.forEach(child => this.reformatWidget(child, keyvals));
         }
     }
     reformatLayout = (layout, keyvals) => {

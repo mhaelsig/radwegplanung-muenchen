@@ -17,7 +17,8 @@
         "Redlining": "Redlining",
         "Share": "Share Link",
         "ThemeSwitcher": "Theme",
-        "Tools": "Map Tools"
+        "Tools": "Map Tools",
+        "Bookmark": "Bookmarks"
       },
       "menulabel": "Map & Tools"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "No background"
+    },
+    "bookmark": {
+      "add": "Add bookmark for current map",
+      "description": "Description",
+      "manage": "Manage your bookmarks",
+      "openintab": "Open bookmark in a new tab",
+      "remove": "Remove bookmark",
+      "update": "Update bookmark"
     },
     "bottombar": {
       "mousepos_label": "Coordinates",
@@ -77,13 +86,10 @@
       "exportformat": "Export format:",
       "featureReport": "Feature report",
       "link": "Link",
-      "noattributes": "No attributes",
-      "noresults": "No information available for the selected point",
-      "querying": "Querying...",
-      "title": "Feature Info"
+      "noattributes": "No attributes"
     },
     "identifyregion": {
-      "info": "Draw a polygon around the features to identify..."
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Add layer",

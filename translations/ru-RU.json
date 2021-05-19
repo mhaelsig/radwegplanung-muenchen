@@ -17,7 +17,8 @@
         "Redlining": "Обводка",
         "Share": "Поделиться ссылкой",
         "ThemeSwitcher": "Тема",
-        "Tools": "Средства картографии"
+        "Tools": "Средства картографии",
+        "Bookmark": ""
       },
       "menulabel": "Карта и инструменты"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Фон отсутствует"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Координаты",
@@ -77,13 +86,10 @@
       "exportformat": "",
       "featureReport": "Отчёт об объекте",
       "link": "гиперссылка",
-      "noattributes": "Аттрибуты отсутствуют",
-      "noresults": "Для выбранной точки нет доступной информации",
-      "querying": "Выполняется запрос...",
-      "title": "Информация об объекте"
+      "noattributes": "Аттрибуты отсутствуют"
     },
     "identifyregion": {
-      "info": "Для получения информации обведите регион многоугольником..."
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Добавить слой",

@@ -17,7 +17,8 @@
         "Redlining": "Redlining",
         "Share": "Udostępnij Link",
         "ThemeSwitcher": "Motyw",
-        "Tools": "Narzędzia Mapy"
+        "Tools": "Narzędzia Mapy",
+        "Bookmark": ""
       },
       "menulabel": "Zawartość mapy i narzędzia"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Bez tła"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Współrzędne",
@@ -77,13 +86,10 @@
       "exportformat": "",
       "featureReport": "Feature report",
       "link": "Link",
-      "noattributes": "Brak atrybutów",
-      "noresults": "Brak dostępnych danych dla wybranego punktu",
-      "querying": "Przetwarzam zapytanie...",
-      "title": "Feature Info"
+      "noattributes": "Brak atrybutów"
     },
     "identifyregion": {
-      "info": "Narysuj poligon wokół obiektów, aby zidentyfikować..."
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Dodaj warstwę",

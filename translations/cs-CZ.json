@@ -17,7 +17,8 @@
         "Redlining": "Připomínkování",
         "Share": "Nasdílet Odkaz",
         "ThemeSwitcher": "Téma",
-        "Tools": "Nástroje Mapy"
+        "Tools": "Nástroje Mapy",
+        "Bookmark": ""
       },
       "menulabel": "Mapa & Nástroje"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Bez podkladu"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Souřadnice",
@@ -77,13 +86,10 @@
       "exportformat": "",
       "featureReport": "Report prvku",
       "link": "Odkaz",
-      "noattributes": "Bez atributů",
-      "noresults": "Pro vybraný bod nejsou k dispozici žádné informace",
-      "querying": "Dotazování...",
-      "title": "Informace o prvku"
+      "noattributes": "Bez atributů"
     },
     "identifyregion": {
-      "info": "Nakreslete polygon pro identifikaci..."
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Přidat vrstvu",

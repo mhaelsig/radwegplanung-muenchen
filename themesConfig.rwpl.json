@@ -70,7 +70,7 @@
     "skipEmptyFeatureAttributes": true,
     "searchProviders": ["coordinates", "nominatim"],
     "mapCrs": "EPSG:3857",
-    "mapTips": true,
+    "mapTips": false,
     "additionalMouseCrs": ["EPSG:4326"],
     "collapseLayerGroupsBelowLevel": 1
   }],

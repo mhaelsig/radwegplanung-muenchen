@@ -1,7 +1,7 @@
 {
   "themes": {
     "items": [{
-      "url": "https://rsv.radwegplanung-muenchen.de/cgi-bin/qgis_mapserv.fcgi",
+      "url": "https://radwegplanung-muenchen.de/cgi-bin/qgis_mapserv.fcgi",
       "attribution": "munichways Gesamtnetz",
       "attributionUrl": "https://www.munichways.com",
       "format": "image/png; mode=8bit",
@@ -70,7 +70,7 @@
     "skipEmptyFeatureAttributes": true,
     "searchProviders": ["coordinates", "nominatim"],
     "mapCrs": "EPSG:3857",
-    "mapTips": true,
+    "mapTips": false,
     "additionalMouseCrs": ["EPSG:4326"],
     "collapseLayerGroupsBelowLevel": 1
   }],

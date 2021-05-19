@@ -17,11 +17,20 @@
         "Redlining": "Línea de demarcación",
         "Share": "Compartilhar enlace",
         "ThemeSwitcher": "Tema",
-        "Tools": "Ferramentas de mapa"
+        "Tools": "Ferramentas de mapa",
+        "Bookmark": ""
       }
     },
     "bgswitcher": {
       "nobg": "Sem fundo"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Coordenadas",
@@ -65,13 +74,7 @@
       "exportformat": "Formato de exportação",
       "featureReport": "Relatório de recurso",
       "link": "Link",
-      "noattributes": "Sem atributos",
-      "noresults": "Nenhuma informação disponível para o ponto selecionado",
-      "querying": "Consulta...",
-      "title": "Información de recurso"
-    },
-    "identifyregion": {
-      "info": "Desenhe um polígono em torno das características para identificar..."
+      "noattributes": "Sem atributos"
     },
     "importlayer": {
       "addlayer": "Adicionar camada",

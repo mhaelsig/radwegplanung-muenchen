@@ -17,7 +17,8 @@
         "Redlining": "Dessiner",
         "Share": "Partager",
         "ThemeSwitcher": "Thèmes",
-        "Tools": "Outils"
+        "Tools": "Outils",
+        "Bookmark": "Marque-pages"
       },
       "menulabel": "Cartes et outils"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Pas de fond"
+    },
+    "bookmark": {
+      "add": "Ajouter un marque-page",
+      "description": "Description",
+      "manage": "Gérer les marque-pages",
+      "openintab": "Ouvrir dans un nouvel onglet",
+      "remove": "Supprimer le marque-page",
+      "update": "Sauvegarder le marque-page"
     },
     "bottombar": {
       "mousepos_label": "Coordonnées",
@@ -77,13 +86,10 @@
       "exportformat": "Format d'export:",
       "featureReport": "Données de l'objet",
       "link": "Lien",
-      "noattributes": "Pas d'attribut",
-      "noresults": "Pas de résultats pour la position sélectionnée",
-      "querying": "Identification en cours...",
-      "title": "Informations sur l'objet"
+      "noattributes": "Pas d'attribut"
     },
     "identifyregion": {
-      "info": "Dessiner un polygone pour identifier les objets"
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Ajouter une couche",

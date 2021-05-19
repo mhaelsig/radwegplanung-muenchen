@@ -56,5 +56,6 @@
             ],
             "@babel/preset-react"
         ]
-    }
+    },
+    "dependencies": {}
 }

@@ -89,6 +89,9 @@ const LayerUtils = {
     insertPermalinkLayers(exploded, layers) {
         for (const layer of layers || []) {
             const insLayer = LayerUtils.explodeLayers([layer])[0];
+            if(insLayer.layer.role !== LayerRole.USERLAYER || insLayer.layer.type !== 'vector') {
+                continue;
+            }
             delete insLayer.layer.pos;
             exploded.splice(layer.pos, 0, insLayer);
         }
@@ -442,7 +445,7 @@ const LayerUtils = {
     getSublayerNames(layer) {
         return [layer.name].concat((layer.sublayers || []).reduce((list, sublayer) => {
             return list.concat([...this.getSublayerNames(sublayer)]);
-        }, []));
+        }, [])).filter(x => x);
     },
     mergeSubLayers(baselayer, addlayer) {
         addlayer = {...baselayer, sublayers: addlayer.sublayers};
@@ -475,6 +478,17 @@ const LayerUtils = {
         } else {
             if (layer[attr] === value) {
                 return layer;
+            }
+        }
+        return null;
+    },
+    searchLayer(layers, key, value, roles = [LayerRole.THEME, LayerRole.USERLAYER]) {
+        for (const layer of layers) {
+            if (roles.includes(layer.role)) {
+                const matchsublayer = LayerUtils.searchSubLayer(layer, key, value);
+                if (matchsublayer) {
+                    return {layer: layer, sublayer: matchsublayer};
+                }
             }
         }
         return null;
@@ -590,18 +604,6 @@ const LayerUtils = {
             return "";
         }
         return requestUrl + (requestUrl.indexOf('?') === -1 ? '?' : '&') + params;
-    },
-    findLayerTitle(layers, layerName, roles = [LayerRole.THEME, LayerRole.USERLAYER], fallback = null) {
-        // Search matching layer by technical name
-        for (const layer of layers) {
-            if (roles.includes(layer.role)) {
-                const matchsublayer = LayerUtils.searchSubLayer(layer, 'name', layerName);
-                if (matchsublayer) {
-                    return matchsublayer.title;
-                }
-            }
-        }
-        return fallback || layerName;
     }
 };
 

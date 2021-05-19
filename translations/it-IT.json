@@ -17,7 +17,8 @@
         "Redlining": "Strumenti di disegno",
         "Share": "Condividi",
         "ThemeSwitcher": "Temi",
-        "Tools": "Strumenti"
+        "Tools": "Strumenti",
+        "Bookmark": ""
       },
       "menulabel": "Mappa e strumenti"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Nessuno sfondo"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Coordinate",
@@ -77,13 +86,10 @@
       "exportformat": "Formato d'esportazione",
       "featureReport": "Oggetto formulario",
       "link": "Link",
-      "noattributes": "Nessun attributo",
-      "noresults": "Nessun risultato",
-      "querying": "Caricando...",
-      "title": "Titolo"
+      "noattributes": "Nessun attributo"
     },
     "identifyregion": {
-      "info": "Disegna un poligono attorno all'area da identificare"
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Aggiungi livello",

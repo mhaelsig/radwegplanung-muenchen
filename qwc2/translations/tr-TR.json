@@ -17,11 +17,20 @@
         "Redlining": "Çizim",
         "Share": "Bağlantı Paylaş",
         "ThemeSwitcher": "Tema",
-        "Tools": "Harita Araçları"
+        "Tools": "Harita Araçları",
+        "Bookmark": ""
       }
     },
     "bgswitcher": {
       "nobg": "Arkaplan Yok"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Koordinatlar",
@@ -65,13 +74,7 @@
       "exportformat": "Dışarı aktarma formatı:",
       "featureReport": "Obje raporu",
       "link": "Bağlantı",
-      "noattributes": "Öznitelik yok",
-      "noresults": "Seçilen nokta için geçerli bilgi yok",
-      "querying": "Sorgulanıyor...",
-      "title": "Obje Bilgisi"
-    },
-    "identifyregion": {
-      "info": "Bilgi alınacak alanı poligon çizerek belirleyiniz..."
+      "noattributes": "Öznitelik yok"
     },
     "importlayer": {
       "addlayer": "Katman ekle",

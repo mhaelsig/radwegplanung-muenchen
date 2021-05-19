@@ -13,15 +13,13 @@ const fs = require('fs');
 const path = require('path');
 const objectPath = require('object-path');
 const isEmpty = require('lodash.isempty');
-let fqdn = null;
-try {
-    fqdn = require('node-fqdn');
-} catch (e) {
-    /* Pass */
-}
 const uuid = require('uuid');
+const os = require('os');
+const dns = require('dns');
 
-const hostFqdn = fqdn ? "http://" + String(fqdn()) : "";
+const { lookup, lookupService } = dns.promises;
+
+let hostFqdn = "";
 const themesConfigPath = process.env.QWC2_THEMES_CONFIG || "themesConfig.json";
 
 const usedThemeIds = [];
@@ -117,6 +115,8 @@ function getThumbnail(configItem, resultItem, layers, crs, extent, resolve, prox
 function getEditConfig(editConfig) {
     if (isEmpty(editConfig)) {
         return null;
+    } else if (typeof editConfig === "object") {
+        return editConfig;
     } else if (path.isAbsolute(editConfig) && fs.existsSync(editConfig)) {
         return JSON.parse(fs.readFileSync(path, "utf8"));
     } else if (fs.existsSync(process.cwd() + '/' + editConfig)) {
@@ -579,6 +579,16 @@ function genThemes(themesConfig) {
     return result;
 }
 
-console.log("Reading " + themesConfigPath);
+lookup(os.hostname(), { hints: dns.ADDRCONFIG })
+  .then((result) => lookupService(result.address, 0))
+  .then((result) => {
+    hostFqdn = "http://" + result.hostname;
+    console.log("Reading " + themesConfigPath);
 
-genThemes(themesConfigPath);
+    genThemes(themesConfigPath);
+  })
+  .catch((error) => {
+    process.nextTick(() => {
+      throw error;
+    });
+  });

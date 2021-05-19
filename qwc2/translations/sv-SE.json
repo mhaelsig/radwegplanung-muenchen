@@ -17,11 +17,20 @@
         "Redlining": "Rita",
         "Share": "Dela länk",
         "ThemeSwitcher": "Tema",
-        "Tools": "Kartverktyg"
+        "Tools": "Kartverktyg",
+        "Bookmark": ""
       }
     },
     "bgswitcher": {
       "nobg": "Ingen bakgrund"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Koordinater",
@@ -65,13 +74,7 @@
       "exportformat": "",
       "featureReport": "Objektrapport",
       "link": "Länk",
-      "noattributes": "Inga attribut",
-      "noresults": "Ingen information för vald punkt",
-      "querying": "Frågar...",
-      "title": "Objektinformation"
-    },
-    "identifyregion": {
-      "info": "Rita en polygon runt objektn som ska identifieras"
+      "noattributes": "Inga attribut"
     },
     "importlayer": {
       "addlayer": "Lägg till lager",

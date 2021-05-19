@@ -17,7 +17,8 @@
         "Redlining": "Evidențiere",
         "Share": "Trimite Link",
         "ThemeSwitcher": "Hărți tematice",
-        "Tools": "Unelte hartă"
+        "Tools": "Unelte hartă",
+        "Bookmark": ""
       },
       "menulabel": "Hărți & Unelte"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Fără fundal"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Coordonate",
@@ -77,13 +86,10 @@
       "exportformat": "",
       "featureReport": "Raport entitate",
       "link": "Link",
-      "noattributes": "Fără atribute",
-      "noresults": "Nu există informații în punctul cerut",
-      "querying": "Interogare...",
-      "title": "Info Entități"
+      "noattributes": "Fără atribute"
     },
     "identifyregion": {
-      "info": "Încadrați într-un poligon entitățile de identificat..."
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Adaugă strat",
