@@ -1,0 +1,12 @@
+node_modules/
+<<<<<<< HEAD
+dist/
+prod/
+icons/build
+npm-debug.log
+themes.json
+assets/img/genmapthumbs/*
+yarn-error.log
+=======
+npm-debug.log
+>>>>>>> ade338e9dff297468fa5b356bedb79f47cea66d8

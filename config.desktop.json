@@ -1,0 +1,238 @@
+"desktop": [
+        {
+          "name": "Map",
+          "cfg": {
+            "mapOptions": {
+              "zoomDuration": 250,
+              "antialiasing": true,
+              "enableRotation": true
+            },
+            "toolsOptions": {
+              "OverviewSupport": {
+                "tipLabel": "Overview"
+              },
+              "LocateSupport": {
+                "keepCurrentZoomLevel": true,
+                "stopFollowingOnDrag": true,
+                "startupMode": "DISABLED"
+              },
+              "ScaleBarSupport": {
+                "units": "metric"
+              }
+            },
+            "swipeGeometryTypeBlacklist": ["Point"],
+            "swipeLayerNameBlacklist": ["*_noswipe"]
+          }
+        },
+        {
+          "name": "TaskButton",
+          "cfg": {
+            "position": 4,
+            "task": "LayerTree",
+            "icon": "list-alt"
+          }
+        },
+        {
+          "name": "HomeButton"
+          ,
+          "cfg": {
+            "position": 3
+          }
+        },
+        {
+          "name": "ZoomIn",
+          "cfg": {
+            "position": 2
+          }
+        },
+        {
+          "name": "ZoomOut",
+          "cfg": {
+            "position": 1
+          }
+        },
+        {
+          "name": "BackgroundSwitcher",
+          "cfg": {
+            "position": 0
+          }
+        },
+        {
+            "name": "TopBar",
+            "cfg": {
+              "menuItems": [
+                {"key": "LayerTree", "icon": "layers"},
+                {"key": "Share", "icon": "share"},
+                {"key": "Bookmark", "icon": "bookmark"},
+                {"key": "Tools", "icon": "tools", "subitems": [
+                  {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+                  {"key": "TimeManager", "icon": "clock"},
+                  {"key": "Measure", "icon": "measure"},
+                  {"key": "Redlining", "icon": "draw"},
+                  {"key": "Editing", "icon": "editing"},
+                  {"key": "AttributeTable", "icon": "editing"},
+                  {"key": "DxfExport", "icon": "dxfexport"},
+                  {"key": "RasterExport", "icon": "rasterexport"}
+                ]},
+                {"key": "Print", "icon": "print"},
+                {"key": "Help", "icon": "info"},
+                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
+              ],
+              "toolbarItems": [
+                {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
+                {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
+                {"key": "Print", "icon": "print"},
+                {"key": "Identify", "icon": "identify_region", "mode": "Region"}
+              ],
+              "searchOptions": {
+                "minScaleDenom": 1000,
+                "showProviderSelection": true,
+                "providerSelectionAllowAll": true,
+                "zoomToLayers": false,
+                "showProvidersInPlaceholder": false
+              },
+              "appMenuClearsTask": true,
+              "appMenuVisibleOnStartup": false,
+              "logoUrl": "/"
+            }
+        },
+        {
+          "name": "BottomBar",
+          "cfg": {
+            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
+            "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
+          }
+        },
+        {
+          "name": "Measure",
+          "cfg": {
+            "showMeasureModeSwitcher": true
+          }
+        },
+        {
+          "name": "ThemeSwitcher",
+          "cfg": {
+            "collapsibleGroups": true
+          }
+        },
+        {
+          "name": "LayerTree",
+          "cfg": {
+            "showLegendIcons": true,
+            "showRootEntry": false,
+            "showQueryableIcon": true,
+            "allowMapTips": true,
+            "allowCompare": true,
+            "allowImport": true,
+            "groupTogglesSublayers": false,
+            "grayUnchecked": false,
+            "layerInfoWindowSize": {"width": 480, "height": 400},
+            "bboxDependentLegend": true,
+            "scaleDependentLegend": "theme",
+            "showToggleAllLayersCheckbox": false
+          },
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "Identify",
+          "cfg": {
+            "params": {
+              "FI_POINT_TOLERANCE": 16,
+              "FI_LINE_TOLERANCE": 8,
+              "FI_POLYGON_TOLERANCE": 4,
+              "feature_count": 20,
+              "region_feature_count": 100
+            },
+            "enableExport": true,
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false,
+            "featureInfoReturnsLayerName": true,
+            "initialWidth": 480,
+            "initialHeight": 550
+          }
+        },
+        {
+          "name": "MapTip"
+        },
+        {
+          "name": "Share",
+          "cfg": {
+            "showSocials": true,
+            "showLink": true,
+            "showQRCode": true
+          },
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "Print",
+          "cfg": {
+            "inlinePrintOutput": false,
+            "gridInitiallyEnabled": false
+          }
+        },
+        {
+          "name": "Help",
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "MapCopyright",
+          "cfg": {
+            "showThemeCopyrightOnly": true
+             }
+        },
+        {
+          "name": "DxfExport"
+        },
+        {
+          "name": "RasterExport",
+          "cfg": {
+            "dpis": [96, 300]
+          }
+        },
+        {
+          "name": "Redlining"
+        },
+        {
+          "name": "Editing"
+        },
+        {
+          "name": "MapCompare"
+        },
+        {
+          "name": "HeightProfile",
+          "cfg": {
+            "heighProfilePrecision": 0
+          }
+        },
+        {
+          "name": "MapInfoTooltip",
+          "cfg": {
+            "elevationPrecision": 0,
+            "includeWGS84": true
+          }
+        },
+        {
+          "name": "StartupMarker",
+          "cfg": {
+            "removeMode": "onclickonmarker"
+          }
+        },
+      {
+          "name": "API"
+      },
+      {
+          "name": "ScratchDrawing"
+      },
+
+      {
+          "name": "Bookmark"
+      },
+      {
+          "name": "AttributeTable"
+      },
+      {
+          "name": "TimeManager"
+      }
+      ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "themes": {
+    "items": [{
+      "url": "https://bgl.radwegplanung-muenchen.de/cgi-bin/qgis_mapserv.fcgi",
+      "attribution": "Luftbild München Proxy",
+      "attributionUrl": "https://www.munichways.com",
+      "format": "image/png; mode=8bit",
+      "default": true,
+      "scales": [200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
+      "printScales": [200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
+      "printResolutions": [150, 300, 600],
+      "backgroundLayers": [],
+    "skipEmptyFeatureAttributes": true,
+    "searchProviders": ["coordinates", "nominatim"],
+    "mapCrs": "EPSG:3857",
+    "additionalMouseCrs": ["EPSG:4326"],
+    "collapseLayerGroupsBelowLevel": 1
+  }],
+  "backgroundLayers": []
+},
+  "defaultScales": [4000000, 2000000, 1000000, 400000, 200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
+  "defaultPrintGrid": [{
+    "s": 10000,
+    "x": 1000,
+    "y": 1000
+  }, {
+    "s": 1000,
+    "x": 100,
+    "y": 100
+  }, {
+    "s": 100,
+    "x": 10,
+    "y": 10
+  }],
+  "defaultWMSVersion": "1.3.0"
+}
