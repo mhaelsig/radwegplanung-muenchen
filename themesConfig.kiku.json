@@ -2,8 +2,8 @@
   "themes": {
     "items": [{
       "url": "https://kiku.radwegplanung-muenchen.de/cgi-bin/qgis_mapserv.fcgi",
-      "attribution": "kiku",
-      "attributionUrl": "https://www.munichways.com",
+      "attribution": "Kinder-Kultur-Radweg München",
+      "attributionUrl": "https://www.kulturundspielraum.de/",
       "format": "image/png; mode=8bit",
       "default": true,
       "scales": [200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
@@ -64,6 +64,12 @@
       },
       {
         "name":"OSM2World"
+      },
+      {
+        "name":"basemap_grau"
+      },
+      {
+        "name":"basemap_farbe"
       }
 
     ],
@@ -83,6 +89,36 @@
       "thumbnail": "mapnik.jpg",
       "attribution": "OpenStreetMap contributors",
       "attributionUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "type":"wms",
+      "name":"basemap_grau",
+      "title":"basemap_grau",
+      "group":"basemap",
+      "url": "https://sgx.geodatenzentrum.de/wms_basemapde",
+      "srs": "EPSG:3857",
+      "params": {
+        "LAYERS": "de_basemapde_web_raster_grau",
+        "VERSION": "1.3.0"
+      },
+      "thumbnail": "BingAerial.png",
+      "attribution": "basemap.de",
+      "attributionUrl": "https://basemap.de"
+    },
+    {
+      "type":"wms",
+      "name":"basemap_farbe",
+      "title":"basemap_farbig",
+      "group":"basemap",
+      "url": "https://sgx.geodatenzentrum.de/wms_basemapde",
+      "srs": "EPSG:3857",
+      "params": {
+        "LAYERS": "de_basemapde_web_raster_farbe",
+        "VERSION": "1.3.0"
+      },
+      "thumbnail": "BingAerial.png",
+      "attribution": "basemap.de",
+      "attributionUrl": "https://basemap.de"
     },
     {
       "name":"mhcGoogleRoadmap",

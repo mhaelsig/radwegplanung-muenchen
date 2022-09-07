@@ -36,6 +36,7 @@
       "existinglayer": "Die Ebene existiert bereits in der Karte",
       "invisiblelayer": "Das Resultat liegt auf einer Ebene, die ausgeschaltet ist.",
       "more": "Mehr...",
+      "noresults": "Keine Ergebnisse",
       "providerselection": "Suchdienste",
       "search": "Suchen",
       "searchall": "Ort suchen oder Karte hinzufügen...",
@@ -100,24 +101,29 @@
       "add": "Hinzufügen",
       "attrtable": "Tabelle",
       "canceldelete": "Abbrechen",
-      "capturedpicture": "Aufgenommenes Bild",
       "clearpicture": "Zurücksetzen",
       "commit": "Speichern",
+      "commitfailed": "Fehler beim Speichern",
+      "create": "Erstellen",
       "delete": "Löschen",
       "discard": "Abbrechen",
       "draw": "Zeichnen",
       "feature": "Objekt",
       "geomreadonly": "Die Geometrie enthält Z-Werte ungleich Null und kann daher nicht veränderbar.",
+      "invalidform": "Formular umgültig",
       "maximize": "Maximieren",
       "minimize": "Minimieren",
       "nocompatpick": "Keine kompatible Geometrie",
       "noeditablelayers": "Keine editierbare Ebenen.",
+      "paint": "Bearb.",
       "pick": "Auswählen",
       "pickdrawfeature": "Existierende Geometrie kopieren",
       "reallydelete": "Löschen",
       "relationcommitfailed": "Einige Relationen konnten nicht gespeichert werden, siehe Tooltips der Icons für mehr Details.",
       "select": "Auswählen",
-      "takepicture": "Bild schiessen"
+      "selectedpicture": "Ausgewähltes Bild",
+      "takepicture": "Bild schiessen",
+      "unsavedchanged": "Es gibt nicht gespeicherte Änderungen. Soll die Seite trotzdem verlassen werden?"
     },
     "featureform": {
       "feature": "Objekt",
@@ -144,6 +150,10 @@
       "noresults": "Keine Resultate an der ausgewählten Position",
       "querying": "Objekte werden abgefragt...",
       "title": "Objektinformationen"
+    },
+    "imageeditor": {
+      "confirmclose": "Schließen, ohne zu speichern?",
+      "title": "Bildbearbeitung"
     },
     "importlayer": {
       "addfailed": "Die Ebene konnte nicht hinzugefügt werden",
@@ -186,6 +196,12 @@
       "transparency": "Transparenz",
       "visiblefilter": "Unsichtbare Ebenen filtern",
       "zoomtolayer": "Auf den Layer zoomen"
+    },
+    "linkfeatureform": {
+      "cancel": "Abbrechen",
+      "close": "Schliessen",
+      "drawhint": "Objekt auf der Karte zeichnen...",
+      "pickhint": "Objekt auf der Karte auswählen..."
     },
     "locate": {
       "feetUnit": "Fuss",
@@ -230,6 +246,9 @@
       "scale": "Massstab",
       "submit": "PDF erzeugen",
       "wait": "Bitte warten..."
+    },
+    "qtdesignerform": {
+      "loading": "Formular wird geladen..."
     },
     "rasterexport": {
       "format": "Format:",
@@ -289,12 +308,13 @@
       "QRCodeLinkTitle": "QR Code (Smartphone)",
       "directLinkTitle": "Über einen direkten Link",
       "refresh": "Permalink generieren",
+      "shareTitle": "QWC2",
       "showpin": "Pin anzeigen",
       "socialIntro": "In den sozialen Medien"
     },
     "snapping": {
       "loading": "Einrastrungsgeometrien werden geladen...",
-      "snappingenabled": "Einrasten aktiviert"
+      "snappingenabled": "Einrasten"
     },
     "themelayerslist": {
       "addlayer": "Layer hinzufügen",
@@ -354,8 +374,10 @@
       "close": "Schliessen",
       "dock": "Andocken",
       "maximize": "Maximieren",
+      "minimize": "Minimieren",
       "undock": "Abdocken",
-      "unmaximize": "Wiederherstellen"
+      "unmaximize": "Wiederherstellen",
+      "unminimize": "Vergrössern"
     }
   }
 }

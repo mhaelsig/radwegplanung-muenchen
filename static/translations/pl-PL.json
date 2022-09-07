@@ -36,6 +36,7 @@
       "existinglayer": "",
       "invisiblelayer": "Wynik znajduje się na warstwie, która nie jest widoczna.",
       "more": "Więcej...",
+      "noresults": "",
       "providerselection": "",
       "search": "Szukaj",
       "searchall": "Szukaj miejsc lub dodaj mapy...",
@@ -100,24 +101,29 @@
       "add": "",
       "attrtable": "",
       "canceldelete": "Nie usuwaj",
-      "capturedpicture": "",
       "clearpicture": "",
       "commit": "Zatwierdź",
+      "commitfailed": "",
+      "create": "",
       "delete": "Usuń",
       "discard": "Odrzuć",
       "draw": "Rysuj",
       "feature": "",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maksymalizuj",
       "minimize": "Minimalizuj",
       "nocompatpick": "",
       "noeditablelayers": "Brak edytowalnych warstw.",
+      "paint": "",
       "pick": "Wybierz",
       "pickdrawfeature": "",
       "reallydelete": "Usuń",
       "relationcommitfailed": "",
       "select": "Zaznacz",
-      "takepicture": ""
+      "selectedpicture": "",
+      "takepicture": "",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",
@@ -144,6 +150,10 @@
       "noresults": "Brak dostępnych danych dla wybranego punktu",
       "querying": "Przetwarzam zapytanie...",
       "title": "Feature Info"
+    },
+    "imageeditor": {
+      "confirmclose": "",
+      "title": ""
     },
     "importlayer": {
       "addfailed": "",
@@ -186,6 +196,12 @@
       "transparency": "",
       "visiblefilter": "",
       "zoomtolayer": ""
+    },
+    "linkfeatureform": {
+      "cancel": "",
+      "close": "",
+      "drawhint": "",
+      "pickhint": ""
     },
     "locate": {
       "feetUnit": "stopy",
@@ -230,6 +246,9 @@
       "scale": "Skala:",
       "submit": "Drukuj",
       "wait": "Proszę czekać..."
+    },
+    "qtdesignerform": {
+      "loading": ""
     },
     "rasterexport": {
       "format": "Format:",
@@ -289,6 +308,7 @@
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Poprzez link bezpośredni",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "W twoich ulubionych mediach społecznościowych"
     },
@@ -354,8 +374,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

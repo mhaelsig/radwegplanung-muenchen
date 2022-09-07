@@ -36,6 +36,7 @@
       "existinglayer": "",
       "invisiblelayer": "",
       "more": "Mer",
+      "noresults": "",
       "providerselection": "",
       "search": "",
       "searchall": "",
@@ -100,24 +101,29 @@
       "add": "",
       "attrtable": "",
       "canceldelete": "Radera inte",
-      "capturedpicture": "",
       "clearpicture": "",
       "commit": "Skicka",
+      "commitfailed": "",
+      "create": "",
       "delete": "Radera",
       "discard": "Förkasta",
       "draw": "Rita",
       "feature": "Objekt",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximera",
       "minimize": "Minimera",
       "nocompatpick": "",
       "noeditablelayers": "Inga redigerbara lager",
+      "paint": "",
       "pick": "Välj",
       "pickdrawfeature": "",
       "reallydelete": "Verkligen radera",
       "relationcommitfailed": "",
       "select": "Välj",
-      "takepicture": ""
+      "selectedpicture": "",
+      "takepicture": "",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",
@@ -144,6 +150,10 @@
       "noresults": "Ingen information för vald punkt",
       "querying": "Frågar...",
       "title": "Objektinformation"
+    },
+    "imageeditor": {
+      "confirmclose": "",
+      "title": ""
     },
     "importlayer": {
       "addfailed": "",
@@ -186,6 +196,12 @@
       "transparency": "",
       "visiblefilter": "",
       "zoomtolayer": ""
+    },
+    "linkfeatureform": {
+      "cancel": "",
+      "close": "",
+      "drawhint": "",
+      "pickhint": ""
     },
     "locate": {
       "feetUnit": "fot",
@@ -230,6 +246,9 @@
       "scale": "Skala:",
       "submit": "Skriv ut",
       "wait": "Vänta..."
+    },
+    "qtdesignerform": {
+      "loading": ""
     },
     "rasterexport": {
       "format": "Format:",
@@ -289,6 +308,7 @@
       "QRCodeLinkTitle": "QR kod",
       "directLinkTitle": "Via en direktlänk",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "I ditt favoritnätverk"
     },
@@ -354,8 +374,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

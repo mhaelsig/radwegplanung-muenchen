@@ -36,6 +36,7 @@
       "existinglayer": "",
       "invisiblelayer": "",
       "more": "Больше...",
+      "noresults": "",
       "providerselection": "",
       "search": "Поиск",
       "searchall": "",
@@ -100,24 +101,29 @@
       "add": "",
       "attrtable": "",
       "canceldelete": "Не удалять",
-      "capturedpicture": "",
       "clearpicture": "",
       "commit": "Подтвердить изменения",
+      "commitfailed": "",
+      "create": "",
       "delete": "Удалить",
       "discard": "Отменить изменения",
       "draw": "Нарисовать",
       "feature": "",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Развернуть",
       "minimize": "Свернуть",
       "nocompatpick": "",
       "noeditablelayers": "Отсутствуют доступные для редактирования слои.",
+      "paint": "",
       "pick": "Выбрать",
       "pickdrawfeature": "",
       "reallydelete": "Удалить",
       "relationcommitfailed": "",
       "select": "Выберите...",
-      "takepicture": ""
+      "selectedpicture": "",
+      "takepicture": "",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",
@@ -144,6 +150,10 @@
       "noresults": "Для выбранной точки нет доступной информации",
       "querying": "Выполняется запрос...",
       "title": "Информация об объекте"
+    },
+    "imageeditor": {
+      "confirmclose": "",
+      "title": ""
     },
     "importlayer": {
       "addfailed": "",
@@ -186,6 +196,12 @@
       "transparency": "",
       "visiblefilter": "",
       "zoomtolayer": ""
+    },
+    "linkfeatureform": {
+      "cancel": "",
+      "close": "",
+      "drawhint": "",
+      "pickhint": ""
     },
     "locate": {
       "feetUnit": "футов",
@@ -230,6 +246,9 @@
       "scale": "Масштаб:",
       "submit": "Печать",
       "wait": ""
+    },
+    "qtdesignerform": {
+      "loading": ""
     },
     "rasterexport": {
       "format": "Формат бумаги:",
@@ -289,6 +308,7 @@
       "QRCodeLinkTitle": "QR-код",
       "directLinkTitle": "По прямой ссылке",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "В Вашей любимой соцсети"
     },
@@ -354,8 +374,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

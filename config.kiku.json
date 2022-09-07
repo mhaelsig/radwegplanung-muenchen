@@ -73,7 +73,7 @@
               "LocateSupport": {
                 "keepCurrentZoomLevel": true,
                 "stopFollowingOnDrag": true,
-                "startupMode": "DISABLED"
+                "startupMode": "ENABLED"
               },
               "ScaleBarSupport": {
                 "units": "metric"
@@ -86,7 +86,7 @@
         {
           "name": "TaskButton",
           "cfg": {
-            "position": 4,
+            "position": 3,
             "task": "LayerTree",
             "icon": "list-alt"
           }
@@ -95,17 +95,11 @@
           "name": "HomeButton"
           ,
           "cfg": {
-            "position": 3
-          }
-        },
-        {
-          "name": "ZoomIn",
-          "cfg": {
             "position": 2
           }
         },
         {
-          "name": "ZoomOut",
+          "name": "LocateButton",
           "cfg": {
             "position": 1
           }
@@ -135,7 +129,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
+                {"key": "ExternalLink", "icon": "link", "url": "https://www.kinder-kultur-radweg.de/wp-content/uploads/2022/07/Radwegfuehrer_compressed.pdf"}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
@@ -158,7 +152,9 @@
         {
           "name": "BottomBar",
           "cfg": {
-            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
+            "displayCoordinates": false,
+            "displayScales": true,
+            "viewertitleUrl": "https://kiku.radwegplanung-muenchen.de/doc/Kinder-Kultur-Radweg.pdf",
             "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
           }
         },
@@ -323,7 +319,7 @@
         {
           "name": "TaskButton",
           "cfg": {
-            "position": 4,
+            "position": 3,
             "task": "LayerTree",
             "icon": "list-alt"
           }
@@ -332,17 +328,11 @@
           "name": "HomeButton"
           ,
           "cfg": {
-            "position": 3
-          }
-        },
-        {
-          "name": "ZoomIn",
-          "cfg": {
             "position": 2
           }
         },
         {
-          "name": "ZoomOut",
+          "name": "LocateButton",
           "cfg": {
             "position": 1
           }
@@ -372,7 +362,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
+                {"key": "ExternalLink", "icon": "link", "url": "https://www.kinder-kultur-radweg.de/wp-content/uploads/2022/07/Radwegfuehrer_compressed.pdf"}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
@@ -395,7 +385,7 @@
         {
           "name": "BottomBar",
           "cfg": {
-            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
+            "viewertitleUrl": "https://kiku.radwegplanung-muenchen.de/doc/Kinder-Kultur-Radweg.pdf",
             "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
           }
         },

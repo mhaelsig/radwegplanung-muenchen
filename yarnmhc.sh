@@ -1,6 +1,6 @@
 #!/bin/bash
-# Aufruf: yarnmhc.sh rwpl|oa start|prod
-# läuft im Verzeichnis /home/mhaelsig/QGIS/QGIS_Server/qwc2-app-mhc2/
+# Aufruf: yarnmhc.sh rwpl|kiku|oa|bgl start|prod 1blu|strato
+# läuft im Verzeichnis /home/mhaelsig/QGIS/QGIS_Server/qwc2-app-mhc*/
 
 # Holen der Umgebungsvariablen aus .env
 
@@ -13,6 +13,13 @@ case "$1" in
                     if [ "$1" == "kiku" ]
                      then
                       cp /home/mhaelsig/QGIS/Kiku/radweg/geotagged/resized*.jpg static/assets/img/kiku/
+                      cp static/assets/img/kiku.svg static/assets/img/logo.svg
+                      cp static/translations/de-DE_kiku.json static/translations/de-DE.json # in bottombar spezifisch
+                      cp js/Help_kiku.jsx js/Help.jsx                                       # Hilfe spezifisch
+                     else
+                      cp static/assets/img/made_with_QGIS.svg static/assets/img/logo.svg
+                      cp static/translations/de-DE_rwpl.json static/translations/de-DE.json # in bottombar spezifisch
+                      cp js/Help_rwpl.jsx js/Help.jsx                                       # Hilfe spezifisch
                     fi
 
                     yarn "$2"
@@ -21,7 +28,6 @@ case "$1" in
                      then
 
                 # nur bei 'rwpl' die Dokumentation neu erzeugen
-
                       if [ "$1" == "rwpl" ]
                        then
                         cd doc
@@ -33,11 +39,13 @@ case "$1" in
 
                       echo "FTP von prod nach Host ins User-Verzeichnis QGIS/prod-"$1
 
-                      if ["$1" != "kiku"]
+                # wenn nicht kiku, evtl. vorhandene Bilder von kiku löschen
+                      if [ "$1" != "kiku" ]
                        then rm static/assets/img/kiku/*
                       fi
 
                       lftp -e "mirror -R -c -e --verbose=1 prod QGIS/html/prod-$1;exit" -u $FTP_USER,$FTP_PWD 178.254.45.130:21
+
                      fi
            ;;
   *) echo "unbekannter Parameter"

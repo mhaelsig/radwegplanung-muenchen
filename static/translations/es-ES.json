@@ -4,13 +4,13 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
-        "AttributeTable": "",
+        "AttributeTable": "Tabla de Atributos",
         "DxfExport": "Exportar DXF",
         "Editing": "Editando",
-        "FeatureForm": "",
+        "FeatureForm": "Formulario de Elemento",
         "Help": "Ayuda",
         "IdentifyRegion": "Identificar zona",
-        "LayerCatalog": "",
+        "LayerCatalog": "Capa catálogo",
         "LayerTree": "Capas & Leyenda",
         "Login": "Inicio de sesión",
         "Logout": "Cierre de sesión",
@@ -23,10 +23,10 @@
         "Share": "Compartir enlace",
         "ThemeSwitcher": "Tema",
         "Tools": "Herramientas de Mapa",
-        "Bookmark": "",
-        "TimeManager": ""
+        "Bookmark": "Marcadores",
+        "TimeManager": "Gestor de Tiempo"
       },
-      "filter": "",
+      "filter": "Menú de filtros...",
       "menulabel": "Mapa & Herramientas"
     },
     "search": {
@@ -36,50 +36,51 @@
       "existinglayer": "La capa ya existe en el mapa",
       "invisiblelayer": "El resultado se encuentra en una capa no visible",
       "more": "Más...",
-      "providerselection": "",
+      "noresults": "",
+      "providerselection": "Proveedores de búsqueda",
       "search": "Buscar",
       "searchall": "Buscar lugares o agregar mapas...",
-      "searchinprogress": "",
-      "searchreset": "",
+      "searchinprogress": "Buscando...",
+      "searchreset": "Reiniciar búsqueda",
       "themes": "Temas"
     },
     "attribtable": {
-      "addfeature": "",
-      "commit": "",
-      "delete": "",
-      "deletefailed": "",
-      "deletefeatures": "",
-      "deleting": "",
-      "discard": "",
-      "formeditmode": "",
-      "geomnoadd": "",
-      "layer": "",
-      "loadfailed": "",
-      "loading": "",
-      "nodelete": "",
-      "nogeomnoform": "",
-      "pleasereload": "",
-      "reload": "",
-      "selectlayer": "",
-      "title": "",
-      "zoomtoselection": ""
+      "addfeature": "Añadir elemento",
+      "commit": "Commit de la fila modificada",
+      "delete": "Eliminar",
+      "deletefailed": "Uno o más elementos no han podido eliminarse",
+      "deletefeatures": "Eliminar elementos seleccionados",
+      "deleting": "Eliminando elementos...",
+      "discard": "Descartar fila modificada",
+      "formeditmode": "Abrir el formulario de edición del elemento seleccionado",
+      "geomnoadd": "Por favor use el formulario de edición para añadir elementos a esta capa",
+      "layer": "Capa",
+      "loadfailed": "No se han podido cargar los datos del elemento",
+      "loading": "Cargando...",
+      "nodelete": "No eliminar",
+      "nogeomnoform": "El formulario de edición no está disponible para capas sin geometría",
+      "pleasereload": "Presione 'Recargar' para cargar la tabla de atributos",
+      "reload": "Recargar",
+      "selectlayer": "Seleccionar capa",
+      "title": "Tabla de Atributos",
+      "zoomtoselection": "Hacer zoom a elementos seleccionado"
     },
     "bgswitcher": {
       "nobg": "Sin fondo"
     },
     "bookmark": {
-      "add": "",
-      "addfailed": "",
-      "description": "",
-      "lastUpdate": "",
-      "manage": "",
-      "notloggedin": "",
-      "open": "",
-      "openTab": "",
-      "remove": "",
-      "removefailed": "",
-      "savefailed": "",
-      "update": ""
+      "add": "Añadir",
+      "addfailed": "Error al crear",
+      "description": "Descripción",
+      "lastUpdate": "Último guardado",
+      "manage": "Administrar",
+      "notloggedin": "Se necesita tener sesión iniciada para guardar marcadores",
+      "open": "Abrir en la pestaña actual",
+      "openTab": "Abrir en pestaña",
+      "remove": "Eliminar",
+      "removefailed": "Error al eliminar el marcador",
+      "savefailed": "Error al actualizar el marcador",
+      "update": "Actualizar marcador"
     },
     "bottombar": {
       "mousepos_label": "Coordenadas",
@@ -92,38 +93,43 @@
       "copied": "Copiado"
     },
     "dxfexport": {
-      "layers": "",
+      "layers": "Capas",
       "selectinfo": "Arrastre un rectángulo alrededor de la zona para exportar...",
       "symbologyscale": "Escala de la simbología:"
     },
     "editing": {
-      "add": "",
-      "attrtable": "",
+      "add": "Añadir",
+      "attrtable": "Tabla",
       "canceldelete": "No borrar",
-      "capturedpicture": "",
-      "clearpicture": "",
+      "clearpicture": "Limpiar",
       "commit": "Confirmar",
+      "commitfailed": "",
+      "create": "Crear",
       "delete": "Borrar",
       "discard": "Descartar",
       "draw": "Trazar",
       "feature": "Elemento",
-      "geomreadonly": "",
+      "geomreadonly": "La geometría contiene valores Z diferentes de cero por lo que es sólo lectura",
+      "invalidform": "Formulario inválido",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
-      "nocompatpick": "",
+      "nocompatpick": "Ninguna geometría compatible encontrada",
       "noeditablelayers": "Sin capas a modificar.",
+      "paint": "Modificar",
       "pick": "Elegir",
-      "pickdrawfeature": "",
+      "pickdrawfeature": "Clonar geometría existente",
       "reallydelete": "Borrar",
-      "relationcommitfailed": "",
+      "relationcommitfailed": "Algunos valores de las relaciones no han podido guardarse, verifique los tooltips de los iconos para más detalles",
       "select": "Seleccionar",
-      "takepicture": ""
+      "selectedpicture": "Imagen seleccionada",
+      "takepicture": "Tomar fotografía",
+      "unsavedchanged": "Hay cambios sin guardar. Quieres salir de la página sin guardar?"
     },
     "featureform": {
-      "feature": "",
-      "noresults": "",
-      "querying": "",
-      "title": ""
+      "feature": "Elemento",
+      "noresults": "Sin resultados",
+      "querying": "Consultando...",
+      "title": "Formulario de elemento"
     },
     "fileselector": {
       "placeholder": "Seleccionar archivo..."
@@ -131,7 +137,7 @@
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distancia",
-      "export": "",
+      "export": "Exportar perfil",
       "height": "Altura",
       "loading": "Cálculo del perfil de altura..."
     },
@@ -145,8 +151,12 @@
       "querying": "Consultando...",
       "title": "Información del elemento"
     },
+    "imageeditor": {
+      "confirmclose": "Cerrar sin guardar?",
+      "title": "Editor de imágenes"
+    },
     "importlayer": {
-      "addfailed": "",
+      "addfailed": "Error al añadir capa",
       "addlayer": "Agregar capa",
       "connect": "Conectar",
       "filter": "Filtrar...",
@@ -162,7 +172,7 @@
       "clickhelpPolygon": "Trace un polígono alrededor de los elementos para identificarlos..."
     },
     "layercatalog": {
-      "windowtitle": ""
+      "windowtitle": "Catálogo de capas"
     },
     "layerinfo": {
       "abstract": "Resumen",
@@ -187,6 +197,12 @@
       "visiblefilter": "Filtrar capas no visibles",
       "zoomtolayer": "Zoom a la capa"
     },
+    "linkfeatureform": {
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "drawhint": "Dibujar elemento en el mapa...",
+      "pickhint": "Elegir elemento en el mapa..."
+    },
     "locate": {
       "feetUnit": "pies",
       "metersUnit": "metros",
@@ -201,7 +217,7 @@
     },
     "map": {
       "loading": "Cargando...",
-      "resetrotation": ""
+      "resetrotation": "Reiniciar rotación"
     },
     "mapinfotooltip": {
       "elevation": "Elevación",
@@ -214,12 +230,12 @@
       "pointLabel": "Posición"
     },
     "navbar": {
-      "perpage": ""
+      "perpage": "por página"
     },
     "print": {
       "grid": "Grilla:",
       "layout": "Diseño:",
-      "legend": "",
+      "legend": "Leyenda",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
       "nolayouts": "El tema seleccionado no admite su impresión",
@@ -230,6 +246,9 @@
       "scale": "Escala:",
       "submit": "Imprimir",
       "wait": "Por favor espere..."
+    },
+    "qtdesignerform": {
+      "loading": "Cargando formulario..."
     },
     "rasterexport": {
       "format": "Formato:",
@@ -289,12 +308,13 @@
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Vía un vínculo directo",
       "refresh": "Generar un enlace permanente",
+      "shareTitle": "QWC2",
       "showpin": "Mostrar pin",
       "socialIntro": "En tu red social favorita"
     },
     "snapping": {
-      "loading": "",
-      "snappingenabled": ""
+      "loading": "Cargando geometrías de snapping...",
+      "snappingenabled": "Snapping"
     },
     "themelayerslist": {
       "addlayer": "Agregar capa",
@@ -304,7 +324,7 @@
     "themeswitcher": {
       "addlayerstotheme": "Agregar capas al mapa actual",
       "addtotheme": "Agregar al actual tema",
-      "confirmswitch": "",
+      "confirmswitch": "Las capas sin tema se perderán al cambiar de tema. Continuar?",
       "filter": "Filtrar...",
       "match": {
         "abstract": "Resumen",
@@ -315,34 +335,34 @@
       "restrictedthemeinfo": "Ud. no tiene permitido ver el tema o no está conectado"
     },
     "timemanager": {
-      "animationinterval": "",
-      "markers": "",
-      "notemporaldata": "",
-      "play": "",
-      "playrev": "",
-      "rewind": "",
-      "stepback": "",
-      "stepfwd": "",
-      "stepsize": "",
-      "stop": "",
-      "title": "",
-      "toggle": "",
+      "animationinterval": "Intervalo de la animación",
+      "markers": "Marcadores",
+      "notemporaldata": "No hay capas temporales visibles en el mapa",
+      "play": "Reproducir",
+      "playrev": "Reproducir al revés",
+      "rewind": "Rebobinar",
+      "stepback": "Saltar hacia atrás",
+      "stepfwd": "Saltar hacia delante",
+      "stepsize": "Tamaño del salto",
+      "stop": "Parar",
+      "title": "Gestor de tiempo",
+      "toggle": "Navegación temporal",
       "unit": {
-        "century": "",
-        "days": "",
-        "decade": "",
-        "hours": "",
-        "milliseconds": "",
-        "minutes": "",
-        "months": "",
-        "seconds": "",
-        "years": ""
+        "century": "siglos",
+        "days": "días",
+        "decade": "décadas",
+        "hours": "horas",
+        "milliseconds": "milisegundos",
+        "minutes": "minutos",
+        "months": "meses",
+        "seconds": "segundos",
+        "years": "años"
       }
     },
     "tooltip": {
       "background": "Cambiar fondo",
-      "fullscreendisable": "",
-      "fullscreenenable": "",
+      "fullscreendisable": "Descativar pantalla completa",
+      "fullscreenenable": "Activar pantalla completa",
       "home": "Mostrar todo el mapa",
       "zoomin": "Acercarse",
       "zoomout": "Alejarse"
@@ -353,9 +373,11 @@
     "window": {
       "close": "Cerrar",
       "dock": "Acoplar",
-      "maximize": "",
+      "maximize": "Maximizar",
+      "minimize": "Minimizar",
       "undock": "Desacoplar",
-      "unmaximize": ""
+      "unmaximize": "Restaurar",
+      "unminimize": "Desminimizar"
     }
   }
 }

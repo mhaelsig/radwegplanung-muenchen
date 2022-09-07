@@ -73,7 +73,7 @@
               "LocateSupport": {
                 "keepCurrentZoomLevel": true,
                 "stopFollowingOnDrag": true,
-                "startupMode": "DISABLED"
+                "startupMode": "ENABLED"
               },
               "ScaleBarSupport": {
                 "units": "metric"
@@ -84,28 +84,13 @@
           }
         },
         {
-          "name": "TaskButton",
-          "cfg": {
-            "position": 4,
-            "task": "LayerTree",
-            "icon": "list-alt"
-          }
-        },
-        {
-          "name": "HomeButton"
-          ,
-          "cfg": {
-            "position": 3
-          }
-        },
-        {
-          "name": "ZoomIn",
+          "name": "HomeButton",
           "cfg": {
             "position": 2
           }
         },
         {
-          "name": "ZoomOut",
+          "name": "LocateButton",
           "cfg": {
             "position": 1
           }
@@ -125,23 +110,12 @@
                 {"key": "Bookmark", "icon": "bookmark"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
-                  {"key": "TimeManager", "icon": "clock"},
                   {"key": "Measure", "icon": "measure"},
-                  {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing"},
-                  {"key": "AttributeTable", "icon": "editing"},
-                  {"key": "DxfExport", "icon": "dxfexport"},
-                  {"key": "RasterExport", "icon": "rasterexport"}
+                  {"key": "Redlining", "icon": "draw"}
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
                 {"key": "ExternalLink", "icon": "link", "url": "https://radwegplanung-muenchen.de/doc/build/html/index.html"}
-              ],
-              "toolbarItems": [
-                {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
-                {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
-                {"key": "Print", "icon": "print"},
-                {"key": "Identify", "icon": "identify_region", "mode": "Region"}
               ],
               "searchOptions": {
                 "minScaleDenom": 1000,
@@ -152,15 +126,9 @@
               },
               "appMenuClearsTask": true,
               "appMenuVisibleOnStartup": false,
-              "logoUrl": "/"
+              "logoUrl": "/",
+              "logoClickResetsTheme": true
             }
-        },
-        {
-          "name": "BottomBar",
-          "cfg": {
-            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
-            "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
-          }
         },
         {
           "name": "Measure",
@@ -169,50 +137,29 @@
           }
         },
         {
-          "name": "ThemeSwitcher",
+          "name": "BottomBar",
           "cfg": {
-            "collapsibleGroups": true
+            "displayCoordinates": false,
+            "displayScales": true,
+            "viewertitleUrl": "https://radwegplanung-muenchen.de/doc/build/html/index.html",
+            "termsUrl":  "https://radwegplanung-muenchen.de/doc/build/html/Datenschutz und Nutzungsbedingungen.html"
           }
-        },
-        {
-          "name": "LayerTree",
-          "cfg": {
-            "showLegendIcons": true,
-            "showRootEntry": false,
-            "showQueryableIcon": true,
-            "allowMapTips": true,
-            "allowCompare": true,
-            "allowImport": true,
-            "groupTogglesSublayers": false,
-            "grayUnchecked": false,
-            "layerInfoWindowSize": {"width": 480, "height": 400},
-            "bboxDependentLegend": true,
-            "scaleDependentLegend": "theme",
-            "showToggleAllLayersCheckbox": false
-          },
-          "mapClickAction": "identify"
         },
         {
           "name": "Identify",
           "cfg": {
             "params": {
-              "FI_POINT_TOLERANCE": 16,
-              "FI_LINE_TOLERANCE": 8,
-              "FI_POLYGON_TOLERANCE": 4,
+              "FI_POINT_TOLERANCE": 32,
+              "FI_LINE_TOLERANCE": 16,
+              "FI_POLYGON_TOLERANCE": 8,
               "feature_count": 20,
-              "region_feature_count": 100,
-              "with_maptip": true
+              "region_feature_count": 100
             },
             "enableExport": true,
             "longAttributesDisplay": "wrap",
             "displayResultTree": false,
-            "featureInfoReturnsLayerName": true,
-            "initialWidth": 480,
-            "initialHeight": 550
+            "featureInfoReturnsLayerName": true
           }
-        },
-        {
-          "name": "MapTip"
         },
         {
           "name": "Share",
@@ -235,10 +182,25 @@
           "mapClickAction": "identify"
         },
         {
-          "name": "MapCopyright",
+          "name": "MapCopyright"
+        },
+        {
+          "name": "LayerTree",
           "cfg": {
-            "showThemeCopyrightOnly": true
-             }
+            "showLegendIcons": true,
+            "showRootEntry": false,
+            "showQueryableIcon": true,
+            "allowMapTips": true,
+            "allowCompare": true,
+            "allowImport": true,
+            "groupTogglesSublayers": false,
+            "grayUnchecked": false,
+            "layerInfoWindowSize": {"width": 480, "height": 400},
+            "bboxDependentLegend": true,
+            "scaleDependentLegend": "theme",
+            "showToggleAllLayersCheckbox": false
+          },
+          "mapClickAction": "identify"
         },
         {
           "name": "DxfExport"
@@ -276,23 +238,7 @@
           "cfg": {
             "removeMode": "onclickonmarker"
           }
-        },
-      {
-          "name": "API"
-      },
-      {
-          "name": "ScratchDrawing"
-      },
-
-      {
-          "name": "Bookmark"
-      },
-      {
-          "name": "AttributeTable"
-      },
-      {
-          "name": "TimeManager"
-      }
+        }
       ],
       "desktop": [
         {
@@ -311,6 +257,9 @@
                 "keepCurrentZoomLevel": true,
                 "stopFollowingOnDrag": true,
                 "startupMode": "DISABLED"
+              },
+              "MeasurementSupport": {
+                "geodesic": true
               },
               "ScaleBarSupport": {
                 "units": "metric"
@@ -388,6 +337,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
+              "appMenuFilterField": true,
               "appMenuVisibleOnStartup": false,
               "logoUrl": "/"
             }
@@ -437,15 +387,16 @@
               "FI_LINE_TOLERANCE": 8,
               "FI_POLYGON_TOLERANCE": 4,
               "feature_count": 20,
-              "region_feature_count": 100,
-              "with_maptip": true
+              "region_feature_count": 100
             },
             "enableExport": true,
             "longAttributesDisplay": "wrap",
             "displayResultTree": false,
             "featureInfoReturnsLayerName": true,
             "initialWidth": 480,
-            "initialHeight": 550
+            "initialHeight": 550,
+            "initialX": 0,
+            "initialY": 0
           }
         },
         {
@@ -464,6 +415,7 @@
           "name": "Print",
           "cfg": {
             "inlinePrintOutput": false,
+            "printExternalLayers": true,
             "gridInitiallyEnabled": false
           }
         },
@@ -483,7 +435,8 @@
         {
           "name": "RasterExport",
           "cfg": {
-            "dpis": [96, 300]
+            "dpis": [96, 300],
+            "exportExternalLayers": true
           }
         },
         {

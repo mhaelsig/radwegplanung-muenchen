@@ -36,6 +36,7 @@
       "existinglayer": "Il livello esiste già nella mappa",
       "invisiblelayer": "Il risultato si trova su un livello che non è visibile.",
       "more": "Altri risultati",
+      "noresults": "Nessun risultato",
       "providerselection": "Selezione provider",
       "search": "Cerca",
       "searchall": "Cerca località o aggiungi cartine...",
@@ -100,24 +101,29 @@
       "add": "Aggiungi",
       "attrtable": "Tabella",
       "canceldelete": "Annulla",
-      "capturedpicture": "Foto catturata",
       "clearpicture": "Cancella",
       "commit": "Salva",
+      "commitfailed": "Impossibile salvare",
+      "create": "Crea",
       "delete": "Elimina",
       "discard": "Annulla",
       "draw": "Disegna",
       "feature": "Oggetto",
       "geomreadonly": "La geometria contiene valori Z non nulli ed è quindi di sola lettura.",
+      "invalidform": "Formulario invalido",
       "maximize": "Massimizza",
       "minimize": "Minimizza",
       "nocompatpick": "Nessuna geometria compatibile",
       "noeditablelayers": "Nessun livello modificabile",
+      "paint": "Modifica",
       "pick": "Seleziona",
       "pickdrawfeature": "Copia geometria esistente",
       "reallydelete": "Elimina",
       "relationcommitfailed": "Alcune relazioni non sono state salvate, consultare i tooltip delle icone per i dettagli.",
       "select": "Seleziona...",
-      "takepicture": "Foto"
+      "selectedpicture": "Immagine selezionata",
+      "takepicture": "Foto",
+      "unsavedchanged": "Vi sono cambiamenti non salvati. Volete comunque lasciare la pagina?"
     },
     "featureform": {
       "feature": "Oggetto",
@@ -144,6 +150,10 @@
       "noresults": "Nessun risultato",
       "querying": "Caricando...",
       "title": "Titolo"
+    },
+    "imageeditor": {
+      "confirmclose": "Chiudere senza salvare?",
+      "title": "Editor immagine"
     },
     "importlayer": {
       "addfailed": "Impossibile aggiungere il livello",
@@ -186,6 +196,12 @@
       "transparency": "Trasparenza",
       "visiblefilter": "Filtra livelli non visibili",
       "zoomtolayer": "Zoom a tutto il livello"
+    },
+    "linkfeatureform": {
+      "cancel": "Annulla",
+      "close": "Chiudi",
+      "drawhint": "Disegnare l'oggetto sulla mappa...",
+      "pickhint": "Seleziona un oggetto sulla mappa..."
     },
     "locate": {
       "feetUnit": "piedi",
@@ -230,6 +246,9 @@
       "scale": "Scala:",
       "submit": "Stampa",
       "wait": "Attendere..."
+    },
+    "qtdesignerform": {
+      "loading": "Caricando formulario..."
     },
     "rasterexport": {
       "format": "Formato:",
@@ -289,12 +308,13 @@
       "QRCodeLinkTitle": "Codice QR",
       "directLinkTitle": "Collegamento diretto",
       "refresh": "Genera permalink",
+      "shareTitle": "QWC2",
       "showpin": "Mostra pin",
       "socialIntro": "Social network"
     },
     "snapping": {
       "loading": "Caricamento delle geometrie per snapping",
-      "snappingenabled": "Snapping attivo"
+      "snappingenabled": "Snapping"
     },
     "themelayerslist": {
       "addlayer": "Aggiungi layer",
@@ -354,8 +374,10 @@
       "close": "Chiudi",
       "dock": "Aggancia",
       "maximize": "Massimizza",
+      "minimize": "Minimizza",
       "undock": "Sgancia",
-      "unmaximize": "Ripristina"
+      "unmaximize": "Ripristina",
+      "unminimize": "Ingrandisci"
     }
   }
 }

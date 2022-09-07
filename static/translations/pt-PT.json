@@ -36,6 +36,7 @@
       "existinglayer": "A camada já existe no mapa",
       "invisiblelayer": "O resultado reside numa camada que não é visível.",
       "more": "Mais...",
+      "noresults": "",
       "providerselection": "",
       "search": "Pesquisa",
       "searchall": "Procurar lugares ou adicionar mapas...",
@@ -100,24 +101,29 @@
       "add": "",
       "attrtable": "",
       "canceldelete": "Não apagues",
-      "capturedpicture": "",
       "clearpicture": "",
       "commit": "Comprometer-se",
+      "commitfailed": "",
+      "create": "",
       "delete": "Excluir",
       "discard": "Descartar",
       "draw": "Desenhar",
       "feature": "Recurso",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
       "nocompatpick": "",
       "noeditablelayers": "Não camadas editadas.",
+      "paint": "",
       "pick": "Elegir",
       "pickdrawfeature": "",
       "reallydelete": "Excluir",
       "relationcommitfailed": "",
       "select": "Selecione",
-      "takepicture": ""
+      "selectedpicture": "",
+      "takepicture": "",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",
@@ -144,6 +150,10 @@
       "noresults": "Nenhuma informação disponível para o ponto selecionado",
       "querying": "Consulta...",
       "title": "Información de recurso"
+    },
+    "imageeditor": {
+      "confirmclose": "",
+      "title": ""
     },
     "importlayer": {
       "addfailed": "",
@@ -186,6 +196,12 @@
       "transparency": "Transparência",
       "visiblefilter": "Filtrar camadas invisíveis",
       "zoomtolayer": "Ampliar a camada"
+    },
+    "linkfeatureform": {
+      "cancel": "",
+      "close": "",
+      "drawhint": "",
+      "pickhint": ""
     },
     "locate": {
       "feetUnit": "pés",
@@ -230,6 +246,9 @@
       "scale": "Escala:",
       "submit": "Imprimir",
       "wait": "Por favor, espera..."
+    },
+    "qtdesignerform": {
+      "loading": ""
     },
     "rasterexport": {
       "format": "Formato:",
@@ -289,6 +308,7 @@
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Via uma ligação direta",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "Na sua rede social favorita"
     },
@@ -354,8 +374,10 @@
       "close": "Fechar",
       "dock": "Juntar",
       "maximize": "",
+      "minimize": "",
       "undock": "Desencaixar",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

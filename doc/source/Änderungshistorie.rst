@@ -1,6 +1,27 @@
 Änderungshistorie
 =================
 
+- 03.09.22
+    - automatisches Update ergänzt
+    - QGIS Prozess zum Anpassen und Ergänzen der Daten für Straßen, Straßen etc. mit MW schwarz/rot umgebaut
+
+- 29.08.22
+    - Straßen in München mit Tempobeschränkungen verfeinert.
+    - 1. Teil automatisches Update wöchentlich aus OSM eingebaut.
+
+- 04.08.22
+    Unfallstatistik verfeinert: 2016 - 2019 umfangreicher hinzugenommen, Heatmap mit Gewicht 10 bei Todesfolge, und 5 bei schwerverletzt verändert. Für die Unfallzahlen dienen jetzt die Jahre 2017 - 2021 als Basis, um z.B. bei der Bewertung von Maßnahmen auch einen Vierjahres-Schnitt zu nutzen.
+
+- 03.08.22
+    - Im Layer Mitschrift REM in der Gruppe AG Netzplanung die einzelnen Attribute (offen, Zielkonzeption, ...) einzeln auswählbar gemacht
+    - Unfallstatistik 2021 ergänzt, 2020 erweitert. (vorläufig)
+
+- 15.07.22
+    Layer Einwohnerdichte nach Zensus 2011 entfernt (lud nicht mehr)
+
+- 05.07.2022
+    Stadtbezirke nach Geschäftsbereichen in der Layergruppe 'Grenzen' hinzugefügt.
+
 - 15.06.2022
     - Radlstadtplan 2022 differenzierter dargestellt: Einrichtungs- und Zweirichtungsradweg, mit und ohne Fußverkehr, im Wald.
     - Radverkehrsmodellierung 2019 von der Stadtverwaltung übernommen
