@@ -1,6 +1,13 @@
 Änderungshistorie
 =================
 
+- 13.09.22
+    Netztyp = 1 und Netztyp = 2 aus MunichWays mit mw_rv_strecke=Premium und mw_rv_strecke=Standard ersetzt.
+
+- 07.09.22
+    - Radwegplanung vom MOR Stand 4.9.22 aktualisiert
+    - Umland- und Quartierszentren Stand 4.9.22 MOR übernommen
+
 - 03.09.22
     - automatisches Update ergänzt
     - QGIS Prozess zum Anpassen und Ergänzen der Daten für Straßen, Straßen etc. mit MW schwarz/rot umgebaut
