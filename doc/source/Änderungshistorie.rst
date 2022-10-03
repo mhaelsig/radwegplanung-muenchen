@@ -1,6 +1,12 @@
 Änderungshistorie
 =================
 
+- 03.10.22
+    Layer Statistik MunichWays Strecken hinzugefügt
+
+- 22.09.22
+    Layer 'Plötzlich endende Radwege' (Andreas Jakob) unter 'Gefahrenstellen/Unfälle' eingefügt.
+
 - 13.09.22
     Netztyp = 1 und Netztyp = 2 aus MunichWays mit mw_rv_strecke=Premium und mw_rv_strecke=Standard ersetzt.
 
