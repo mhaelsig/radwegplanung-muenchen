@@ -1,6 +1,9 @@
 Änderungshistorie
 =================
 
+- 13.10.22
+    Layer Meldeplattform Infobox aktualisiert
+
 - 03.10.22
     Layer Statistik MunichWays Strecken hinzugefügt
 
