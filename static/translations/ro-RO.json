@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Hărți tematice",
         "Tools": "Unelte hartă",
         "Bookmark": "Marcaj",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Hărți & Unelte"
@@ -74,6 +75,7 @@
       "description": "Descriere",
       "lastUpdate": "Ultima actualizare",
       "manage": "Gestionează",
+      "nobookmarks": "",
       "notloggedin": "Nelogat",
       "open": "Deschide",
       "openTab": "",
@@ -234,16 +236,16 @@
     },
     "print": {
       "grid": "Grid",
-      "layout": "Șablon:",
+      "layout": "Șablon",
       "legend": "Legendă",
       "maximize": "Maximizează",
       "minimize": "Minimizează",
       "nolayouts": "Această temă nu are șabloane de print",
       "notheme": "Nu avem selectată tema",
       "output": "Rezultat tipărire",
-      "resolution": "Rezoluție:",
-      "rotation": "Rotație:",
-      "scale": "Scară:",
+      "resolution": "Rezoluție",
+      "rotation": "Rotație",
+      "scale": "Scară",
       "submit": "Tipărește",
       "wait": "Așteaptă te rog.."
     },
@@ -304,6 +306,12 @@
       "onlineResource": "Resursă online",
       "title": "Titlu"
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Cod QR",
       "directLinkTitle": "Via link direct",
@@ -336,15 +344,32 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "classify": "",
+      "classifynone": "",
+      "displayfeatures": "",
+      "displaylayers": "",
+      "displayminimal": "",
+      "endtime": "",
+      "group": "",
+      "groupnone": "",
+      "home": "",
+      "loading": "",
+      "loop": "",
       "markers": "",
       "notemporaldata": "",
       "play": "",
       "playrev": "",
       "rewind": "",
+      "starttime": "",
       "stepback": "",
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_fixed": "",
+      "timeline_infinite": "",
+      "timelinedisplay": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -357,7 +382,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Straturi suport",

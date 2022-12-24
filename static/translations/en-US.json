@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Theme",
         "Tools": "Map Tools",
         "Bookmark": "Bookmarks",
-        "TimeManager": "Time Manager"
+        "TimeManager": "Time Manager",
+        "Settings": "Settings"
       },
       "filter": "Filter menu...",
       "menulabel": "Map & Tools"
@@ -71,9 +72,10 @@
     "bookmark": {
       "add": "Create new bookmark",
       "addfailed": "Failed to create bookmark",
-      "description": "Description",
+      "description": "Enter description...",
       "lastUpdate": "Last saved",
       "manage": "Manage bookmarks",
+      "nobookmarks": "No bookmarks",
       "notloggedin": "You need to be logged in to store bookmarks",
       "open": "Open bookmark in current tab",
       "openTab": "Open bookmark in tab",
@@ -241,7 +243,7 @@
       "nolayouts": "The selected theme does not support printing",
       "notheme": "No theme selected",
       "output": "Print output",
-      "resolution": "Resolution:",
+      "resolution": "Resolution",
       "rotation": "Rotation",
       "scale": "Scale",
       "submit": "Print",
@@ -304,6 +306,12 @@
       "onlineResource": "Online resource",
       "title": "Theme Information"
     },
+    "settings": {
+      "colorscheme": "Color scheme",
+      "confirmlang": "The application will be reloaded to change the language. Proceed?",
+      "language": "Language",
+      "systemlang": "System language"
+    },
     "share": {
       "QRCodeLinkTitle": "QR Code",
       "directLinkTitle": "Via a direct link",
@@ -336,15 +344,32 @@
     },
     "timemanager": {
       "animationinterval": "Animation interval",
+      "classify": "Classification attribute",
+      "classifynone": "None",
+      "displayfeatures": "Timeline with features",
+      "displaylayers": "Timeline with layers",
+      "displayminimal": "Timeline only",
+      "endtime": "End",
+      "group": "Grouping attribute",
+      "groupnone": "None",
+      "home": "Reset timeline",
+      "loading": "Loading...",
+      "loop": "Loop",
       "markers": "Markers",
       "notemporaldata": "No temporal layers are visible in the map.",
       "play": "Play",
       "playrev": "Play backwards",
       "rewind": "Rewind",
+      "starttime": "Start",
       "stepback": "Step back",
       "stepfwd": "Step forward",
       "stepsize": "Step size",
       "stop": "Stop",
+      "timeline": "Timeline",
+      "timeline_fixed": "Fixed",
+      "timeline_infinite": "Infinite",
+      "timelinedisplay": "Display",
+      "timelinescale": "Timescale (non-linearity)",
       "title": "Time manager",
       "toggle": "Temporal navigation",
       "unit": {
@@ -357,7 +382,9 @@
         "months": "months",
         "seconds": "seconds",
         "years": "years"
-      }
+      },
+      "zoomin": "Zoom in",
+      "zoomout": "Zoom out"
     },
     "tooltip": {
       "background": "Switch background",

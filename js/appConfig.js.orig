@@ -17,6 +17,7 @@ import OverviewSupport from 'qwc2/plugins/map/OverviewSupport';
 import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
 import ScaleBarSupport from 'qwc2/plugins/map/ScaleBarSupport';
 import SelectionSupport from 'qwc2/plugins/map/SelectionSupport';
+import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
 import HomeButtonPlugin from 'qwc2/plugins/HomeButton';
 import LocateButtonPlugin from 'qwc2/plugins/LocateButton';
 import {ZoomInPlugin, ZoomOutPlugin} from 'qwc2/plugins/ZoomButtons';
@@ -52,7 +53,9 @@ import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
 import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
+import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
+import SettingsPlugin from 'qwc2/plugins/Settings';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
 import defaultLocaleData from '../static/translations/en-US.json';
@@ -72,7 +75,8 @@ export default {
                 OverviewSupport: OverviewSupport,
                 RedliningSupport: RedliningSupport,
                 ScaleBarSupport: ScaleBarSupport,
-                SelectionSupport: SelectionSupport
+                SelectionSupport: SelectionSupport,
+                SnappingSupport: SnappingSupport
             }),
             HomeButtonPlugin: HomeButtonPlugin,
             LocateButtonPlugin: LocateButtonPlugin,
@@ -112,9 +116,11 @@ export default {
             ScratchDrawingPlugin: ScratchDrawingPlugin,
             AuthenticationPlugin: AuthenticationPlugin,
             BookmarkPlugin: BookmarkPlugin,
-            AttributeTablePlugin: AttributeTablePlugin(),
+            AttributeTablePlugin: AttributeTablePlugin(/* CustomEditingInterface */),
             APIPlugin: APIPlugin,
-            TimeManagerPlugin: TimeManagerPlugin
+            TimeManagerPlugin: TimeManagerPlugin,
+            FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
+            SettingsPlugin: SettingsPlugin
         },
         cfg: {
             IdentifyPlugin: {

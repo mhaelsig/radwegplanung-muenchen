@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Temi",
         "Tools": "Strumenti",
         "Bookmark": "Segnalibri",
-        "TimeManager": "Linea temporale"
+        "TimeManager": "Linea temporale",
+        "Settings": "Impostazioni"
       },
       "filter": "Filtra menù...",
       "menulabel": "Mappa e strumenti"
@@ -71,9 +72,10 @@
     "bookmark": {
       "add": "Crea segnalibro",
       "addfailed": "Impossibile creare il segnalibro",
-      "description": "Descrizione",
+      "description": "Inserire descrizione...",
       "lastUpdate": "Ultimo salvataggio",
       "manage": "Gestisci segnalibri",
+      "nobookmarks": "Nessun segnalibro",
       "notloggedin": "È necessario aver effettuato l'accesso per utilizzare i segnalibri",
       "open": "Apri nella finestra corrente",
       "openTab": "Apri in una nuova finestra",
@@ -241,9 +243,9 @@
       "nolayouts": "Nessun layout di stampa",
       "notheme": "Nessun tema selezionato",
       "output": "Stampa",
-      "resolution": "Risoluzione:",
-      "rotation": "Rotazione:",
-      "scale": "Scala:",
+      "resolution": "Risoluzione",
+      "rotation": "Rotazione",
+      "scale": "Scala",
       "submit": "Stampa",
       "wait": "Attendere..."
     },
@@ -304,6 +306,12 @@
       "onlineResource": "Risorsa online",
       "title": "Informazioni sul tema"
     },
+    "settings": {
+      "colorscheme": "Stile",
+      "confirmlang": "L'applicazione sarà ricaricata per cambiare la lingua. Procedere?",
+      "language": "Lingua",
+      "systemlang": "Lingua del sistema"
+    },
     "share": {
       "QRCodeLinkTitle": "Codice QR",
       "directLinkTitle": "Collegamento diretto",
@@ -336,15 +344,32 @@
     },
     "timemanager": {
       "animationinterval": "Intervallo animazione",
+      "classify": "Classifica per attributo",
+      "classifynone": "Nessuno",
+      "displayfeatures": "Linea temporale con oggetti",
+      "displaylayers": "Linea temporale con livelli",
+      "displayminimal": "Solo linea temporale",
+      "endtime": "Fine",
+      "group": "Raggruppa per attributo",
+      "groupnone": "Nessuno",
+      "home": "Ripristina linea temporale",
+      "loading": "Caricamento...",
+      "loop": "Ripeti",
       "markers": "Marker",
       "notemporaldata": "Nessun layer con dimensioni temporali è attivo nella cartina.",
       "play": "Anima",
       "playrev": "Anima indietro",
       "rewind": "Resetta animazione",
+      "starttime": "Inizio",
       "stepback": "Passo indietro",
       "stepfwd": "Passo avanti",
       "stepsize": "Passo",
       "stop": "Ferma animazione",
+      "timeline": "Linea temporale",
+      "timeline_fixed": "Fissa",
+      "timeline_infinite": "Infinita",
+      "timelinedisplay": "Visualizzazione",
+      "timelinescale": "Scala temporale (non-linearità)",
       "title": "Linea temporale",
       "toggle": "Abilità gesitone temporale",
       "unit": {
@@ -357,7 +382,9 @@
         "months": "mesi",
         "seconds": "secondi",
         "years": "anni"
-      }
+      },
+      "zoomin": "Ingrandisci",
+      "zoomout": "Rimpicciolisci"
     },
     "tooltip": {
       "background": "Cambia sfondo",

@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Téma",
         "Tools": "Nástroje Mapy",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Mapa & Nástroje"
@@ -74,6 +75,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -241,9 +243,9 @@
       "nolayouts": "Vybrané téma nepodporuje tisk",
       "notheme": "Není vybráno téma",
       "output": "",
-      "resolution": "Rozlišení:",
-      "rotation": "Rotace:",
-      "scale": "Měřítko:",
+      "resolution": "Rozlišení",
+      "rotation": "Rotace",
+      "scale": "Měřítko",
       "submit": "Tisk",
       "wait": ""
     },
@@ -304,6 +306,12 @@
       "onlineResource": "",
       "title": ""
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR kód",
       "directLinkTitle": "Přes přímé spojení",
@@ -336,15 +344,32 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "classify": "",
+      "classifynone": "",
+      "displayfeatures": "",
+      "displaylayers": "",
+      "displayminimal": "",
+      "endtime": "",
+      "group": "",
+      "groupnone": "",
+      "home": "",
+      "loading": "",
+      "loop": "",
       "markers": "",
       "notemporaldata": "",
       "play": "",
       "playrev": "",
       "rewind": "",
+      "starttime": "",
       "stepback": "",
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_fixed": "",
+      "timeline_infinite": "",
+      "timelinedisplay": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -357,7 +382,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Přepnout podkladovou mapu",

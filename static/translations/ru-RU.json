@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Тема",
         "Tools": "Средства картографии",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Карта и инструменты"
@@ -74,6 +75,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -233,17 +235,17 @@
       "perpage": ""
     },
     "print": {
-      "grid": "Сетка:",
-      "layout": "Формат бумаги:",
+      "grid": "Сетка",
+      "layout": "Формат бумаги",
       "legend": "",
       "maximize": "Развернуть",
       "minimize": "Свернуть",
       "nolayouts": "Выбранная тема не поддерживает печать",
       "notheme": "Тема не выбрана",
       "output": "",
-      "resolution": "Разрешение:",
-      "rotation": "Поворот:",
-      "scale": "Масштаб:",
+      "resolution": "Разрешение",
+      "rotation": "Поворот",
+      "scale": "Масштаб",
       "submit": "Печать",
       "wait": ""
     },
@@ -304,6 +306,12 @@
       "onlineResource": "",
       "title": ""
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR-код",
       "directLinkTitle": "По прямой ссылке",
@@ -336,15 +344,32 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "classify": "",
+      "classifynone": "",
+      "displayfeatures": "",
+      "displaylayers": "",
+      "displayminimal": "",
+      "endtime": "",
+      "group": "",
+      "groupnone": "",
+      "home": "",
+      "loading": "",
+      "loop": "",
       "markers": "",
       "notemporaldata": "",
       "play": "",
       "playrev": "",
       "rewind": "",
+      "starttime": "",
       "stepback": "",
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_fixed": "",
+      "timeline_infinite": "",
+      "timelinedisplay": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -357,7 +382,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Сменить фон",

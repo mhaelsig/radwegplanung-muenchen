@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Tema",
         "Tools": "Harita Araçları",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Harita & Araçlar"
@@ -74,6 +75,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -233,16 +235,16 @@
       "perpage": ""
     },
     "print": {
-      "grid": "Grid:",
-      "layout": "Yazdırma düzeni:",
+      "grid": "Grid",
+      "layout": "Yazdırma düzeni",
       "legend": "",
       "maximize": "Büyült",
       "minimize": "Küçült",
       "nolayouts": "Seçili tema yazdırma işlemini desteklemiyor",
       "notheme": "Tema seçilmedi",
       "output": "Yazıcı çıktısı",
-      "resolution": "Çözünürlük:",
-      "rotation": "Döndürme:",
+      "resolution": "Çözünürlük",
+      "rotation": "Döndürme",
       "scale": "Ölçek:",
       "submit": "Yazdır",
       "wait": "Lütfen bekleyiniz..."
@@ -304,6 +306,12 @@
       "onlineResource": "",
       "title": ""
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Karekod",
       "directLinkTitle": "Doğrudan bağlantı yolu ile",
@@ -336,15 +344,32 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "classify": "",
+      "classifynone": "",
+      "displayfeatures": "",
+      "displaylayers": "",
+      "displayminimal": "",
+      "endtime": "",
+      "group": "",
+      "groupnone": "",
+      "home": "",
+      "loading": "",
+      "loop": "",
       "markers": "",
       "notemporaldata": "",
       "play": "",
       "playrev": "",
       "rewind": "",
+      "starttime": "",
       "stepback": "",
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_fixed": "",
+      "timeline_infinite": "",
+      "timelinedisplay": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -357,7 +382,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Arkaplanı değiştir",
