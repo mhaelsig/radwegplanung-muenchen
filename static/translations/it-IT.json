@@ -171,7 +171,9 @@
     },
     "infotool": {
       "clickhelpPoint": "Seleziona un luogo da identificare sulla mappa...",
-      "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare"
+      "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": "Catalogo livelli"
@@ -350,6 +352,7 @@
       "displaylayers": "Linea temporale con livelli",
       "displayminimal": "Solo linea temporale",
       "endtime": "Fine",
+      "future": "Futuro",
       "group": "Raggruppa per attributo",
       "groupnone": "Nessuno",
       "home": "Ripristina linea temporale",
@@ -357,6 +360,8 @@
       "loop": "Ripeti",
       "markers": "Marker",
       "notemporaldata": "Nessun layer con dimensioni temporali è attivo nella cartina.",
+      "now": "Adesso",
+      "past": "Passato",
       "play": "Anima",
       "playrev": "Anima indietro",
       "rewind": "Resetta animazione",

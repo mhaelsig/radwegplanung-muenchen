@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 QGIS Web Client 2 Demo Application
 ==================================
 
@@ -8,11 +7,13 @@ This repository contains a sample QWC2 application.
 
 Some examples of QWC2 production deployments:
 
+- [QWC2 demo server](http://qwc2.sourcepole.ch)
 - [GeoViewer Kanton Glarus](https://map.geo.gl.ch/)
 - [Web GIS Client Kanton Solothurn](https://geo.so.ch/map/)
 
 ## [Quick start](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#quick-start)
 ## [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
+## [QWC2 extended with microservices](https://github.com/qwc-services/qwc-docker)
 ## [Upgrade notes](https://github.com/qgis/qwc2-demo-app/blob/master/UpgradeNotes.md)
 ## [Mailing list](https://lists.osgeo.org/mailman/listinfo/qgis-qwc2)
 
@@ -25,35 +26,24 @@ Some examples of QWC2 production deployments:
 - Theme switcher
 - Arbitrarily configurable search providers
 - Layer tree
-  * Enable and disable layers and groups
-  * Change layer opacity
-  * Change layer order
+  * Toggle layers and groups
+  * Change layer order and opacity
+  - Import external WMS/WFS/WMTS/GeoJSON/KML layers
 - Feature info
 - Compare layers
-- Import external WMS/WFS/KML layers
 - Share permalinks
+- Bookmarks
 - Measuring tools
 - Height profile
 - Redlining
 - Editing
+- Attribute table
 - DXF export
 - Raster export
 - Printing
+- Time manager for temporal layers
+- Themeable with color schemes
 
 # License
 
 QWC2 is released under the terms of the [BSD license](https://github.com/qgis/qwc2-demo-app/blob/master/LICENSE).
-=======
-QGIS Web Client 2 Components
-============================
-
-QGIS Web Client 2 (QWC2) is a modular next generation responsive web client for QGIS Server, built with ReactJS and OpenLayers.
-
-This repository contains the common QWC2 application components from which you can build your own personal QWC2 application.
-
-See:
-* [qwc2-demo-app](https://github.com/qgis/qwc2-demo-app) for an example application built on top of the QWC2 components.
-* [this presentation](https://blog.sourcepole.ch/assets/2019/qwc2-foss4g19.pdf) for an overview and architecture of QWC2.
-
-Please report QWC2 issues at [qwc2-demo-app/issues](https://github.com/qgis/qwc2-demo-app/issues).
->>>>>>> ade338e9dff297468fa5b356bedb79f47cea66d8

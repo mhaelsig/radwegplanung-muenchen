@@ -171,7 +171,9 @@
     },
     "infotool": {
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Narysuj poligon wokół obiektów, aby zidentyfikować..."
+      "clickhelpPolygon": "Narysuj poligon wokół obiektów, aby zidentyfikować...",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": ""
@@ -350,6 +352,7 @@
       "displaylayers": "",
       "displayminimal": "",
       "endtime": "",
+      "future": "",
       "group": "",
       "groupnone": "",
       "home": "",
@@ -357,6 +360,8 @@
       "loop": "",
       "markers": "",
       "notemporaldata": "",
+      "now": "",
+      "past": "",
       "play": "",
       "playrev": "",
       "rewind": "",

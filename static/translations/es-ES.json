@@ -171,7 +171,9 @@
     },
     "infotool": {
       "clickhelpPoint": "Haga click en una ubicación para identificar en el mapa...",
-      "clickhelpPolygon": "Trace un polígono alrededor de los elementos para identificarlos..."
+      "clickhelpPolygon": "Trace un polígono alrededor de los elementos para identificarlos...",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": "Catálogo de capas"
@@ -350,6 +352,7 @@
       "displaylayers": "",
       "displayminimal": "",
       "endtime": "",
+      "future": "",
       "group": "",
       "groupnone": "",
       "home": "",
@@ -357,6 +360,8 @@
       "loop": "",
       "markers": "Marcadores",
       "notemporaldata": "No hay capas temporales visibles en el mapa",
+      "now": "",
+      "past": "",
       "play": "Reproducir",
       "playrev": "Reproducir al revés",
       "rewind": "Rebobinar",

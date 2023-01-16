@@ -1,5 +1,25 @@
 Änderungshistorie
 =================
+- 15.01.23
+    - Layergruppe Übergabepunkte ergänzt und korrigiert - die Stadtgrenze München stimmte nicht mit den Grenzen der LKe München, Dachau und FFB überein.
+    - (vorläufig!) die sich ergebenden Ergänzungen aus den fehlenden Übergabepunkten im Stadtnetz und LK-Netz eingefügt (von V. Oppermann)
+
+- 03.01.23
+    Layergruppe ÖPNV hinzugefügt, mit den Layern Buslinien und -Haltestellen, und Tramlinien und -Haltestellen.
+
+- 01.01.23
+    - Layergruppe Übergabepunkte weiter ergänzt (ÜP Stadt ungleich Landkreise)
+    - Grenzen Landkreise Dachau, FFB, München und STA hinzugefügt in der Gruppe 'Grenzen'
+
+- 30.12.22
+    Layergruppe Übergabepunkte ergänzt
+
+- 28.12.22
+    Layergruppe Übergabepunkte Stadt/Landkreise hinzugefügt
+
+- 27.12.22
+    - Layergruppe Landkreis Dachau hinzugefügt
+    - Maßnahmenliste angefangen zu überarbeiten
 
 - 13.10.22
     Layer Meldeplattform Infobox aktualisiert

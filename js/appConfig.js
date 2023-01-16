@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {SearchProviders, searchProviderFactory} from './SearchProviders';
+import {SearchProviders} from './SearchProviders';
 import {renderHelp} from './Help';
 
 import MapPlugin from 'qwc2/plugins/Map';
@@ -56,7 +56,7 @@ import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
 import SettingsPlugin from 'qwc2/plugins/Settings';
-import {customAttributeCalculator} from './CustomAttributeCalculator';
+import {customAttributeCalculator, customExporters} from './IdentifyExtensions';
 
 import defaultLocaleData from '../static/translations/de-DE.json';
 
@@ -86,7 +86,7 @@ export default {
             BackgroundSwitcherPlugin: BackgroundSwitcherPlugin,
             TopBarPlugin: TopBarPlugin({
                 AppMenu: AppMenu,
-                Search: SearchBox(SearchProviders, searchProviderFactory),
+                Search: SearchBox(SearchProviders),
                 Toolbar: Toolbar,
                 FullscreenSwitcher: FullscreenSwitcher
             }),
@@ -124,7 +124,8 @@ export default {
         },
         cfg: {
             IdentifyPlugin: {
-                attributeCalculator: customAttributeCalculator
+                attributeCalculator: customAttributeCalculator,
+                customExporters: customExporters
             }
         }
     },

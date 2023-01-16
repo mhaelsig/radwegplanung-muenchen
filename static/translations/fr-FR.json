@@ -171,7 +171,9 @@
     },
     "infotool": {
       "clickhelpPoint": "Cliquez sur un emplacement pour l'identifier sur la carte...",
-      "clickhelpPolygon": "Dessiner un polygone pour identifier les objets"
+      "clickhelpPolygon": "Dessiner un polygone pour identifier les objets",
+      "clickhelpRadius": "Configurez un rayon et cliquez sur un emplacement pour identifier les objets autour de ce point",
+      "radius": "Rayon"
     },
     "layercatalog": {
       "windowtitle": "Catalogue de couches"
@@ -350,6 +352,7 @@
       "displaylayers": "Chronologie avec couches",
       "displayminimal": "Chronologie uniquement",
       "endtime": "Fin",
+      "future": "Future",
       "group": "Attribut de regroupement",
       "groupnone": "Aucun",
       "home": "Réinitialiser",
@@ -357,6 +360,8 @@
       "loop": "Répéter",
       "markers": "Marqueurs",
       "notemporaldata": "Aucune couche temporelle n'est visible sur la carte.",
+      "now": "Maintenant",
+      "past": "Passé",
       "play": "Jouer",
       "playrev": "Jouer en sens inverse",
       "rewind": "Rembobiner",

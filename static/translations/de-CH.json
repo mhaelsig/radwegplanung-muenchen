@@ -171,7 +171,9 @@
     },
     "infotool": {
       "clickhelpPoint": "Zu identifizierende Position in der Karte auswählen...",
-      "clickhelpPolygon": "Polygon um die zu identifizierende Objekte zeichnen"
+      "clickhelpPolygon": "Polygon um die zu identifizierende Objekte zeichnen",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": "Ebenenkatalog"
@@ -350,13 +352,16 @@
       "displaylayers": "Zeitleiste und Ebenen",
       "displayminimal": "Nur Zeitleiste",
       "endtime": "Ende",
-      "group": "Grouppierungsattribut",
+      "future": "Zukunft",
+      "group": "Gruppierungsattribut",
       "groupnone": "Keins",
       "home": "Zeitleiste zurücksetzten",
       "loading": "Laden...",
       "loop": "Schleife",
       "markers": "Marker",
       "notemporaldata": "Keine sichtbare Ebenen in der Karte sind mit Zeitinformationen versehen.",
+      "now": "Jetzt",
+      "past": "Vergangenheit",
       "play": "Abspielen",
       "playrev": "Zurück abspielen",
       "rewind": "Zurücksetzten",
