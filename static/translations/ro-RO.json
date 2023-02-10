@@ -14,6 +14,7 @@
         "LayerTree": "Straturi & Legendă",
         "Login": "Conectează-te",
         "Logout": "Deconectează-te",
+        "MapLegend": "",
         "Measure": "Măsoară",
         "MeasureLineString": "Măsoară o linie",
         "MeasurePolygon": "Măsoară un poligon",
@@ -144,6 +145,7 @@
       "loading": "Calcularea profilului înălțimii..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Export",
       "exportformat": "Formatul de export",
       "featureReport": "Raport entitate",
@@ -227,10 +229,18 @@
       "elevation": "Altitudine",
       "title": "Poziție"
     },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
+    },
     "measureComponent": {
       "areaLabel": "Arie",
       "bearingLabel": "Direcție",
+      "imperial": "",
       "lengthLabel": "Lungime",
+      "metric": "",
       "pointLabel": "Poziție"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Elimină",
       "draw": "Adaugă",
       "edit": "Modifică",
+      "ellipse": "",
       "fill": "Interior",
       "freehand": "Mână liberă",
       "label": "Text",
       "layer": "Strat",
       "line": "Linie",
+      "measurements": "",
       "outline": "Contur",
       "pick": "Alege",
       "point": "Punct",
       "polygon": "Poligon",
+      "rectangle": "",
       "size": "Mărime",
+      "square": "",
       "text": "Text",
+      "transform": "",
       "width": "Lățime"
     },
     "scratchdrawing": {

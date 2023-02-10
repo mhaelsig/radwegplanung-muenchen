@@ -14,6 +14,7 @@
         "LayerTree": "Couches",
         "Login": "Connexion",
         "Logout": "Déconnexion",
+        "MapLegend": "Légende",
         "Measure": "Mesurer",
         "MeasureLineString": "Mesurer une ligne",
         "MeasurePolygon": "Mesurer un polygone",
@@ -144,6 +145,7 @@
       "loading": "Calcul du profil de hauteur..."
     },
     "identify": {
+      "clipboard": "Copier dans le presse-papiers",
       "export": "Exporter",
       "exportformat": "Format d'export:",
       "featureReport": "Données de l'objet",
@@ -227,10 +229,18 @@
       "elevation": "Altitude",
       "title": "Position"
     },
+    "maplegend": {
+      "bboxdependent": "Légende dépendante de l'étendue de la carte",
+      "onlyvisible": "Seulement les couches visibles",
+      "scaledependent": "Légende dépendante de l'échelle de la carte",
+      "windowtitle": "Légende"
+    },
     "measureComponent": {
       "areaLabel": "Surface",
       "bearingLabel": "Direction",
+      "imperial": "Impérial",
       "lengthLabel": "Longueur",
+      "metric": "Métrique",
       "pointLabel": "Position"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Effacer",
       "draw": "Dessiner",
       "edit": "Editer",
+      "ellipse": "Ellipse",
       "fill": "Remplissage",
       "freehand": "Dessin à main libre",
       "label": "Texte",
       "layer": "Couche",
       "line": "Ligne",
+      "measurements": "Montrer les mesures",
       "outline": "Contour",
       "pick": "Choisir",
       "point": "Point",
       "polygon": "Polygone",
+      "rectangle": "Rectangle",
       "size": "Taille",
+      "square": "Carré",
       "text": "Texte",
+      "transform": "Transformer",
       "width": "Largeur"
     },
     "scratchdrawing": {

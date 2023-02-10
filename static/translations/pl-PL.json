@@ -14,6 +14,7 @@
         "LayerTree": "Warstwy i ich legendy",
         "Login": "Zaloguj",
         "Logout": "Wyloguj",
+        "MapLegend": "",
         "Measure": "Pomiary",
         "MeasureLineString": "Zmierzyć linię",
         "MeasurePolygon": "Zmierzyć wielokąt",
@@ -144,6 +145,7 @@
       "loading": "Obliczanie profilu wysokości..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Eksport",
       "exportformat": "",
       "featureReport": "Feature report",
@@ -227,10 +229,18 @@
       "elevation": "Wysokość",
       "title": "Pozycja"
     },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
+    },
     "measureComponent": {
       "areaLabel": "Obszar",
       "bearingLabel": "Bearing",
+      "imperial": "",
       "lengthLabel": "Odległość",
+      "metric": "",
       "pointLabel": "Pozycja"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Usuń",
       "draw": "Rysuj",
       "edit": "Edytuj",
+      "ellipse": "",
       "fill": "Wypełnij",
       "freehand": "",
       "label": "Etykieta",
       "layer": "Warstwa",
       "line": "Linia",
+      "measurements": "",
       "outline": "Szkic",
       "pick": "Wybierz",
       "point": "Punkt",
       "polygon": "Poligon",
+      "rectangle": "",
       "size": "Rozmiar",
+      "square": "",
       "text": "Tekst",
+      "transform": "",
       "width": "Szerokość"
     },
     "scratchdrawing": {

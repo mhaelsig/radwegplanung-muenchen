@@ -1,5 +1,12 @@
 Änderungshistorie
 =================
+- 10.02.23
+    Maßnahmenliste ergänzt und neu dargestellt.
+
+- 19.01.23
+    - MunichWays alle Gruppen weiter aufgeteilt in 'innerhalb Stadt' und 'mit Landkreisen'
+    - Den mir zugelieferten Teilausschnitt des Radnetzes FFB hinzugefügt
+
 - 15.01.23
     - Layergruppe Übergabepunkte ergänzt und korrigiert - die Stadtgrenze München stimmte nicht mit den Grenzen der LKe München, Dachau und FFB überein.
     - (vorläufig!) die sich ergebenden Ergänzungen aus den fehlenden Übergabepunkten im Stadtnetz und LK-Netz eingefügt (von V. Oppermann)

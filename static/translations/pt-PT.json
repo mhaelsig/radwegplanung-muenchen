@@ -14,6 +14,7 @@
         "LayerTree": "Camadas & Leyenda",
         "Login": "Inicio de sesión",
         "Logout": "Cierre de sesión",
+        "MapLegend": "",
         "Measure": "Medir",
         "MeasureLineString": "Medir uma linha",
         "MeasurePolygon": "Medir um polígono",
@@ -144,6 +145,7 @@
       "loading": "Calcular o perfil de altura..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Exportação",
       "exportformat": "Formato de exportação",
       "featureReport": "Relatório de recurso",
@@ -227,10 +229,18 @@
       "elevation": "Elevação",
       "title": "Posição"
     },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
+    },
     "measureComponent": {
       "areaLabel": "Área",
       "bearingLabel": "Dirección",
+      "imperial": "",
       "lengthLabel": "Longitud",
+      "metric": "",
       "pointLabel": "Posição"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Excluir",
       "draw": "Traçar",
       "edit": "Editar",
+      "ellipse": "",
       "fill": "Preencha",
       "freehand": "Desenho à mão livre ",
       "label": "Etiqueta",
       "layer": "Camada",
       "line": "Línha",
+      "measurements": "",
       "outline": "Contorno",
       "pick": "Escolher",
       "point": "Ponto",
       "polygon": "Polígono",
+      "rectangle": "",
       "size": "Tamanho",
+      "square": "",
       "text": "Texto",
+      "transform": "",
       "width": "Largura"
     },
     "scratchdrawing": {

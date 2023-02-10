@@ -14,6 +14,7 @@
         "LayerTree": "Lager & teckenförklaring",
         "Login": "Logga in",
         "Logout": "Logga ut",
+        "MapLegend": "",
         "Measure": "Mät",
         "MeasureLineString": "Mäta en linje",
         "MeasurePolygon": "Mäta en polygon",
@@ -144,6 +145,7 @@
       "loading": "Beräknar höjdprofil..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Exportera",
       "exportformat": "",
       "featureReport": "Objektrapport",
@@ -227,10 +229,18 @@
       "elevation": "Höjd",
       "title": "Position"
     },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
+    },
     "measureComponent": {
       "areaLabel": "Area",
       "bearingLabel": "Bäring",
+      "imperial": "",
       "lengthLabel": "Längd",
+      "metric": "",
       "pointLabel": "Position"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Radera",
       "draw": "Rita",
       "edit": "Redigera",
+      "ellipse": "",
       "fill": "Fyllning",
       "freehand": "",
       "label": "Etikett",
       "layer": "Lager",
       "line": "Linje",
+      "measurements": "",
       "outline": "Kant",
       "pick": "Välj",
       "point": "Punkt",
       "polygon": "Yta",
+      "rectangle": "",
       "size": "Storlek",
+      "square": "",
       "text": "Text",
+      "transform": "",
       "width": "Bredd"
     },
     "scratchdrawing": {

@@ -14,6 +14,7 @@
         "LayerTree": "Layers & Legend",
         "Login": "Login",
         "Logout": "Logout",
+        "MapLegend": "Legend",
         "Measure": "Measure",
         "MeasureLineString": "Measure a line",
         "MeasurePolygon": "Measure a polygon",
@@ -144,6 +145,7 @@
       "loading": "Calculating height profile..."
     },
     "identify": {
+      "clipboard": "Copy to clipboard",
       "export": "Export",
       "exportformat": "Export format:",
       "featureReport": "Feature report",
@@ -227,10 +229,18 @@
       "elevation": "Elevation",
       "title": "Position"
     },
+    "maplegend": {
+      "bboxdependent": "Map extent dependent legend",
+      "onlyvisible": "Only visibile layers",
+      "scaledependent": "Map scale depdendent legend",
+      "windowtitle": "Legend"
+    },
     "measureComponent": {
       "areaLabel": "Area",
       "bearingLabel": "Bearing",
+      "imperial": "Imperial",
       "lengthLabel": "Length",
+      "metric": "Metric",
       "pointLabel": "Position"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Delete",
       "draw": "Draw",
       "edit": "Edit",
+      "ellipse": "Ellipse",
       "fill": "Fill",
       "freehand": "Freehand drawing",
       "label": "Label",
       "layer": "Layer",
       "line": "Line",
+      "measurements": "Show measurements",
       "outline": "Outline",
       "pick": "Pick",
       "point": "Point",
       "polygon": "Polygon",
+      "rectangle": "Rectangle",
       "size": "Size",
+      "square": "Square",
       "text": "Text",
+      "transform": "Transform",
       "width": "Width"
     },
     "scratchdrawing": {

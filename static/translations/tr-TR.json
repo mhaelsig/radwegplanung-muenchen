@@ -14,6 +14,7 @@
         "LayerTree": "Katmanlar & Gösterim",
         "Login": "Giriş",
         "Logout": "Çıkış",
+        "MapLegend": "",
         "Measure": "Ölç",
         "MeasureLineString": "Bir çizgiyi ölçmek",
         "MeasurePolygon": "Bir çokgen ölçmek",
@@ -144,6 +145,7 @@
       "loading": "Yükseklik profili hesaplanıyor..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Dışarıya aktar",
       "exportformat": "Dışarı aktarma formatı:",
       "featureReport": "Obje raporu",
@@ -227,10 +229,18 @@
       "elevation": "Yükseklik",
       "title": "Konum"
     },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
+    },
     "measureComponent": {
       "areaLabel": "Alan",
       "bearingLabel": "Doğrultu",
+      "imperial": "",
       "lengthLabel": "Uzunluk",
+      "metric": "",
       "pointLabel": "Konum"
     },
     "navbar": {
@@ -271,17 +281,22 @@
       "delete": "Sil",
       "draw": "Çiz",
       "edit": "Düzenle",
+      "ellipse": "",
       "fill": "Dolgu",
       "freehand": "Serbest çizim",
       "label": "Etiket",
       "layer": "Katman",
       "line": "Çizgi",
+      "measurements": "",
       "outline": "Kenarlık",
       "pick": "Seç",
       "point": "Nokta",
       "polygon": "Poligon",
+      "rectangle": "",
       "size": "Boyut",
+      "square": "",
       "text": "Metin",
+      "transform": "",
       "width": "Genişlik"
     },
     "scratchdrawing": {
