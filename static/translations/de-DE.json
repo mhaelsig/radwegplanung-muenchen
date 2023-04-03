@@ -16,11 +16,12 @@
         "Logout": "Abmelden",
         "MapLegend": "Legende",
         "Measure": "Messen",
-        "MeasureLineString": "Messen linie",
-        "MeasurePolygon": "Messen polygon",
+        "MeasureLineString": "Messen Linie",
+        "MeasurePolygon": "Messen Polygon",
         "Print": "Drucken",
         "RasterExport": "Raster-Export",
         "Redlining": "Zeichnen",
+        "Routing": "Routing",
         "Share": "Teilen",
         "ThemeSwitcher": "Themen",
         "Tools": "Werkzeuge",
@@ -246,6 +247,15 @@
     "navbar": {
       "perpage": "pro Seite"
     },
+    "numericinput": {
+      "angle": "Winkel",
+      "featureunsupported": "Numerische Eingabe nicht verfügbar für dieses Objekt",
+      "height": "Höhe",
+      "nofeature": "Kein Objekt aktiv",
+      "side": "Seite",
+      "width": "Breite",
+      "windowtitle": "Numerische Eingabe"
+    },
     "print": {
       "grid": "Gitter",
       "layout": "Format",
@@ -265,9 +275,13 @@
       "loading": "Formular wird geladen..."
     },
     "rasterexport": {
-      "format": "Format:",
-      "resolution": "Auflösung:",
-      "selectinfo": "Rechteck um die zu exportierende Region aufziehen"
+      "format": "Format",
+      "resolution": "Auflösung",
+      "scale": "Maßstab",
+      "size": "Dimensionen",
+      "submit": "Exportieren",
+      "usersize": "Auf Karte auswählen...",
+      "wait": "Bitte warten..."
     },
     "redlining": {
       "border": "Rand",
@@ -282,13 +296,12 @@
       "draw": "Zeichnen",
       "edit": "Bearbeiten",
       "ellipse": "Ellipse",
-      "fill": "Füllung",
       "freehand": "Freihand",
       "label": "Beschriftung",
       "layer": "Ebene",
       "line": "Linie",
       "measurements": "Messungen anzeigen",
-      "outline": "Rand",
+      "numericinput": "Numerische Eingabe",
       "pick": "Auswählen",
       "point": "Punkt",
       "polygon": "Polygon",
@@ -298,6 +311,42 @@
       "text": "Text",
       "transform": "Transformieren",
       "width": "Breite"
+    },
+    "routing": {
+      "add": "Hinzufügen",
+      "addviapoint": "Über hier",
+      "clear": "Zurücksetzen",
+      "computefailed": "Berechnung fehlgeschlagen",
+      "computing": "Berechnung...",
+      "excludepolygons": "Flächen ausschließen",
+      "export": "Exportieren",
+      "fastest": "Schnellste",
+      "fromhere": "Von hier",
+      "importerror": "Import fehlgeschlagen. Der Dateinhalt muss eine GeoJSON FeatureCollection bestehend aus Punktobjekte sein.",
+      "importhint": "Datei mit GeoJSON FeatureCollection bestehend aus Punktobjekte",
+      "importpoints": "Importieren",
+      "iso_intervals": "Intervalle",
+      "iso_mode": "Modus",
+      "iso_mode_distance": "Distanz",
+      "iso_mode_time": "Zeit",
+      "isocenter": "Zentrum",
+      "isoextracenter": "Zusätzliches Zentrum",
+      "maxspeed": "Max. Geschwindigkeit",
+      "method": "Methode",
+      "mode_auto": "Auto",
+      "mode_bicycle": "Fahrrad",
+      "mode_bus": "Bus",
+      "mode_walking": "Zu Fuß",
+      "optimized_route": "Optimale Route",
+      "reachability": "Erreichbarkeit",
+      "roundtrip": "Rundweg",
+      "route": "Route",
+      "shortest": "Kürzeste",
+      "tohere": "Nach hier",
+      "useferries": "Fähren benutzen",
+      "usehighways": "Autobahnen benutzen",
+      "usetollways": "Mautstraßen benutzen",
+      "windowtitle": "Routing"
     },
     "scratchdrawing": {
       "finish": "Abschließen"
@@ -338,7 +387,7 @@
       "socialIntro": "In den sozialen Medien"
     },
     "snapping": {
-      "loading": "Einrastrungsgeometrien werden geladen...",
+      "loading": "Einrastungsgeometrien werden geladen...",
       "snappingenabled": "Einrasten"
     },
     "themelayerslist": {
@@ -415,6 +464,7 @@
       "zoomout": "Hinauszoomen"
     },
     "vectorlayerpicker": {
+      "none": "Keine",
       "prompt": "Ebenenname eingeben"
     },
     "window": {

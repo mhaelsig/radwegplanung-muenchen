@@ -21,6 +21,7 @@
         "Print": "Печать",
         "RasterExport": "Экспорт в растровый Формат бумаги",
         "Redlining": "Обводка",
+        "Routing": "",
         "Share": "Поделиться ссылкой",
         "ThemeSwitcher": "Тема",
         "Tools": "Средства картографии",
@@ -246,6 +247,15 @@
     "navbar": {
       "perpage": ""
     },
+    "numericinput": {
+      "angle": "",
+      "featureunsupported": "",
+      "height": "",
+      "nofeature": "",
+      "side": "",
+      "width": "",
+      "windowtitle": ""
+    },
     "print": {
       "grid": "Сетка",
       "layout": "Формат бумаги",
@@ -267,7 +277,11 @@
     "rasterexport": {
       "format": "Формат бумаги:",
       "resolution": "Разрешение:",
-      "selectinfo": "Для экспорта обведите регион многоугольником..."
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
     },
     "redlining": {
       "border": "Граница",
@@ -282,13 +296,12 @@
       "draw": "",
       "edit": "",
       "ellipse": "",
-      "fill": "Заливка",
       "freehand": "",
       "label": "Надпись",
       "layer": "",
       "line": "Линия",
       "measurements": "",
-      "outline": "Контур",
+      "numericinput": "",
       "pick": "Выбрать",
       "point": "Точка",
       "polygon": "Полигон",
@@ -298,6 +311,42 @@
       "text": "Текст",
       "transform": "",
       "width": "Ширина"
+    },
+    "routing": {
+      "add": "",
+      "addviapoint": "",
+      "clear": "",
+      "computefailed": "",
+      "computing": "",
+      "excludepolygons": "",
+      "export": "",
+      "fastest": "",
+      "fromhere": "",
+      "importerror": "",
+      "importhint": "",
+      "importpoints": "",
+      "iso_intervals": "",
+      "iso_mode": "",
+      "iso_mode_distance": "",
+      "iso_mode_time": "",
+      "isocenter": "",
+      "isoextracenter": "",
+      "maxspeed": "",
+      "method": "",
+      "mode_auto": "",
+      "mode_bicycle": "",
+      "mode_bus": "",
+      "mode_walking": "",
+      "optimized_route": "",
+      "reachability": "",
+      "roundtrip": "",
+      "route": "",
+      "shortest": "",
+      "tohere": "",
+      "useferries": "",
+      "usehighways": "",
+      "usetollways": "",
+      "windowtitle": ""
     },
     "scratchdrawing": {
       "finish": ""
@@ -415,6 +464,7 @@
       "zoomout": "Уменьшить"
     },
     "vectorlayerpicker": {
+      "none": "",
       "prompt": ""
     },
     "window": {

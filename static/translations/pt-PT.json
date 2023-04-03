@@ -21,6 +21,7 @@
         "Print": "Imprimir",
         "RasterExport": "Exportar trama",
         "Redlining": "Línea de demarcación",
+        "Routing": "",
         "Share": "Compartilhar enlace",
         "ThemeSwitcher": "Tema",
         "Tools": "Ferramentas de mapa",
@@ -246,6 +247,15 @@
     "navbar": {
       "perpage": ""
     },
+    "numericinput": {
+      "angle": "",
+      "featureunsupported": "",
+      "height": "",
+      "nofeature": "",
+      "side": "",
+      "width": "",
+      "windowtitle": ""
+    },
     "print": {
       "grid": "Rede",
       "layout": "Desenho",
@@ -267,7 +277,11 @@
     "rasterexport": {
       "format": "Formato:",
       "resolution": "Resolução:",
-      "selectinfo": "Arraste um retângulo pela região para exportar..."
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
     },
     "redlining": {
       "border": "Fronteira",
@@ -282,13 +296,12 @@
       "draw": "Traçar",
       "edit": "Editar",
       "ellipse": "",
-      "fill": "Preencha",
       "freehand": "Desenho à mão livre ",
       "label": "Etiqueta",
       "layer": "Camada",
       "line": "Línha",
       "measurements": "",
-      "outline": "Contorno",
+      "numericinput": "",
       "pick": "Escolher",
       "point": "Ponto",
       "polygon": "Polígono",
@@ -298,6 +311,42 @@
       "text": "Texto",
       "transform": "",
       "width": "Largura"
+    },
+    "routing": {
+      "add": "",
+      "addviapoint": "",
+      "clear": "",
+      "computefailed": "",
+      "computing": "",
+      "excludepolygons": "",
+      "export": "",
+      "fastest": "",
+      "fromhere": "",
+      "importerror": "",
+      "importhint": "",
+      "importpoints": "",
+      "iso_intervals": "",
+      "iso_mode": "",
+      "iso_mode_distance": "",
+      "iso_mode_time": "",
+      "isocenter": "",
+      "isoextracenter": "",
+      "maxspeed": "",
+      "method": "",
+      "mode_auto": "",
+      "mode_bicycle": "",
+      "mode_bus": "",
+      "mode_walking": "",
+      "optimized_route": "",
+      "reachability": "",
+      "roundtrip": "",
+      "route": "",
+      "shortest": "",
+      "tohere": "",
+      "useferries": "",
+      "usehighways": "",
+      "usetollways": "",
+      "windowtitle": ""
     },
     "scratchdrawing": {
       "finish": "Terminar"
@@ -415,6 +464,7 @@
       "zoomout": "Reduzir o zoom"
     },
     "vectorlayerpicker": {
+      "none": "",
       "prompt": "Insira o nome da camada"
     },
     "window": {

@@ -1,5 +1,18 @@
 Änderungshistorie
 =================
+- 13.03.23
+    - MunichWays 4_Ring in Plan- und Zielkonzeption angepasst
+    - Kurznamen Gruppen und Layer geändert in Gxxx und Lxxx, damit sie leichter aufgerufen werden können
+    - Dokumentation um Zuordnungsliste Gruppen- und Layernamen zu Kurznamen ergänzt; dafür Script *Zuordnung_Gruppen_und_Layernamen.py* erzeugt, dass von *qgis_process* in *yarnmhcs.sh* aufgerufen wird.
+
+- 25.02.23
+    - Top100 Radverkehrsmodellierung geändert
+    - Startorte und Zielorte aus Strava Juli 2022 eingebaut
+
+- 17.02.23
+    - Top100 Radverkehrsmodellierung 2019 eingefügt
+    - Gesamtnetz Stadt Stand 17.2.23 übernommen
+
 - 10.02.23
     Maßnahmenliste ergänzt und neu dargestellt.
 

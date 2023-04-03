@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Radwegplanung München'
-copyright = '2021, Dr. Michael Hälsig'
+copyright = '2023, Dr. Michael Hälsig'
 author = 'Dr. Michael Hälsig'
 
 # The full version, including alpha/beta/rc tags

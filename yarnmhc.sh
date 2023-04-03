@@ -30,9 +30,13 @@ case "$1" in
                 # nur bei 'rwpl' die Dokumentation neu erzeugen
                       if [ "$1" == "rwpl" ]
                        then
+                # Zuordnung Layernamen aktualisieren
+                        qgis_process --verbose run /home/mhaelsig/QGIS/Modelle/Skripte/Zuordnung_Gruppen_und_Layernamen.py
+                # Dokumentation aktualiseren
                         cd doc
                         make html
-                        make latexpdf
+                # make latexpdf hat Fehlermeldung: to deeply nested
+                #       make latexpdf
                         cd ..
                         cp doc/source/*.mp4 prod/doc/build/html/
                       fi

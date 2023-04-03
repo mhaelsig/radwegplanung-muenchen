@@ -61,8 +61,7 @@ function coordinatesSearch(text, searchParams, callback) {
             }
         );
     }
-    callback({results: results});
-    // dispatch(addSearchResults({data: results, provider: "coordinates", reqId: requestId}, true));
+    setTimeout(() => callback({results: results}), 50);
 }
 
 /** ************************************************************************ **/
@@ -71,7 +70,7 @@ class NominatimSearch {
     static TRANSLATIONS = {};
 
     static search(text, searchParams, callback, axios) {
-        axios.get("//nominatim.openstreetmap.org/search", {params: {
+        axios.get("https://nominatim.openstreetmap.org/search", {params: {
             'q': text,
             'addressdetails': 1,
             'polygon_geojson': 1,

@@ -21,6 +21,7 @@
         "Print": "Drukuj",
         "RasterExport": "Eksport Rastra",
         "Redlining": "Redlining",
+        "Routing": "",
         "Share": "Udostępnij Link",
         "ThemeSwitcher": "Motyw",
         "Tools": "Narzędzia Mapy",
@@ -246,6 +247,15 @@
     "navbar": {
       "perpage": ""
     },
+    "numericinput": {
+      "angle": "",
+      "featureunsupported": "",
+      "height": "",
+      "nofeature": "",
+      "side": "",
+      "width": "",
+      "windowtitle": ""
+    },
     "print": {
       "grid": "Siatka",
       "layout": "Layout",
@@ -267,7 +277,11 @@
     "rasterexport": {
       "format": "Format:",
       "resolution": "Rozdzielczość:",
-      "selectinfo": "Narysuj prostokąt, określając obszar do eksportu..."
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
     },
     "redlining": {
       "border": "Obramowanie",
@@ -282,13 +296,12 @@
       "draw": "Rysuj",
       "edit": "Edytuj",
       "ellipse": "",
-      "fill": "Wypełnij",
       "freehand": "",
       "label": "Etykieta",
       "layer": "Warstwa",
       "line": "Linia",
       "measurements": "",
-      "outline": "Szkic",
+      "numericinput": "",
       "pick": "Wybierz",
       "point": "Punkt",
       "polygon": "Poligon",
@@ -298,6 +311,42 @@
       "text": "Tekst",
       "transform": "",
       "width": "Szerokość"
+    },
+    "routing": {
+      "add": "",
+      "addviapoint": "",
+      "clear": "",
+      "computefailed": "",
+      "computing": "",
+      "excludepolygons": "",
+      "export": "",
+      "fastest": "",
+      "fromhere": "",
+      "importerror": "",
+      "importhint": "",
+      "importpoints": "",
+      "iso_intervals": "",
+      "iso_mode": "",
+      "iso_mode_distance": "",
+      "iso_mode_time": "",
+      "isocenter": "",
+      "isoextracenter": "",
+      "maxspeed": "",
+      "method": "",
+      "mode_auto": "",
+      "mode_bicycle": "",
+      "mode_bus": "",
+      "mode_walking": "",
+      "optimized_route": "",
+      "reachability": "",
+      "roundtrip": "",
+      "route": "",
+      "shortest": "",
+      "tohere": "",
+      "useferries": "",
+      "usehighways": "",
+      "usetollways": "",
+      "windowtitle": ""
     },
     "scratchdrawing": {
       "finish": ""
@@ -415,6 +464,7 @@
       "zoomout": "Oddal"
     },
     "vectorlayerpicker": {
+      "none": "",
       "prompt": ""
     },
     "window": {

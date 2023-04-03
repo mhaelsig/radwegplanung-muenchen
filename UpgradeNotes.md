@@ -5,12 +5,49 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [96aaa51](https://github.com/qgis/qwc2/tree/96aaa51) (09.02.2023)
+---------------------------------------------------------------------------------------------------
+
+**Config setting change**
+
+* Geodesic measurement mode is now configured at toplevel in `config.json` via `geodesicMeasurements: true|false` rather than below `Map -> cfg -> toolsOptions -> MeasurementSupport`.
+
+Update to qwc2 submodule revision [7a474e3](https://github.com/qgis/qwc2/tree/7a474e3) (23.01.2023)
+---------------------------------------------------------------------------------------------------
+
+**Dependency update**
+
+Most dependencies have been updated to the latest version. The following adjustments need to be performed by hand:
+
+* Use `createRoot` in `app.jsx`, see the [demo `app.jsx`](https://github.com/qgis/qwc2-demo-app/blob/1ec0a2ba614ddfb2bc30ab0d3db083fbcc5da524/js/app.jsx).
+* Update `uuid` imports in external components, examples:
+
+      import {v1 as uuidv1} from 'uuid';
+      import {v4 as uuidv4} from 'uuid';
+
+  and then instead of `uuid.v1()` use `uuidv1()` etc.
+
+* Adjust `webpack.config.js` from
+
+      {
+        test: /\.mjs$/,
+        type: 'javascript/auto'
+      }
+
+  to
+
+      {
+        test: /(.mjs|.js)$/,
+        type: 'javascript/auto'
+      }
+
+
 Update to qwc2 submodule revision [fe063b6](https://github.com/qgis/qwc2/tree/fe063b6) (13.01.2023)
 ---------------------------------------------------------------------------------------------------
 
 **Reworked search provider support**
 
-The arguments and expected behaviour of the provider `onSearch` and `getResultGeometry` have changed. Please refer to the documentation chapter in the [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#search-providers). Consult [js/SearchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js) and [static/assets/searchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/searchProviders.js) for full examples.
+The arguments and expected behaviour of the provider `onSearch` and `getResultGeometry` have changed. Please refer to the documentation chapter in the [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/src/qwc_configuration.md#search-providers). Consult [js/SearchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js) and [static/assets/searchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/searchProviders.js) for full examples.
 
 It is now possible to define search providers in a external JS file loaded at runtime rather than compiled into the application bundle. See [static/assets/searchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/searchProviders.js), which is loaded by [index.html](https://github.com/qgis/qwc2-demo-app/blob/master/index.html).
 
@@ -27,14 +64,14 @@ and read from `searchParams.cfgParams` in the provider `onSearch` function.
 
 **Load Help dialog contents from HTML fragment**
 
-Instead of requiring users to implement the `renderHelp` function in `js/Help.jsx`, for simple cases the users can provide a plain HTML fragment which is loaded at runtime from the assets. Consult the [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#help-dialog).
+Instead of requiring users to implement the `renderHelp` function in `js/Help.jsx`, for simple cases the users can provide a plain HTML fragment which is loaded at runtime from the assets. Consult the [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/src/qwc_configuration.md#help-dialog).
 
 Update to qwc2 submodule revision [90c613a](https://github.com/qgis/qwc2/tree/90c613a) (28.11.2022)
 ---------------------------------------------------------------------------------------------------
 
 **Reworked color scheme support**
 
-The `styleConfig.js` file is deprecated and won't be honoured anymore for the styling of core QWC2 components. Instead, base theme colors can be defined via CSS, refer to [documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#color-schemes) for details.
+The `styleConfig.js` file is deprecated and won't be honoured anymore for the styling of core QWC2 components. Instead, base theme colors can be defined via CSS, refer to [documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/src/qwc_configuration.md#color-schemes) for details.
 
 **Renamed config variable**
 The `maxGetUrlLength` variable in `config.json` has been renamed to `wmsMaxGetUrlLength`.

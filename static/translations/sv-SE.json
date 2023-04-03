@@ -21,6 +21,7 @@
         "Print": "Skriv ut",
         "RasterExport": "Raster Export",
         "Redlining": "Rita",
+        "Routing": "",
         "Share": "Dela länk",
         "ThemeSwitcher": "Tema",
         "Tools": "Kartverktyg",
@@ -246,6 +247,15 @@
     "navbar": {
       "perpage": ""
     },
+    "numericinput": {
+      "angle": "",
+      "featureunsupported": "",
+      "height": "",
+      "nofeature": "",
+      "side": "",
+      "width": "",
+      "windowtitle": ""
+    },
     "print": {
       "grid": "Rutnät",
       "layout": "Layout:",
@@ -267,7 +277,11 @@
     "rasterexport": {
       "format": "Format:",
       "resolution": "Upplösning:",
-      "selectinfo": "Dra en rektangel runt området som ska exporteras..."
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
     },
     "redlining": {
       "border": "Kant",
@@ -282,13 +296,12 @@
       "draw": "Rita",
       "edit": "Redigera",
       "ellipse": "",
-      "fill": "Fyllning",
       "freehand": "",
       "label": "Etikett",
       "layer": "Lager",
       "line": "Linje",
       "measurements": "",
-      "outline": "Kant",
+      "numericinput": "",
       "pick": "Välj",
       "point": "Punkt",
       "polygon": "Yta",
@@ -298,6 +311,42 @@
       "text": "Text",
       "transform": "",
       "width": "Bredd"
+    },
+    "routing": {
+      "add": "",
+      "addviapoint": "",
+      "clear": "",
+      "computefailed": "",
+      "computing": "",
+      "excludepolygons": "",
+      "export": "",
+      "fastest": "",
+      "fromhere": "",
+      "importerror": "",
+      "importhint": "",
+      "importpoints": "",
+      "iso_intervals": "",
+      "iso_mode": "",
+      "iso_mode_distance": "",
+      "iso_mode_time": "",
+      "isocenter": "",
+      "isoextracenter": "",
+      "maxspeed": "",
+      "method": "",
+      "mode_auto": "",
+      "mode_bicycle": "",
+      "mode_bus": "",
+      "mode_walking": "",
+      "optimized_route": "",
+      "reachability": "",
+      "roundtrip": "",
+      "route": "",
+      "shortest": "",
+      "tohere": "",
+      "useferries": "",
+      "usehighways": "",
+      "usetollways": "",
+      "windowtitle": ""
     },
     "scratchdrawing": {
       "finish": ""
@@ -415,6 +464,7 @@
       "zoomout": "Zooma ut"
     },
     "vectorlayerpicker": {
+      "none": "",
       "prompt": ""
     },
     "window": {

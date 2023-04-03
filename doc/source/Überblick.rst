@@ -13,7 +13,7 @@ Die Informations-Ebenen sind in Gruppen zusammengefasst.
 - die Vorschläge von `munichways <https://www.munichways.com>`_
 - die bereits von der Stadtverwaltung geplanten Maßnahmen in München zur Umsetzung des Radentscheids
 - die geplanten Radschnellverbindungen, wie sie im Dezember 2020 den Bezirksausschüssen vorgestellt wurden
-- dem Verkehrsentwicklungsplan Rad (VEP-R) aus dem Jahr 2005
+- dem Verkehrsentwicklungsplan Rad (VEP-R) aus dem Jahr 2003
 - Radwege in Bayern
 
 2 Istzahlen

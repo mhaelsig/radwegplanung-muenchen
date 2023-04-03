@@ -21,6 +21,7 @@
         "Print": "Stampa",
         "RasterExport": "Esporta su immagine",
         "Redlining": "Strumenti di disegno",
+        "Routing": "Routing",
         "Share": "Condividi",
         "ThemeSwitcher": "Temi",
         "Tools": "Strumenti",
@@ -246,6 +247,15 @@
     "navbar": {
       "perpage": "per pagina"
     },
+    "numericinput": {
+      "angle": "Angolo",
+      "featureunsupported": "Formulario numerico non disponibile per questa geometria",
+      "height": "Altezza",
+      "nofeature": "Nessun oggetto attivo",
+      "side": "Lato",
+      "width": "Larghezza",
+      "windowtitle": "Formulario numerico"
+    },
     "print": {
       "grid": "Griglia",
       "layout": "Layout",
@@ -265,9 +275,13 @@
       "loading": "Caricando formulario..."
     },
     "rasterexport": {
-      "format": "Formato:",
-      "resolution": "Risoluzione:",
-      "selectinfo": "Seleziona l'area da esportare"
+      "format": "Formato",
+      "resolution": "Risoluzione",
+      "scale": "Scala",
+      "size": "Dimensione",
+      "submit": "Esporta",
+      "usersize": "Seleziona sulla mappa...",
+      "wait": "Attendere..."
     },
     "redlining": {
       "border": "Bordo",
@@ -282,13 +296,12 @@
       "draw": "Disegna",
       "edit": "Modifica",
       "ellipse": "Ellisse",
-      "fill": "Riempimento",
       "freehand": "Mano libera",
       "label": "Ettichetta",
       "layer": "Layer",
       "line": "Linea",
       "measurements": "Mostra misurazioni",
-      "outline": "Contorno",
+      "numericinput": "Formulario numerico",
       "pick": "Seleziona",
       "point": "Punto",
       "polygon": "Poligono",
@@ -298,6 +311,42 @@
       "text": "Testo",
       "transform": "Transforma",
       "width": "Larghezza"
+    },
+    "routing": {
+      "add": "Aggiungi",
+      "addviapoint": "Via qui",
+      "clear": "Azzera",
+      "computefailed": "Errore durante il calcolo",
+      "computing": "Calcolo...",
+      "excludepolygons": "Escludi aree",
+      "export": "Esporta",
+      "fastest": "Più veloce",
+      "fromhere": "Da qui",
+      "importerror": "Impossibile importare. Il contenuto del file deve essere una GeoJSON FeatureCollection di punti.",
+      "importhint": "File contenente una GeoJSON FeatureCollection di punti",
+      "importpoints": "Importa",
+      "iso_intervals": "Intervalli",
+      "iso_mode": "Modalità",
+      "iso_mode_distance": "Distanza",
+      "iso_mode_time": "Tempo",
+      "isocenter": "Centro",
+      "isoextracenter": "Ulteriore centro",
+      "maxspeed": "Velocità massima",
+      "method": "Metodo",
+      "mode_auto": "Automobile",
+      "mode_bicycle": "Bicicletta",
+      "mode_bus": "Bus",
+      "mode_walking": "A piedi",
+      "optimized_route": "Rotta ottimale",
+      "reachability": "Raggiungibilità",
+      "roundtrip": "Andata e ritorno",
+      "route": "Rotta",
+      "shortest": "Più corta",
+      "tohere": "A qui",
+      "useferries": "Utilizza traghetti",
+      "usehighways": "Utilizza autostrade",
+      "usetollways": "Utilizza strade a pedaggio",
+      "windowtitle": "Routing"
     },
     "scratchdrawing": {
       "finish": "Finito"
@@ -415,6 +464,7 @@
       "zoomout": "Rimpicciolisci"
     },
     "vectorlayerpicker": {
+      "none": "Nessuno",
       "prompt": "Nome del layer"
     },
     "window": {
